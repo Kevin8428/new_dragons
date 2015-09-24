@@ -1,4 +1,5 @@
 * [Introduction & Syllabus](README.md)
+  * [Welcome](0_onboarding/welcome.md)
   * [Student Holidays](0_onboarding/holidays.md)
   * [Homework Submission](0_onboarding/homework_submission.md)
   * [Class Library](0_onboarding/class_library.md)
