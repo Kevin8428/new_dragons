@@ -1,4 +1,4 @@
-![WDI Jon Snow](http://imgur.com/oavA3Zy)
+![http://i.imgur.com/oavA3Zy.png](http://imgur.com/oavA3Zy)
 
 ## Welcome from your instructors
 
