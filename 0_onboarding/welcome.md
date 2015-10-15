@@ -1,4 +1,4 @@
-![http://i.imgur.com/oavA3Zy.png](http://imgur.com/oavA3Zy)
+![Jon Snow](http://i.imgur.com/oavA3Zy.png)
 
 ## Welcome from your instructors
 
