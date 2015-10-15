@@ -1,8 +1,6 @@
 # WDI Chicago #3: *Jon Snow*
 
-*name not final... but* **winter is coming** :p
-
-## How to use this repository
+![Jon Snow](http://i.imgur.com/oavA3Zy.png)
 
 * Install via `npm`: `npm install gitbook-cli -g`
 * Add a file to any folder. Make sure it is Markdown and you follow Markdown semantics (no HTML!)
