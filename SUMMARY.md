@@ -7,3 +7,6 @@
   * [Course Outline](0_onboarding/course_outline.md)
   * [All Videos/Source Code](0_onboarding/videos.md)
 * [Front End Fundamentals](01_front_end_fundamentals/README.md)
+* [Ruby101](05_ruby101/README.md)
+* [fullstack_sinatra](06_fullstack_sinatra/README.md)
+* [Pairprogramming_project](07_pairprogramming_project/README.md)
