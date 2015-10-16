@@ -13,4 +13,4 @@
 * [Front End Project](04_frontend_project/README.md)
 * [Ruby on Rails](11_rubyonrails/README.md)
 * [React.js](12_reactjs/README.md)
-* [Captstone Project](13_capstone_project/README.md)
+* [Capstone Project](13_capstone_project/README.md)
