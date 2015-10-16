@@ -13,6 +13,10 @@
 * [Advanced Front End](03_advanced_front_end/README.md)
 * [Front End Project](04_frontend_project/README.md)
 
+* [Fullstack Node](08_fullstack_node/README.md)
+* [Backbone.js](09_backbonejs/README.md)
+* [Group Project](10_group_project/README.md)
+
 * [Ruby on Rails](11_rubyonrails/README.md)
 * [React.js](12_reactjs/README.md)
 * [Capstone Project](13_capstone_project/README.md)
