@@ -1,4 +1,4 @@
-![Dragons](http://i.imgur.com/oavA3Zy.png)
+![dragons.png](dragons.png)
 
 ## Welcome from your instructors
 
