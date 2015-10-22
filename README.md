@@ -1,11 +1,23 @@
-# WDI Chicago #3: *Jon Snow*
+# WDI Chicago #3: *Dragons*
 
-![Jon Snow](http://i.imgur.com/oavA3Zy.png)
+![Dragons](http://i.imgur.com/oavA3Zy.png)
 
-* Install via `npm`: `npm install gitbook-cli -g`
-* Add a file to any folder. Make sure it is Markdown and you follow Markdown semantics (no HTML!)
-* Link to that file's root path inside of `SUMMARY.md`
-* Build the book. `gitbook build`
-* The HTML version of the book can be found in `_book/`
-* View your changes in `_book/index.html`
-* Push live to whatever repository you are sharing with your students.
+## Welcome!
+
+Please use the navigation bar to the left to browse our cohort's *living syllabus/textbook*.
+
+## Your Instructors
+<table>
+  <tr>
+    <td><img src="https://avatars2.githubusercontent.com/u/1757078?v=3&amp;s=460" width="40%" height="25%">
+    <br><a href="https://github.com/code-for-coffee">James Traver</a> <br>(code-for-coffee)<br>
+    </td>
+
+    <td><img src="https://avatars3.githubusercontent.com/u/5898365?v=3&s=460" width="40%" height="25%">
+    <br><a href="https://github.com/alcastaneda">Adriana Castaneda</a><br> (alcastaneda)<br>
+    /td>
+
+    <td><img src="https://avatars1.githubusercontent.com/u/13041261?v=3&s=460" width="40%" height="25%">
+    <br><a href="https://github.com/jimbojones1">Jim Haff</a> (jimbojones1)<br></td>
+  </tr>
+</table>
