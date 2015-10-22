@@ -1,6 +1,6 @@
 # WDI Chicago #3: *Dragons*
 
-![Dragons](http://i.imgur.com/oavA3Zy.png)
+![Dragons](dragons.png)
 
 ## Welcome!
 
