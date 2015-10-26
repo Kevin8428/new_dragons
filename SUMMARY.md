@@ -8,6 +8,8 @@
   * [All Videos/Source Code](0_onboarding/videos.md)
 * [Front End Fundamentals](01_front_end_fundamentals/README.md)
   * [1.1 Introduction](01_front_end_fundamentals/d01.md)
+  * [Mac Cheat Sheet](01_front_end_fundamentals/d01-mac-cheat-sheet.md)
+  * [Terminal Cheat Sheet](01_front_end_fundamentals/d01-termina-cheat-sheet.md)
 * [Object Oriented JS & jQuery](02_oojs_jquery/README.md)
 * [Advanced Front End](03_advanced_front_end/README.md)
 * [Front End Project](04_frontend_project/README.md)
