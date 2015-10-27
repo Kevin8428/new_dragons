@@ -13,6 +13,8 @@
   * [Workshop: Star Wars Command Line](01_front_end_fundamentals/d01_workhop_cli.md)
   * [1.2 Hello World](01_front_end_fundamentals/d02.md)
   * [Variables](01_front_end_fundamentals/d02-variables.md)
+  * [Data Types](01_front_end_fundamentals/d02-datatypes-examples.md)
+  * [Control Flow](01_front_end_fundamentals/d02-controlflow-examples.md)
   * [String Concatenation](01_front_end_fundamentals/d02-stringconcat.md)
   * [Arrays](01_front_end_fundamentals/d02-arrays.md)
   * [Loops](01_front_end_fundamentals/d02-loops.md)
