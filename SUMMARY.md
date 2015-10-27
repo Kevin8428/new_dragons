@@ -11,6 +11,7 @@
   * [Mac Cheat Sheet](01_front_end_fundamentals/d01-mac-cheat-sheet.md)
   * [Terminal Cheat Sheet](01_front_end_fundamentals/d01-termina-cheat-sheet.md)
   * [Workshop: Star Wars Command Line](01_front_end_fundamentals/d01_workhop_cli.md)
+  * [1.2 Hello World](01_front_end_fundamentals/d02.md)
 * [Object Oriented JS & jQuery](02_oojs_jquery/README.md)
 * [Advanced Front End](03_advanced_front_end/README.md)
 * [Front End Project](04_frontend_project/README.md)
