@@ -17,10 +17,11 @@ Loop through the carousel using a for loop. Every other cycle through the loop (
 Repeat until the carousel is empty.
 */
 
+
 var carousel = ['James', 'Lars', 'Kirk', 'Cliff'];
 var index = carousel.length*2;
-for (var i = 0; i <= index; i++) {
-  if (i%2 === 1) {
+for (var i = 0; i < index-1; i++) {
+  if (i%2 === 0) { //used i%2 === 0 because we start counting cycles with 1 but the index of the array starts at 0.
     carousel.shift();
   }
 }
