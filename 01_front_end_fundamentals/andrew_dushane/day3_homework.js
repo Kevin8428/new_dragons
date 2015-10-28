@@ -2,7 +2,6 @@
 function getType(x) {
   return typeof x;
 }
-console.log(getType({a: 1, b: 2}))
 
 //Carousel array
 var people = ['Paul', 'Andrew', 'Roger', 'Sam', 'Monty Python', 'Katie', 'Stephen'];
