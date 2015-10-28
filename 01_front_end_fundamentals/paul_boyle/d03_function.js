@@ -24,3 +24,4 @@ var colours = ['green','blue', 'purple'];
 colours.map(function(key) {
   return key + ' is a cool colour';
 });
+  
