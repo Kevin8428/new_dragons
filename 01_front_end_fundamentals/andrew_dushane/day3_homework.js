@@ -33,11 +33,11 @@ var me = {
   }
 }
 for(attr in me) {
-  if( typeof me[attr] != 'object' ) {
+  if( typeof me[attr] != 'object' ) { //log key and value for non-objects
     console.log(attr + ': ' + me[attr]);
   } else {
     console.log(attr);
-    for(attr2 in me[attr]) {
+    for(attr2 in me[attr]) { //log key and value for each attribute in sub-objects
       console.log('  ' + attr2 + ': ' + me[attr][attr2]);
     }
   }
