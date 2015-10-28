@@ -20,6 +20,8 @@
   * [Loops](01_front_end_fundamentals/d02-loops.md)
   * [Syntax](01_front_end_fundamentals/d02-syntax.md)
   * [Homework: Markdown and Readmes](01_front_end_fundamentals/d02-ah.md)
+  * [1.3 Functions, Loops, Objects](01_front_end_fundamentals/d03.md)
+  * [1.3 Homework](01_front_end_fundamentals/d03-ah.md)
 * [Object Oriented JS & jQuery](02_oojs_jquery/README.md)
 * [Advanced Front End](03_advanced_front_end/README.md)
 * [Front End Project](04_frontend_project/README.md)
