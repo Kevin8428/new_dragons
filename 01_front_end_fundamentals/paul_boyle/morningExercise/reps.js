@@ -10,6 +10,7 @@ var max=function(a,b){
   }
 };
 
+
 var vowel=function(letter){
   if (letter.toLowerCase()=='a'||'e'||'i'||'o'||'u'){
     return letter+' is a vowel';
@@ -22,6 +23,7 @@ var vowel=function(letter){
   }
 };
 
+
 var sum=function(arr){
    ans=0;
   for (var i = 0; i < arr.length; i++) {
@@ -29,6 +31,7 @@ var sum=function(arr){
   }
   return ans;
 };
+
 
 var mult=function(arr){
    ans=1;
