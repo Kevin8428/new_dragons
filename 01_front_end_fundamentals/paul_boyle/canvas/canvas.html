@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Canvas</title>
+</head>
+<body>
+  <canvas id='canvas' width='500' height='500' style='border: 1px solid black'></canvas>
+  <script type="text/javascript">
+
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+
+    var randomColor=function(){
+      red=Math.floor(256*Math.random());
+      green=Math.floor(256*Math.random());
+      blue=Math.floor(256*Math.random());
+      return 'rgb('+red+','+green+','+blue+')';
+    }
+
+
+  for (var i = 0; i < 300; i++) {
+
+    var plusMinus=function(num){
+      var x=Math.random();
+        if(x>.5){
+          console.log('plus sign',num);
+          return Math.sign(num);
+        }
+        else{
+          console.log('minus sign', num);
+          return 0-num
+        }
+    }
+
+
+
+
+    var randomPoint1=400*(Math.random());
+    var randomPoint2=400*(Math.random());
+    var randomPoint3=plusMinus(100*(Math.random()));
+    var randomPoint4=plusMinus(100*(Math.random()));
+
+
+
+    context.beginPath();
+    context.moveTo(250,250);
+    context.lineTo(randomPoint1,randomPoint2);
+    context.lineTo(randomPoint1+randomPoint3,randomPoint2+randomPoint4);
+    context.lineWidth=2;
+    context.strokeStyle=randomColor();
+    context.stroke();
+}
+
+
+
+  </script>
+</body>
+</html>
