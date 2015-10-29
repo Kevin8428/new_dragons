@@ -10,3 +10,5 @@ var david = {
 for (var prop in david) {
   console.log("The value for " + prop + " is " + david[prop]);
 }
+
+prompt("cat");

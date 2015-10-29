@@ -20,7 +20,7 @@ for (var pirate in arr) {
 
 
 // Example
-var placesVisited = ['7-Eleven', 'Apple Bite', 'WalMart', 'GoGrocer', 'Cosco-Jewel'];
+var placesVisited = ['7-Eleven', 'Apple Bite', 'WalMart', 'GoGrocer', 'Jewel-Osco'];
 for (var idx = 0; idx < placesVisited.length; idx++) {
   if (idx == placesVisited.length - 1) {
     console.log("this is the last place I visited");
@@ -42,5 +42,3 @@ for (var place in placesVisited) {
   //console.log(typeof(placesVisited.length));
 
 }
-
-console.log(parseInt(typeof("1")) === typeof(1));

@@ -35,5 +35,4 @@ var colors = ["green", "blue", "purple"]
 console.log(colors.map(function(key) {
   return key + " is a cool color.";
 }));
-
 console.log(colors);
