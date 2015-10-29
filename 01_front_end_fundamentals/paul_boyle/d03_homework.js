@@ -24,6 +24,13 @@ Loop through the carousel using a for loop. Every other cycle through the loop (
 Repeat until the carousel is empty.
 */
 
+// while loop will continue until all people have gotten off the carousel.
+
+//cycle<15 expression to protect from infinite loop.
+//each time through the for loop we will list the people on the carousel. after that we will check and see if it is an odd number cycle , if so, someone .pop() off the carousel.
+//increment cycle variable to count how loops around the carosel.
+
+
     var people=['paul','steve','john','christian','alex'];
     var cycle=1;
 
@@ -34,11 +41,12 @@ Repeat until the carousel is empty.
 
     if(cycle%2==1){
       console.log(people.pop(),'got off the carousel');
-      console.log(people.length,': is the amount of people still on carousel');
     } else {
       console.log('no one got off the carousel this time');
     }
     cycle+=1;
+    console.log(people.length,':people still on carousel');
+
   }
 
 /*
@@ -70,7 +78,7 @@ Use a foreach (for-in) loop to list all of these attributes (and the keys that t
       console.log('key:',prop);
       console.log('value:',paul[prop]);
       console.log('');
-      console.log('');
+      
     };
 
 /*
@@ -85,13 +93,11 @@ Use a foreach (for-in) loop to list all of these attributes (and the keys that t
 */
 
 // divide funtion takes in a number as an argument and a divisor
-var divide=function(num,div){
-
 //for loop where we find the quotient but comparing the product between quotient and divisor. If that product is greater than the numer(dividend)then we know we went too far and the correct quotient will be 1 less than current quotient. If product is equal to dividend than we know we have the correct quotient with no divisor.
 
+var divide=function(num,div){
+    for(var quotient=0;quotient*div<num;quotient++){
 
-    for(var quotient=0;x*div<num;x++){
-      //finding the correct quotient
     }
 
     if(quotient*div==num){
@@ -101,10 +107,18 @@ var divide=function(num,div){
     }
 
     var rem=num-quotient*div;
-    var message='an is : '+quotient+'   remainder is : '+rem;
+    var message='answer is : '+quotient+'   remainder is : '+rem;
     return message;
   }
 
 //testing
     console.log('dividing 20 by 7');
     divide(20,7);
+
+//alternate solution using Math.floor
+var divideAlt=function(num,div){
+  var ans=Math.floor(num/div);
+  var rem=num%div
+  var string='The answer is: '+ans+' with a remainder of '+rem;
+  return console.log(string);
+}
