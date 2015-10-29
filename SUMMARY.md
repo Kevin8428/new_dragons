@@ -23,6 +23,13 @@
   * [Functions, Loops, Objects](01_front_end_fundamentals/d03.md)
     * [Homework](01_front_end_fundamentals/d03-ah.md)
   * [Drawing on the Web](01_front_end_fundamentals/d04.md)
+<<<<<<< HEAD
+=======
+    * [HTML and CSS](01_front_end_fundamentals/d04-htmlcss.md)
+    * [The DOM](01_front_end_fundamentals/d04-dom.md)
+    * [Converting Pixels to EM](01_front_end_fundamentals/d04-em-to-px.md)
+    * [Canvas](01_front_end_fundamentals/d04-canvas.md)
+>>>>>>> 669804fbfd7c21e415039dbe57a943027913747c
 * [Object Oriented JS & jQuery](02_oojs_jquery/README.md)
 * [Advanced Front End](03_advanced_front_end/README.md)
 * [Front End Project](04_frontend_project/README.md)
