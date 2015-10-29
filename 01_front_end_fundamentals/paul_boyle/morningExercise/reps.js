@@ -11,8 +11,11 @@ var max=function(a,b){
 };
 
 var vowel=function(letter){
-  if (letter.toLowerCase()=='a'||'e'||'i'||'o'||'u'||'y'){
+  if (letter.toLowerCase()=='a'||'e'||'i'||'o'||'u'){
     return letter+' is a vowel';
+  }
+  else if (letter.toLowerCase()=='y'){
+    return 'sometimes ' + letter;
   }
   else {
     return letter + ' is not a vowel';
