@@ -46,3 +46,5 @@ function calculateAge (birthYear, currentYear) {
   var age = currentYear - birthYear;
   consolelog("You are either ") + age + " or " + (age - 1);
 }
+
+calculateAge(1999, 2015) + "YES";
