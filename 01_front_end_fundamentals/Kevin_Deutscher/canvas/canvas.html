@@ -16,6 +16,8 @@
         return Math.random();
         }
 
+
+
 function format(){
       context.fillStyle= 'red';
       context.fillRect(100, 100, 100, 100);
@@ -27,10 +29,13 @@ function format(){
       context.stroke();
 }
 
+
+
 function colorRange() {
     var max = 250;
     var min = 0;
     var random = Math.floor(Math.random() * (max - min + 1)) + min;
+    console.log(random)
   }
 
 

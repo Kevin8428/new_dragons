@@ -5,13 +5,23 @@ window.onload = function(){
 console.log ("test")
 
 
-function getUserGuess(userGuess) {
+function getInput() {
 
     console.log("Please choose a number between 1 and 4.");
-    guess = userGuess;
-    randomNumber():
+    //guess = userGuess;
+    //randomNumber():
     return prompt();
 }
+
+function getPlayerMove(userMove){
+  guess = getInput();
+  if(guess === 1|| 2 || 3 || 4){
+    console.log('you choose: ' + guess);
+    input = userMove;
+    randomNumber();
+  }
+}
+
 
 function randomNumber() {
     console.log("test");
@@ -46,6 +56,7 @@ function getWinner(){
 //run getUserGuess
 
 getUserGuess();
+randomNumber();
 
 
 
