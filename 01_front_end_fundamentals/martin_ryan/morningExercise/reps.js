@@ -12,7 +12,6 @@ function max(a, b) {
   }
 }
 
-
 var vowels = ['a','e','i','o','u'];
 function evalVowel(char) {
     for (var i = 0; i < vowels.length; i++) {
