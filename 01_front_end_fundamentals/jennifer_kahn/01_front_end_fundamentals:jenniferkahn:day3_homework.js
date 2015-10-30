@@ -42,7 +42,7 @@ for (var i = 0; i < jen.length; i++) {
     height: 'short',
     politicalView: 'democrat',
   };
-for (var i = 0; i < girl.length; i++) {
+for (var i = 0; i >= girl.length; i++) {
 
 
 

@@ -29,3 +29,8 @@ function sum(array) {
     return total + num;
   })
 }
+<<<<<<< HEAD
+
+console.log(sum([2,3]));
+=======
+>>>>>>> 51936a62fc91b975527854601003fbfa0038c777
