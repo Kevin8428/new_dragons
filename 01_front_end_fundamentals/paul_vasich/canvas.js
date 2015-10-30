@@ -27,7 +27,7 @@ function draw() {
   var canvas = document.getElementById("canvas");
   if (canvas.getContext) {
     var ctx = canvas.getContext("2d");
-    var size=100;
+    var size=500;
   //  setInterval(function() {
     ctx.clearRect(0,0,size,size);
 
@@ -37,11 +37,11 @@ function draw() {
       rSquare = new randomSquare(size);
 //      console.log(l.rgba);
       ctx.fillStyle = rSquare.rgba;
-      ctx.beginPath();
-      ctx.arc(rSquare.x, rSquare.y, rSquare.size, 0, Math.PI*2, true);
-      ctx.closePath();
-      ctx.fill();
-  //    ctx.fillRect(rSquare.x, rSquare.y, rSquare.size, rSquare.size);
+      //ctx.beginPath();
+      //ctx.arc(rSquare.x, rSquare.y, rSquare.size, 0, Math.PI*2, true);
+      //ctx.closePath();
+      //ctx.fill();
+      ctx.fillRect(rSquare.x, rSquare.y, rSquare.size, rSquare.size);
     }
   //}, 50);
   }
