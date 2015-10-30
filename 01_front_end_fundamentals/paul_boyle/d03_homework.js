@@ -46,7 +46,6 @@ Repeat until the carousel is empty.
     }
     cycle+=1;
     console.log(people.length,':people still on carousel');
-
   }
 
 /*
@@ -60,6 +59,7 @@ Use a foreach (for-in) loop to list all of these attributes (and the keys that t
 
 
   //assigning attributes for the paul obj
+  //outputing key value pairs
     paul={};
     paul.eyeColor='blue';
     paul.hairColor='brown';
@@ -73,12 +73,12 @@ Use a foreach (for-in) loop to list all of these attributes (and the keys that t
     paul.money=null;
 
 
-//output key value pairs
+
     for(prop in paul){
       console.log('key:',prop);
       console.log('value:',paul[prop]);
       console.log('');
-      
+
     };
 
 /*
@@ -95,26 +95,7 @@ Use a foreach (for-in) loop to list all of these attributes (and the keys that t
 // divide funtion takes in a number as an argument and a divisor
 //for loop where we find the quotient but comparing the product between quotient and divisor. If that product is greater than the numer(dividend)then we know we went too far and the correct quotient will be 1 less than current quotient. If product is equal to dividend than we know we have the correct quotient with no divisor.
 
-var divide=function(num,div){
-    for(var quotient=0;quotient*div<num;quotient++){
-
-    }
-
-    if(quotient*div==num){
-      console.log('no remainder... yay!');
-    } else {
-      quotient-=1;
-    }
-
-    var rem=num-quotient*div;
-    var message='answer is : '+quotient+'   remainder is : '+rem;
-    return message;
-  }
-
-//testing
-    console.log('dividing 20 by 7');
-    divide(20,7);
-
+  
 //alternate solution using Math.floor
 var divideAlt=function(num,div){
   var ans=Math.floor(num/div);
