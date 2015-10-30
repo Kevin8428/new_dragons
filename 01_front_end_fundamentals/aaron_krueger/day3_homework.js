@@ -5,10 +5,11 @@ function detectType(dt){
 //    I'm not sure exactly how to de-increment on the odd each time
 var riders = ['ash', 'dash', 'cash', 'lash'];
 
-for(i=0; i <= riders.length -1; i++){
-  if (i % 2 === 1) {
+for(i=0; 0 < riders.length; i++){
+  if (i % 2 == 1) {
     console.log('this is odd');
-    console.log(riders[i]);
+    var popped = riders.pop();
+    console.log(popped + ' has been thrown off');
   }else {
     console.log('this is even')
   }
