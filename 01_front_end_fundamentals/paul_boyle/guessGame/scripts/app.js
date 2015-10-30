@@ -1,7 +1,7 @@
 window.onload=function() {
 
   var getAns = function () {
-    return parseInt(10*(Math.random()));
+    return parseInt(10*(Math.random())+1);//get number between 1-10 random is from 0(inclusive) to 1(exclusive)
   }; //end of getAns function
 
   var getGuess=function() {
@@ -9,7 +9,8 @@ window.onload=function() {
   }; //end of getGuess function
 
   var playGame=function(){
-    while (win == false) {
+
+    while (win==false) {
       if(guess==ans){
         console.log('you win!');
         win=true;
