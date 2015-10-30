@@ -9,7 +9,7 @@ function transmogrifier(a, b, c) {
 function toonify(accent, sentence) {
   if (accent == 'daffy')
     return sentence.replace(/[sS]/g, 'th');
-  if (accent == 'elmur')
+  if (accent == 'elmer')
     return sentence.replace(/[rR]/g, 'w')
 }
 
