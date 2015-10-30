@@ -38,3 +38,40 @@ function whatFav(a) {
 }
 var petName = 'marv';
 whatFav('cheese');
+
+
+
+
+var pets = ['Marv', 'Max','Dog'];
+for (var i = 0; i < pets.length; i++) {
+  pets[i]
+}
+
+for (var lastPlace in pets) {
+  console.log(pets[lastPlace]);
+}
+
+
+var firstName = 'John'; // 1
+var lastName = 'Dowd'; // 2
+var age = 19; // 3
+​
+function displayPerson(fname, lname){ //4, 5
+  var prefix = 'Mr'; // 6
+  var fullName = null; // 6
+​
+  function getFullName(){ // 7
+    var suffix = "Esq.";  // Everybody's a lawyer, eh.
+    return  fullName = prefix + " " + fname + " " + lname + " " + suffix;
+  };
+​
+  return getFullName();
+};
+​
+function removeYears(){ // 8
+  var minusYears = 10, age = 49;
+  return age - minusYears;
+};
+​
+console.log(displayPerson(firstName, lastName));
+console.log(removeYears());
