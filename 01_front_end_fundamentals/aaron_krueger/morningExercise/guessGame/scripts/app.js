@@ -3,26 +3,26 @@
 
 var randNum = Math.floor(Math.random()*100);
 var guessTracker = 0;
-var userGuess;
-var limit = 0;
 
 var getGuess = function(){
-  var userGuess = prompt('Guess a number between 1 and 100');
+  return prompt('Guess a number 0-100');
 }
 
 var compareGuess = function(){
-
+  var limit = 7;
   getGuess();
-  console.log(userGuess);
-  for(i=0; i <= limit; i++){
-    if ( == randNum){
+  for(i=0; i < limit; i++){
+    if ( getGuess == randNum){
       alert('You guessed it right!');
       break;
-    }else if (userGuess != randNum){
+    }else if (getGuess != randNum){
       guessTracker++;
-      limit++;
       alert('Try again' + ', you\'ve guessed '+guessTracker+' times.');
-      return getGuess();
+        if(guessTracker === limit){
+          alert('oh darn')
+          break;
+        }
+      return compareGuess();
     }else{
       alert('something went wrong');
     }
