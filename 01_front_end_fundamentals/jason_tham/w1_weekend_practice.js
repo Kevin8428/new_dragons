@@ -111,7 +111,6 @@ wordReverse("Now I know what a TV dinner feels like")
         if (variable != (temparray.length - 1)){
           result += ' ';
         }
-        console.log(result);
       }
       return result;
   }
