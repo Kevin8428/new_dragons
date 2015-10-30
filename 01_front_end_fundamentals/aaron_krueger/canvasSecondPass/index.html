@@ -44,9 +44,19 @@
         ctx.lineWidth= Math.random()*10;
         ctx.lineTo(pX(),pY());
         ctx.lineTo(pX(),pY());
-        ctx.lineTo(pX(),100);
+        ctx.lineTo(pX(),pY());
         ctx.stroke();
         }
+        for (var i = 0; i < 30; i++) {
+          ctx.beginPath();
+          ctx.moveTo(pX(), 100);
+          ctx.lineWidth= Math.random()*10;
+          ctx.lineTo(pX(),pY());
+          ctx.lineTo(pX(),pY());
+          ctx.lineTo(pX(),pY());
+          ctx.strokeStyle = randColour();
+          ctx.stroke();
+          }
 
 
 
