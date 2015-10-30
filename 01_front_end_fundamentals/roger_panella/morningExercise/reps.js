@@ -75,7 +75,10 @@ function sum(array){
 
   function multiply(array) {
     var total = array[0];
+<<<<<<< HEAD
     console.log(total);
+=======
+>>>>>>> 51936a62fc91b975527854601003fbfa0038c777
     for(var i=1; i<array.length;i++) {
       total = total * array[i];
     }

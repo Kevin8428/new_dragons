@@ -8,6 +8,7 @@
   <p> Keep refreshing your page until all the Beatles are in a row!</p>
   <p> In this case being in a row means being between 50px of each other.</p>
   <p> You win when you see the Beatles logo! </p>
+<<<<<<< HEAD
   <canvas id = "canvas" width = "500" height = "350" style = "border: 1px solid black"></canvas>
 
   <script type = "text/javascript">
@@ -60,5 +61,18 @@ if (beatlesMax-beatlesMin<30) {
 
 
 
+=======
+
+  </script>
+  <script>
+if (beatlesMax-beatlesMin<40) {
+    var appleimg = new Image();
+    appleimg.onload = function() {
+    ctx.drawImage(appleimg, 0, 0);
+    }
+    appleimg.src = "https://dl.dropboxusercontent.com/u/102602916/apple.png";
+    };
+  </script>
+>>>>>>> 51936a62fc91b975527854601003fbfa0038c777
   </body>
 </html>
