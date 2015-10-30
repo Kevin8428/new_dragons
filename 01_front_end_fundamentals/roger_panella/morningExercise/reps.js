@@ -75,7 +75,6 @@ function sum(array){
 
   function multiply(array) {
     var total = array[0];
-    console.log(total);
     for(var i=1; i<array.length;i++) {
       total = total * array[i];
     }
