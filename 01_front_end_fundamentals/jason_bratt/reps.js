@@ -29,5 +29,3 @@ function sum(array) {
     return total + num;
   })
 }
-
-console.log(sum([2,3]));
