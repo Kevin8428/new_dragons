@@ -12,34 +12,20 @@
     var context = canvas.getContext('2d');
 
     var randomColor=function(){
-      red=Math.floor(256*Math.random());
-      green=Math.floor(256*Math.random());
-      blue=Math.floor(256*Math.random());
+      red=Math.floor(255*Math.random());
+      green=Math.floor(255*Math.random());
+      blue=Math.floor(255*Math.random());
       return 'rgb('+red+','+green+','+blue+')';
     }
 
 
   for (var i = 0; i < 300; i++) {
 
-    var plusMinus=function(num){
-      var x=Math.random();
-        if(x>.5){
-          console.log('plus sign',num);
-          return Math.sign(num);
-        }
-        else{
-          console.log('minus sign', num);
-          return 0-num
-        }
-    }
-
-
-
-
     var randomPoint1=400*(Math.random());
     var randomPoint2=400*(Math.random());
-    var randomPoint3=plusMinus(100*(Math.random()));
-    var randomPoint4=plusMinus(100*(Math.random()));
+    var randomPoint3=100*(Math.random());
+    var randomPoint4=-100*(Math.random());
+
 
 
 
