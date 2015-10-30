@@ -6,10 +6,15 @@ function detectType(dt){
 var riders = ['ash', 'dash', 'cash', 'lash'];
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f19fd7c7dcf2f88daa8075e77725b62fb2a88f3b
 for(i=0; i <= riders.length -1; i++){
   if (i % 2 === 1) {
     console.log('this is odd');
     console.log(riders[i]);
+<<<<<<< HEAD
+=======
 =======
 for(i=0; 0 < riders.length; i++){
   if (i % 2 == 1) {
@@ -17,6 +22,7 @@ for(i=0; 0 < riders.length; i++){
     var popped = riders.pop();
     console.log(popped + ' has been thrown off');
 >>>>>>> 51936a62fc91b975527854601003fbfa0038c777
+>>>>>>> f19fd7c7dcf2f88daa8075e77725b62fb2a88f3b
   }else {
     console.log('this is even')
   }

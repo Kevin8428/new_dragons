@@ -78,7 +78,11 @@ function sum(array){
 <<<<<<< HEAD
     console.log(total);
 =======
+<<<<<<< HEAD
+    console.log(total);
+=======
 >>>>>>> 51936a62fc91b975527854601003fbfa0038c777
+>>>>>>> f19fd7c7dcf2f88daa8075e77725b62fb2a88f3b
     for(var i=1; i<array.length;i++) {
       total = total * array[i];
     }

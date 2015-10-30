@@ -49,7 +49,11 @@ Repeat until the carousel is empty.
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+
+=======
 >>>>>>> 51936a62fc91b975527854601003fbfa0038c777
+>>>>>>> f19fd7c7dcf2f88daa8075e77725b62fb2a88f3b
   }
 
 /*
@@ -65,8 +69,11 @@ Use a foreach (for-in) loop to list all of these attributes (and the keys that t
   //assigning attributes for the paul obj
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
   //outputing key value pairs
 >>>>>>> 51936a62fc91b975527854601003fbfa0038c777
+>>>>>>> f19fd7c7dcf2f88daa8075e77725b62fb2a88f3b
     paul={};
     paul.eyeColor='blue';
     paul.hairColor='brown';
@@ -83,8 +90,12 @@ Use a foreach (for-in) loop to list all of these attributes (and the keys that t
 <<<<<<< HEAD
 //output key value pairs
 =======
+<<<<<<< HEAD
+//output key value pairs
+=======
 
 >>>>>>> 51936a62fc91b975527854601003fbfa0038c777
+>>>>>>> f19fd7c7dcf2f88daa8075e77725b62fb2a88f3b
     for(prop in paul){
       console.log('key:',prop);
       console.log('value:',paul[prop]);
@@ -92,8 +103,12 @@ Use a foreach (for-in) loop to list all of these attributes (and the keys that t
 <<<<<<< HEAD
       
 =======
+<<<<<<< HEAD
+      
+=======
 
 >>>>>>> 51936a62fc91b975527854601003fbfa0038c777
+>>>>>>> f19fd7c7dcf2f88daa8075e77725b62fb2a88f3b
     };
 
 /*
@@ -111,6 +126,9 @@ Use a foreach (for-in) loop to list all of these attributes (and the keys that t
 //for loop where we find the quotient but comparing the product between quotient and divisor. If that product is greater than the numer(dividend)then we know we went too far and the correct quotient will be 1 less than current quotient. If product is equal to dividend than we know we have the correct quotient with no divisor.
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f19fd7c7dcf2f88daa8075e77725b62fb2a88f3b
 var divide=function(num,div){
     for(var quotient=0;quotient*div<num;quotient++){
 
@@ -131,9 +149,12 @@ var divide=function(num,div){
     console.log('dividing 20 by 7');
     divide(20,7);
 
+<<<<<<< HEAD
+=======
 =======
   
 >>>>>>> 51936a62fc91b975527854601003fbfa0038c777
+>>>>>>> f19fd7c7dcf2f88daa8075e77725b62fb2a88f3b
 //alternate solution using Math.floor
 var divideAlt=function(num,div){
   var ans=Math.floor(num/div);
