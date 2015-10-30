@@ -27,9 +27,12 @@
     * [The DOM](01_front_end_fundamentals/d04-dom.md)
     * [Converting Pixels to EM](01_front_end_fundamentals/d04-em-to-px.md)
     * [Canvas](01_front_end_fundamentals/d04-canvas.md)
+<<<<<<< HEAD
+=======
   * [Second Pass Friday](01_front_end_fundamentals/d05.md)
     * [Weekend Practice](01_front_end_fundamentals/d05-ah.md)
     * [Bonus Weekend Practice](01_front_end_fundamentals/d05-ah-bonus.md)
+>>>>>>> 51936a62fc91b975527854601003fbfa0038c777
 * [Object Oriented JS & jQuery](02_oojs_jquery/README.md)
 * [Advanced Front End](03_advanced_front_end/README.md)
 * [Front End Project](04_frontend_project/README.md)
