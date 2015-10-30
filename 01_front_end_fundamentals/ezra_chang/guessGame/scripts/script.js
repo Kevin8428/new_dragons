@@ -12,9 +12,11 @@ window.onload = function() {
       alert('too small.');
       guessN(prompt("Guess:"));
     }
-    else {
+    else if (p == rand){
       alert('you win.');
-      break;
+    }
+    else {
+      guessN(prompt("Guess:"));
     }
   }
 
