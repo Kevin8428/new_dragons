@@ -1,6 +1,8 @@
 //
 // I like cats but dogs more.
 //
+<<<<<<< HEAD
+=======
 
 function likeCats() {
 	return "I like cats. meow.";
@@ -25,3 +27,4 @@ var colours = ['green', 'blue', 'purple'];
 colours.map(function(key) {
 	return key + " is a cool color";
 });
+>>>>>>> 669804fbfd7c21e415039dbe57a943027913747c

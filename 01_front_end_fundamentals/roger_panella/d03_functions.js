@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+I'm starting to get hungry
+=======
 //I'm starting to get hungry//
 
 function likeCats() {
@@ -48,3 +51,4 @@ function calculateAge (birthYear, currentYear) {
 }
 
 calculateAge(1999, 2015) + "YES";
+>>>>>>> 669804fbfd7c21e415039dbe57a943027913747c

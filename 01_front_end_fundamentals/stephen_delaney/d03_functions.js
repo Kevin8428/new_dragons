@@ -1,6 +1,8 @@
 //
 // I have two brothers.
 //
+<<<<<<< HEAD
+=======
 function likeDogs() {
 return "I like dogs. Woof.";
 }
@@ -29,3 +31,4 @@ colors.map(function(key) {
   return key + " is a cool color";
 });
 //.map will iterate through the entire argument
+>>>>>>> 669804fbfd7c21e415039dbe57a943027913747c

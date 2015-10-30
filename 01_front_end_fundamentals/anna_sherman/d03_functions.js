@@ -1,4 +1,6 @@
 // I like deadlifts
+<<<<<<< HEAD
+=======
 
 
 
@@ -41,3 +43,4 @@ colors.map(function(key) {
 //function(key) {
 //  return key + "is a cool colour";
 //}
+>>>>>>> 669804fbfd7c21e415039dbe57a943027913747c

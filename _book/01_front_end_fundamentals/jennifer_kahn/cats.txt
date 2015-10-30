@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+I like cats
+=======
 Comfortable:
+>>>>>>> 669804fbfd7c21e415039dbe57a943027913747c

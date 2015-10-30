@@ -1,4 +1,6 @@
 // I love cats!
+<<<<<<< HEAD
+=======
 
 function likeCats() {
   return "I like cats. meow.";
@@ -36,3 +38,4 @@ console.log(colors.map(function(key) {
   return key + " is a cool color.";
 }));
 console.log(colors);
+>>>>>>> 669804fbfd7c21e415039dbe57a943027913747c

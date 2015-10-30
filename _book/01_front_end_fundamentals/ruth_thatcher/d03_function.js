@@ -1,6 +1,8 @@
 //
 //I like hedgehogs
 //
+<<<<<<< HEAD
+=======
 
 function likeCats() {
   return "I like cats. meow.";
@@ -30,3 +32,4 @@ colours.map(function(key) {
   console.log(key);
   return key + " is a cool colour";
 });
+>>>>>>> 669804fbfd7c21e415039dbe57a943027913747c

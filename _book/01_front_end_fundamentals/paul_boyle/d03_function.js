@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+//
+// Da Bulls!
+//
+=======
 function likeCats() {
   return 'I like cats.';
 }
@@ -25,3 +30,4 @@ colours.map(function(key) {
   return key + ' is a cool colour';
 });
   
+>>>>>>> 669804fbfd7c21e415039dbe57a943027913747c
