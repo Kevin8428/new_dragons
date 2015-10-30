@@ -8,9 +8,9 @@ function transmogrifier(a, b, c) {
 
 function toonify(accent, sentence) {
   if (accent == 'daffy')
-    return sentence.replace(/s/, 'th');
+    return sentence.replace(/[sS]/g, 'th');
   if (accent == 'elmur')
-    return sentence.replace(/r/, 'w')
+    return sentence.replace(/[rR]/g, 'w')
 }
 
 function wordReverse(string) {
