@@ -70,7 +70,7 @@ function letterReverse(sen) {
 var sentence = 'The cow jumped over the moon.';
 letterReverse(sentence);
 
-// Longset
+// Longest
 function longest(theStrings) {
   var indexOfLargest = 0;
   var lengthPrevious = theStrings[0].length;
@@ -82,9 +82,12 @@ function longest(theStrings) {
   }
   return theStrings[indexOfLargest];
 }
+
+/*
 var stz = ['asd', 'asdf', 'lkjlj'];
 console.log(longest(stz));
 var stz = ['asdfasdfas','apple', 'banana', 'fedfasdfas','fish', 'a'];
 console.log(longest(stz));
 var stz = [ 'a', 'bbda', 'fda', 'asdf'];
 console.log(longest(stz));
+*/
