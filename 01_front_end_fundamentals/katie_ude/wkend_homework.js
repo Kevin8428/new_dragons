@@ -1,9 +1,15 @@
 // Round 1
 
-var mythAnimals = ['dragon', 'unicorn', 'pegasus', 'gryphon', 'minotaur'];
-  for (var i = 0; i < mythAnimals.length; i++) {
-    console.log(mythAnimals[i].length);
+function lengths(arrayOfStrings) {
+arrayOfStrings = ['dragon', 'unicorn', 'pegasus', 'gryphon', 'minotaur'];
+var numbers = [];
+console.log(arrayOfStrings);
+  for (var i = 0; i < arrayOfStrings.length; i++) {
+    numbers.push(arrayOfStrings[i].length);
   }
+    return (numbers);
+}
+lengths('arrayOfStrings');
 
   function length(mythAnimals) {
     for (var name in mythAnimals) {
@@ -37,4 +43,30 @@ var mythAnimals = ['dragon', 'unicorn', 'pegasus', 'gryphon', 'minotaur'];
   }
 
   // Round 4
-  
+
+  function wordReverse(str) {
+    if (typeof(wordReverse(str)) == 'string') {
+      str.split(' ');
+    }
+  }
+
+  // Round 5
+
+  function letterReverse() {
+    var str = 'Thank God it is Friday';
+    var strReverse = str.split('').reverse().join('');
+    console.log(strReverse);
+  }
+
+  // Round 6
+
+  function longest(a, b, c, d) {
+    var create = Array.of(a, b, c, d);
+      for (var i = 0; i < create.length; i++) {
+        console.log(Math.max(create[i].length));
+    }
+}
+
+  // Round 7
+
+  function repMaster(input, function)
