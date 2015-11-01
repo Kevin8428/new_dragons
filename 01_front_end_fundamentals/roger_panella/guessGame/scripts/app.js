@@ -1,13 +1,15 @@
 window.onload = function(){
 
-  function randomNumber() {
-      return Math.random() * (1000 - 1) + 1;
+var guessNumber = parseInt(prompt('Hey. Guess a number.'));
+
+function randomNumber() {
+      return Math.floor(Math.random() * (10 - 1)) + 1;
   }
 
-var guessNumber = prompt('Hey. Guess a number.');
+randomNumber();
 
-if (guessNumber == randomNumber()) {
-  contentContainer.innerHTML = "Holy shit!  You picked the right number.  Congratulations!"
+if (guessNumber !== randomNumber()) {
+  var respone =  prompt("Holy shit!  You picked the right number.  Congratulations!");
 } else if (guessNumber !== randomNumber()) {
   contentContainer.innerHTML = "You picked the wrong number.  Guess again."
 }
