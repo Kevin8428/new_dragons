@@ -3,7 +3,7 @@
 function lengths(arrayOfStrings) {
   console.log(arrayOfStrings);
   var newArray = [];
-for(i = 0;i < arrayOfStrings.length; i++) {
+for(i = 0; i < arrayOfStrings.length; i++) {
     newArray[i] = arrayOfStrings[i].length;
     }
 return newArray;
@@ -37,7 +37,7 @@ return newArray;
   function wordReverse(yourString) {
     var newArray = yourString.split(" ");
     var reverseArray = newArray.reverse();
-    var reverseString = ""
+    var reverseString = "";
     for (i=0;i<reverseArray.length;i++){
       reverseString += reverseArray[i] + " ";
     }
@@ -55,7 +55,7 @@ return newArray;
 function longest(stringArray) {
   var length = 0;
   var greatest = "a";
-  for (i = 0; i<stringArray.length; i++) {
+  for (i = 0; i < stringArray.length; i++) {
     if (stringArray[i].length > length){
     length = stringArray[i].length;
     greatest = stringArray[i];
@@ -66,7 +66,7 @@ function longest(stringArray) {
 
 // Round 7
 
-function repMaster(yourString, wordReverse) {
-  return wordReverse(yourString) + " proves that i am a repmaster"
-
+function repMaster(aString, aFunction) {
+  aFunction(aString);
+  return aFunction(aString) + " proves that i am a repmaster";
 }
