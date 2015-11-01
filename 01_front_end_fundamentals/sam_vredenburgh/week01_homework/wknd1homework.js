@@ -54,7 +54,7 @@ return newArray;
 
 function longest(stringArray) {
   var length = 0;
-  var greatest = "a";
+  var greatest = "";
   for (i = 0; i < stringArray.length; i++) {
     if (stringArray[i].length > length){
     length = stringArray[i].length;
@@ -68,5 +68,5 @@ function longest(stringArray) {
 
 function repMaster(aString, aFunction) {
   aFunction(aString);
-  return aFunction(aString) + " proves that i am a repmaster";
+  return aFunction(aString) + " proves that I am the rep MASTER";
 }
