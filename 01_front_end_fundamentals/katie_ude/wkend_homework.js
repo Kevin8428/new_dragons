@@ -60,13 +60,30 @@ lengths('arrayOfStrings');
 
   // Round 6
 
-  function longest(a, b, c, d) {
-    var create = Array.of(a, b, c, d);
-      for (var i = 0; i < create.length; i++) {
-        console.log(Math.max(create[i].length));
-    }
+  function longest(a,b,c,d) {
+    var create = Array.of(a,b,c,d);
+    console.log(create);
+      for (var i = 0; i <= create.length; i++) {
+            if (create[0].length > create[i].length)  {
+            return create[0];
+            }
+            else if (create[1].length > create[i].length)  {
+            return create[1];
+            }
+            else if (create[2].length > create[i].length)  {
+            return create[2];
+            }
+            else {
+            return create[3];
+            }
+      }
 }
 
   // Round 7
 
-  function repMaster(input, function)
+  function repMaster(words, makeBig) {
+    function makeBig(words) {
+    return words.toLocaleUpperCase();
+  }
+       return makeBig(words) + ' this proves that I am a repMaster';
+}
