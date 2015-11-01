@@ -15,9 +15,11 @@ function transmogrifier(x, y, z) {
   return Math.pow(x * y, z);
 }
 
+/*
 transmogrifier(5, 4, 3);
 transmogrifier(13, 12, 5);
 transmogrifier(42, 13, 7);
+*/
 
 // TOONIFY
 function toonify(accent, sentence) {
@@ -49,14 +51,15 @@ function wordReverse(sentence) {
    return newSentence;
 }
 
+/*
 var sentence = 'The cow jumped over the moon.';
 wordReverse(sentence);
-
+*/
 
 // Letter Reverse
 function letterReverse(sen) {
   var newSentence="";
-  var words = sentence.split(' ');
+  var words = sen.split(' ');
 
   for (i=0; i<words.length-1; i++) {
     //console.log( words[i].split("").reverse().join("") );
@@ -67,8 +70,10 @@ function letterReverse(sen) {
   return newSentence;
 }
 
+/*
 var sentence = 'The cow jumped over the moon.';
 letterReverse(sentence);
+*/
 
 // Longest
 function longest(theStrings) {
@@ -90,4 +95,16 @@ var stz = ['asdfasdfas','apple', 'banana', 'fedfasdfas','fish', 'a'];
 console.log(longest(stz));
 var stz = [ 'a', 'bbda', 'fda', 'asdf'];
 console.log(longest(stz));
+*/
+
+
+
+// func - a function that returns string and uses input
+function repMaster(input, func) {
+  return (func(input) + ' proves that I am a rep MASTER!');
+}
+
+/*
+var result = repMaster('what is the meaning of life', letterReverse);
+console.log(result);
 */
