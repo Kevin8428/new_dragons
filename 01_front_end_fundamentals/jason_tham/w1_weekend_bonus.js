@@ -62,12 +62,12 @@ function max(){
   var result;
   if (max.arguments.length > 0) {
   result = max.arguments[0];
+}
   for (var variable in max.arguments) {
     if (max.arguments[variable] > result) {
       result = max.arguments[variable];
     }
   }
-}
   return result;
 }
 /* your code ends here */
