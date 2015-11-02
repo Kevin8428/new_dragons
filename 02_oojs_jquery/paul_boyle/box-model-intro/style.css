@@ -1,0 +1,46 @@
+/*
+
+body {
+  background-color: black;
+  margin:0;
+  padding:0;
+
+}
+
+header {
+  color:gray;
+  text-align: center;
+  font-size: 10em;
+ Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,207cca+21,2989d8+43,2989d8+43,14ce00+60,2b602d+
+
+section{
+  border:10px dashed gray;
+  padding:10px;
+  margin:50px;
+  color:gray;
+  text-align:center;
+}
+
+*/
+
+#logo {
+  border: 3px dashed orange;
+  font-size:3em;
+  font-weight:bold;
+  marign:3px;
+
+}
+
+#navbar {
+  font-size: 1.5em;
+  font-weight:bold;
+  border:3px dashed purple;
+  margin:3px;
+
+}
+
+#wrapper {
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+}
