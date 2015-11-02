@@ -23,6 +23,7 @@ section {
 #wrapper {
   width: 80%;
   margin: auto;
+  position: absolute;
 }
 #logo {
   font-size: 3em;
@@ -35,20 +36,26 @@ section {
   font-weight: bold;
   border: 3px dashed purple;
   margin: 3px;
+  background-color: hotpink;
 }
 #sidebar {
   float: right;
   border: 3px dashed green;
   margin: 3px;
   width: 25%;
+  background-color: lightblue;
 }
 #content {
   float: left;
   border: 3px dashed navy;
   margin: 3px;
-  sidebar: 65%;
+  width: 65%;
+  color: black;
+  background-color:lightgray;
 }
 #goodbye {
   margin: 3px;
   border: 3px dashed red;
+  clear: both;
+  background-color: darkorange;
 }
