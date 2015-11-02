@@ -11,6 +11,7 @@ function toonify(accent, sentence) {
     return sentence.replace(/[sS]/g, 'th');
   if (accent == 'elmer')
     return sentence.replace(/[rR]/g, 'w')
+  return sentence;
 }
 
 function wordReverse(string) {
