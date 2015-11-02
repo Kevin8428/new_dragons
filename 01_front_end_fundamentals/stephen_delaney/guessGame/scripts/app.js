@@ -1,32 +1,44 @@
 window.onload = function(){
 
-  var guessOne = prompt('I have a number between one and twenty. Guess what it is.');
+getRandomInt(1, 20)
+  function getRandomInt(min, max) {
+    var mysteryNumber = Math.floor(Math.random() * (max - min)) + min;
 
-    respondOne()
+    var guessOne = prompt('I have a number between 1 and 20. Guess what it is.');
 
-    function respondOne(){
-      if (guessOne == 17) {
-      return 'You got it on the first try! Wow!';
-    }  else if (guessOne > 17) {
-      var guessTwo = prompt('Too high! Try one more time.');
-      respondTwo();
-    }
-      else if (guessOne < 17) {
-        var guessTwo = prompt('Too low! Try one more time.');
+      respondOne()
+
+      function respondOne(){
+        if (guessOne == mysteryNumber) {
+        return 'You got it on the first try! Wow!';
+      }  else if (guessOne > mysteryNumber) {
+        var guessTwo = prompt('Too high! Try one more time.');
         respondTwo();
       }
-      function respondTwo(){
-        if (guessTwo == 17) {
-        alert('You got it! Good job!');
-      }  else {
-        alert('Sorry, you lost the game.');
+        else if (guessOne < mysteryNumber) {
+          var guessTwo = prompt('Too low! Try one more time.');
+          respondTwo();
+        }
+        function respondTwo(){
+          if (guessTwo == mysteryNumber) {
+          alert('You got it! Good job!');
+        }  else {
+          alert('Sorry, you lost the game. The number was ' + mysteryNumber + '.');
+        }
       }
     }
+
+
+
+
+
+
+    }
+
   }
 
 
 
 
 
-}
 // end of window.onLoad
