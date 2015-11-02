@@ -5,6 +5,7 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 #logo {
@@ -21,6 +22,27 @@
   margin: 3px;
 }
 
+#sidebar {
+  border: 3px dashed green;
+  margin: 3px;
+  text-align: left;
+  width: 25%;
+  float: right;
+}
+
+#content {
+  border: 3px dashed navy;
+  margin: 3px;
+  text-align: left;
+  width: 65%;
+  float: left;
+}
+
+#goodbye {
+  margin: 3px;
+  border: 3px dashed red;
+  clear: both /* clearing the floating elements */
+}
 
 /*header {
   background: limegreen;
