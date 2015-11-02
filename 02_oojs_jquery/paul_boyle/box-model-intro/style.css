@@ -71,10 +71,15 @@ section{
   float: left;
   height:6em;
   word-wrap: normal;
+
 }
 
 #goodbye {
   margin: 3px;
   border: 3px dashed red;
   clear:both;
+}
+
+#3colwrapper {
+    display: block;
 }
