@@ -1,0 +1,20 @@
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#coupons {
+  width: 100%;
+  margin: 1em auto;
+  background: black;
+  overflow: hidden;
+}
+
+#coupons div {
+  width: 40%;
+  background: white;
+  border: 5px dashed #333;
+  padding: 1.5%;
+  margin: 2.5%;
+  float: left;
+}
