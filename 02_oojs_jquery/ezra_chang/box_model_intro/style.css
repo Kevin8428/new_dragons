@@ -9,22 +9,48 @@ header {
 section {
   background-color: grey;
   border: 5px dashed;
-  padding: 50px;
+  padding: 10px;
+  margin: 0.5%
 }
 
 #coupon1 {
  font-family: verdana;
  font-size: 1em;
- margin: 5px;
 }
 
 #navbar {
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 5px;
 }
 
-.wrapper {
+#wrapper {
   width: 90%;
-  margin: auto;
+  margin: 0.5%;
+}
+
+#content1 {
+  float: left;
+  width: 35%;
+  margin: 0.5%;
+  clear: none;
+}
+
+#content2 {
+  float: left;
+  width: 35%;
+  margin: 0.5%;
+  clear: none;
+}
+
+#sidebar {
+  border: 5px dashed;
+  float: left;
+  width: 20%;
+  margin: 0.5%;
+}
+
+#goodbye {
+  border: 5px dashed;
+  margin: 0.5%;
+  clear: both;
 }
