@@ -1,0 +1,30 @@
+header {
+  background-color: grey;
+  border: 10px transparent;
+  padding: 50px;
+  font-family: verdana;
+  font-size: 3em;
+}
+
+section {
+  background-color: grey;
+  border: 5px dashed;
+  padding: 50px;
+}
+
+#coupon1 {
+ font-family: verdana;
+ font-size: 1em;
+ margin: 5px;
+}
+
+#navbar {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
