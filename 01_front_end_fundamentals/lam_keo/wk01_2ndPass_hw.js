@@ -101,5 +101,3 @@ function repMaster(x, y) {
   var theFunctionReturnValue = y(x);
   return theFunctionReturnValue + " proves that I am the Rep Master"
 }
-
-repMaster("Does it work", wordReverse);
