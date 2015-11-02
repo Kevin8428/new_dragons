@@ -36,6 +36,7 @@ section{
   font-weight:bold;
   border:3px dashed purple;
   margin:3px;
+  heigh: 6em;
 
 }
 
@@ -43,4 +44,37 @@ section{
   width:90%;
   margin-left:auto;
   margin-right:auto;
+}
+
+#sidebar {
+  border:3px dashed green;
+  margin:3px;
+  width:30%;
+  float:right;
+
+}
+
+#more-content {
+  border:3px dashed yellow;
+  margin: 3px;
+  width:30%;
+  float: left;
+  height:6em;
+  word-wrap: normal;
+}
+
+
+#content {
+  border:3px dashed navy;
+  margin: 3px;
+  width:30%;
+  float: left;
+  height:6em;
+  word-wrap: normal;
+}
+
+#goodbye {
+  margin: 3px;
+  border: 3px dashed red;
+  clear:both;
 }
