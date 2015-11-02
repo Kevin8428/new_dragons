@@ -1,0 +1,45 @@
+/*header {
+  background: pink;
+  margin: 30px;
+  border: dotted 1px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: Courier, Helvetica, sans-serif;
+}
+
+.coupon {
+  background: pink;
+  margin: 60px;
+  border: dotted 1px;
+  padding: 10px;
+  font-size: 80px;
+  font-family: Courier, Helvetica, sans-serif;
+}
+
+section {
+  background: limegreen;
+  border: white;
+  margin: 30px;
+  border: dotted 1px;
+  padding: 10px;
+  font-size: 75px;
+  font-family: Courier, Helvetica, sans-serif;*/
+#wrapper {
+  width: 90%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#logo {
+border: 3px dotted orange;
+font-size: 3em;
+font-weight: bold;
+margin: 3px;
+}
+
+#navbar {
+  border: 3px dotted purple;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 3px;
+}
