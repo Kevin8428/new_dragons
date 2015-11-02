@@ -1,0 +1,53 @@
+/* ids are identifiable using a #name */
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo {
+  font-size: 3em;
+  font-weight: bold;
+  border: 3px dashed orange;
+  margin: 3px;
+}
+#navbar {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 3px dashed purple;
+  margin: 3px;
+}
+
+  <div id='wrapper'>
+    <header id='logo'>
+      Random Website Goes Here
+    </header>
+
+    <nav id='navbar'>
+      Links to places will go here!
+    </nav>
+
+
+
+
+
+
+
+
+/*header {
+  background: limegreen;
+
+
+
+}
+
+
+section {
+  border: 50px;
+  padding: 20px;
+  margin: 10px;
+  background: red;
+
+
+
+}
