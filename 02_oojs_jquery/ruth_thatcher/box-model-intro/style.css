@@ -1,0 +1,45 @@
+/*/ids are identifiable by using a name
+*/
+#wrapper{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#logo {
+  border: 3px dashed orange;
+  font-size: 3em;
+  font-weight: bold;
+  border: 3px orange;
+  margin: 3px;
+
+}
+#navbar {
+  border: 3px dashed purple;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 3px;
+
+}
+
+
+/*header {
+  background: limegreen;
+
+
+
+}
+
+section {
+  background: purple;
+  margin: 50px;
+    border: 10px dashed;
+    padding: 50px;
+}
+
+section h1 {
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}*/
+
+
