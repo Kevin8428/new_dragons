@@ -1,0 +1,31 @@
+/*header {
+  background: limegreen;
+}
+section {
+  border: 10px dashed;
+  padding: 50px;
+  margin: 50px
+}*/
+
+/* ID's are identifiable using a #name */
+
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* margin-left and right auto centers the wrapper */
+
+#logo {
+  font-size: 3em;
+  font-weight: bold;
+  border: 3px dashed orange;
+  margin: 10px;
+}
+
+#navbar {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 3px dashed purple;
+    margin: 10px;
+}
