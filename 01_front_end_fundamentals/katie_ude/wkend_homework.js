@@ -44,10 +44,17 @@ lengths('arrayOfStrings');
 
   // Round 4
 
-  function wordReverse(str) {
-    if (typeof(wordReverse(str)) == 'string') {
-      str.split(' ');
-    }
+  function wordReverse(words) {
+    var words = 'this is cool';
+    var sent = [''];
+    sent = words.split(',');
+    console.log(sent);
+    sent.reverse();
+    console.log(sent);
+      for (var i = 0; i <= sent.length ; i++){
+        
+      }
+
   }
 
   // Round 5
@@ -86,4 +93,53 @@ lengths('arrayOfStrings');
     return words.toLocaleUpperCase();
   }
        return makeBig(words) + ' this proves that I am a repMaster';
+}
+
+  //Bonus Practice
+  //Question 1
+
+function test() {
+  function square(x) {
+    return Math.pow(x, 2);
+  }
+  function cube(x) {
+    return Math.pow(x, 3);
+  }
+  function quad(x) {
+    return Math.pow(x, 4);
+  }
+  if (square(2) !== 4 || cube (3) !== 27 || quad(4) !== 256) {
+    console.log("check question 1");
+  }
+  else {
+    console.log("You are great at math!");
+  }
+}
+
+ // Question 2
+
+var numbers = [2, 4, 6];
+function sum(numbers, twiceOrHalf) {
+  if (twiceOrHalf == 'twice' || 'half') {
+    return (numbers[0] + numbers[1] + numbers[2]) * 2;
+  }
+  else if (twiceOrHalf == undefined) {
+    return (numbers[0] + numbers[1] + numbers[2]);
+  }
+  else {
+    return (numbers[0] + numbers[1] + numbers[2]) / 2;
+  }
+}
+
+ // Question 3
+function max(arg) {
+  arg = [];
+  arg[0] = parseInt(Math.random() * 20)
+  arg[1] = parseInt(Math.random() * 15)
+  arg[2] = parseInt(Math.random() * 30)
+  for (var i = 0; i <= arg.length; i++) {
+    console.log(arg);
+    var largest = Math.max.apply(Math, arg);
+    return largest;
+  }
 }
