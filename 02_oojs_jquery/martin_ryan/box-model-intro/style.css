@@ -1,0 +1,19 @@
+header {
+}
+#logo {
+  font-size: 3em;
+  font-weight: bold;
+  border: 5px dashed orange;
+  margin: 3px;
+}
+#navbar {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 5px dashed purple;
+  margin: 3px;
+}
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
