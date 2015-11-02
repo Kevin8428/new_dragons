@@ -35,7 +35,7 @@
     * [Morning Review](02_oojs_jquery/d01_me.md)
     * [Object Methods](02_oojs_jquery/d01-object-methods.md)
     * [this, hasOwnProperty, .keys](02_oojs_jquery/d01-objects-again.md)
-    * [HTML & CSS Layouts](02_oojs_jquery/d01-hw.md)
+    * [HTML & CSS Layouts](02_oojs_jquery/html_css_layout.md)
     * [Homework: Layout Challenges](02_oojs_jquery/d01-hw.md)
 * [Advanced Front End](03_advanced_front_end/README.md)
 * [Front End Project](04_frontend_project/README.md)
