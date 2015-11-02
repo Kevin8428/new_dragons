@@ -8,4 +8,4 @@ It is not uncommon for the instructional staff to record screencasts in the midd
 
 #### Source Code
 
-* HTML & CSS Boilerplate: https://github.com/code-for-coffee/html_css_boilerplate
+* HTML & CSS Boilerplate: https://github.com/code-for-coffee/html_css_boilerplategit
