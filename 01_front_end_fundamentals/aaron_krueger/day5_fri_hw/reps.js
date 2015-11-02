@@ -166,7 +166,7 @@ var letterReverse = function(string){
       spl[i] = spl[i].split('').reverse().join('');
   }
   console.log(spl);
-  return spl.join(' ')
+  console.log(spl.join(' '));
 }
 
 letterReverse('heeeee yaaaaa jello hello');
