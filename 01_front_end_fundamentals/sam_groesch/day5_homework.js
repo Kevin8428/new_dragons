@@ -64,34 +64,36 @@ function letterReverse(x) {
   var b = [ ];
   var c = [ ];
   var d = [ ];
-  for (var i = 0; i < x.length; i++) {
-    y = x.split(' ');
-    var z = y.length;
-    for (var j = 0; j < z; j++) {
-      b = y[j];
-      for (var k = 0; k < b.length; k++) {
-        a[k] = b.substr(i,1);
-      }
-      a.reverse();
-      c = a.join();
-      while (c.indexOf(',')+1) {
-        c = c.replace(',','');
-      }
-      d[k]= c;
+  y = x.split(' ');
+  var z = y.length;
+  for (var j = 0; j < z; j++) {
+    var a = y[j];
+    b[j] = wordReverse(a);
     }
-  }
-  return d;
+    c = b.join();
+    for (var i = 0; i < c.length; i++) {
+      c = c.replace(',', ' ');
+    }
+    return c;
 }
-
 letterReverse(m);
 
 
 // 6. longest
 
 var x = ['sam', 'steve', 'mike', 'jim'];
-var a = { };
+var a = " ";
 function longest(x) {
   for (var i = 0; i < x.length; i++) {
-    a.word = x[i];
+    if (x[i].length > a.length) {
+      a = x[i];
   }
+  return a;
+}
+
+
+// 7. repMaster
+
+function repMaster (a, aFunction) {
+  return aFunction(a) + ' proves I am the rep MASTER!';
 }
