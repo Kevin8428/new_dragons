@@ -1,0 +1,36 @@
+/*header {
+  background: turquoise;
+}
+
+section {
+  border: 1px solid black;
+  margin: 20px;
+  padding: 4px;
+  background-image: url("http://www.hatboro-horsham.org/cms/lib2/PA01000027/Centricity/Domain/669/castle%20pic.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}*/
+
+body {
+  font-family: sans-serif;
+}
+
+#logo {
+  border: 3px dashed orange;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 3px;
+}
+
+#navbar {
+  border: 3px dashed purple;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 3px;
+}
+
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
