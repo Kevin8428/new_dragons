@@ -1,0 +1,39 @@
+/*header {
+  background: rgb(97, 255, 0);
+  margin: 10em 10em 10em 10em;
+  border: 1em dashed;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+
+section {
+  margin: 5em;
+  border: 3px dashed;
+  padding: 1em;
+  align-content: center;
+}*/
+
+/* id's are identifiable using name */
+#wrapper {
+  width:90%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo {
+    border: 3px solid orange;
+    font-size: 3em;
+    font-weight: bold;
+    margin: 3px;
+}
+
+#navbar {
+  border: 5px dashed purple;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 3px;
+}
