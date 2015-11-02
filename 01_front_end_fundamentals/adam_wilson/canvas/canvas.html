@@ -6,11 +6,14 @@
   </head>
   <body>
     <!-- canvas html tag creates a canvas to draw on -->
-    <canvas id="canvas" width="500" height="500" style="border: 1px solid black"></canvas>
+    <canvas id="canvas" width="500" height="500" style="border: 10px solid pink"></canvas>
 
     <script type="text/javascript">
 
-      var canvas = document.getElementById('canvas');  // a method of the document
+      // get id canvas from document and assign to var canvas
+      var canvas = document.getElementById('canvas');
+
+      // get a 2d context for canvas and assign this as "context"
       var context = canvas.getContext('2d');
       // pull pen before put to paper with fillstyle
 
@@ -18,9 +21,13 @@
         return Math.random() * 500;
       }
 
-      context.fillStyle = 'blue';
-      context.fillRect(100, 100, 200, 200); // startpt, dimensions
+      //these run properties on the (2d) context (canvas)
 
+      // the rectangle and its color and position, size
+      context.fillStyle = 'blue';
+      context.fillRect(100, 100, 200, 200);
+
+      // line pickup pencil, start and endpts, etc..
       context.beginPath();
       context.moveTo(200, 200); // x and y start line
       context.lineTo(300, 300); // x and y line ends
@@ -34,7 +41,7 @@
       // context.stroke();
 
       function rgbPiece() {
-        return Math.floor(Math.random() * 255) + 1;
+        return Math.floor(Math.random() * 255) +1;
       }
 
       function randomRGB() {
