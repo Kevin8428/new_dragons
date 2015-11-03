@@ -23,19 +23,37 @@
 }
 
 #sidebar {
-  border: 3px dashed green;
-  margin: 3px;
+  /*border: 3px dashed green;*/
+  margin: 1%;
   text-align: left;
-  width: 25%;
-  float: right;
+  width: 23%;
+  float: left;
 }
 
 #content {
-  border: 3px dashed navy;
-  margin: 3px;
+  /*border: 3px dashed navy;*/
+  margin: 1%;
   text-align: left;
-  width: 65%;
+  width: 23%;
   float: left;
+}
+
+#midcolumn {
+  /*border: 3px dashed yellow;*/
+  margin: 1%;
+  text-align: left;
+  width: 23%;
+  float:left;
+  background: red;
+}
+
+#midcolumn2 {
+  /*border: 3px dashed yellow;*/
+  margin: 1%;
+  text-align: left;
+  width: 23%;
+  float:left;
+  background: red;
 }
 
 #goodbye {
