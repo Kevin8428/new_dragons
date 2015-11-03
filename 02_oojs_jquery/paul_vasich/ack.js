@@ -15,13 +15,13 @@
 //                     ((ack-curry m) (sub1 n)))))))
 
 
-function currymann(m) {
-  return function(n) {
-    if (m == 0)
+function ackermann(m, n) {
+    if (m === 0)
       return n + 1;
-    else if (n == 0)
-      currymann(m - 1)(1);
-    else
-      currymann(m - 1)((currymann(m)(n-1)))
-  }
+    else if (n === 0)
+      return ackermann(m - 1, 1);
+    else  {
+      var x = ackermann(m, n-1);
+      return ackermann(m - 1, x);
+    }
 }
