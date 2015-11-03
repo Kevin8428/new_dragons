@@ -2,7 +2,7 @@
   float:left;
 
   background-color:gray;
-  margin:2%;
+  margin:.5%;
   text-align: center;
   font-size: 2rem;
 
@@ -34,9 +34,10 @@ body {
   margin:1%;
   text-align: center;
   font-size: 1rem;
-  float:left;
-  width:31%;
-  height:40%;
+  float:right;
+  width:15%;
+  height:15%;
+
 
 }
 
@@ -47,8 +48,8 @@ body {
   text-align: center;
   font-size: 1rem;
   float: right;
-  width:31%;
-  height: 40%;
+  width:15%;
+  height: 15%;
   padding:70%,0;
 }
 
@@ -59,14 +60,30 @@ body {
   text-align: center;
   font-size: 1rem;
   float: right;
-  width:31%;
-  height: 40%;
+  width:15%;
+  height: 15%;
   padding:70%,0;
 }
 
+#content4 {
+
+  background-color: gray;
+  margin: 1%;
+  text-align: center;
+  font-size: 1rem;
+  float: right;
+  width:15%;
+  height: 15%;
+  padding:70%,0;
+}
+
+
 #contentWrapper {
-  background-color: red;
+  margin:1%;
   clear:both;
+  text-align: center;
+  height:60%;
+  width:98%;
 
 }
 
@@ -78,14 +95,14 @@ body {
   margin: 1%;
 }
 
-#singleBlock {
+#sidebar {
   background-color:gray;
   margin:1%;
   text-align: center;
   font-size: 1rem;
   float:left;
   width: 98%;
-  height:40%;
+  height:98%;
   clear:right;
 
 }
@@ -115,7 +132,7 @@ body {
 #nav1 {
   float: left;
   background-color:gray;
-  margin:2%;
+  margin:.5%;
   text-align: center;
   font-size: 2rem;
   float:left;
@@ -126,7 +143,7 @@ body {
 #nav2{
   float: right;
   background-color:gray;
-  margin:2%;
+  margin:.5%;
   text-align: center;
   font-size: 2rem;
   float:left;
@@ -137,7 +154,7 @@ body {
 #nav3{
   float: right;
   background-color:gray;
-  margin:2%;
+  margin:.5%;
   text-align: center;
   font-size: 2rem;
   float:left;
@@ -148,10 +165,21 @@ body {
 #nav4 {
   float: right;
   background-color:gray;
-  margin:2%;
+  margin:.5%;
   text-align: center;
   font-size: 2rem;
   float:left;
   width: 15%;
   height:40%;
+}
+
+#sidebarDiv {
+  background-color:gray;
+  margin:1%;
+  text-align: center;
+  font-size: 1rem;
+  float:left;
+  width: 24%;
+  height:60%;
+  clear:right;
 }
