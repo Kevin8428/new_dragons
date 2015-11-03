@@ -3,7 +3,8 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  /*margin: auto;*/ }
+  /*margin: auto;*/
+}
 
 #leftBar {
   clear: both;
@@ -13,7 +14,8 @@
   padding: 5px;
   margin: 5px;
   height: 600px;
-  width: 15%; }
+  width: 15%;
+}
 
 #wrapper {
   /*clear: both;*/
@@ -21,18 +23,21 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  /*margin: auto;*/ }
+  /*margin: auto;*/
+}
+
 
 #header {
   float: left;
   font-size: 2em;
   font-weight: bold;
   background-color: #E5E4E2;
+  padding: 5px;
   border: 1px solid grey;
   margin: 5px;
-  padding: 5px;
   height: 100px;
-  width: 40%; }
+  width: 40%;
+}
 
 #navbar {
   text-align: center;
@@ -42,11 +47,14 @@
   padding: 5px;
   border: 1px solid grey;
   margin: 40px 9px 5px 5px;
-  width: 50%; }
+  width: 50%;
+}
 
 #navbar li {
-  display: inline;
-  padding: 40px; }
+display: inline;
+padding: 40px;
+}
+
 
 #section1-1 {
   float: left;
@@ -55,17 +63,21 @@
   border: 1px solid grey;
   margin: 5px 5px 5px 5px;
   height: 292px;
-  width: 81.4%; }
+  width: 81.4%;
+}
+
+
 
 #section2-1 {
-  /*  clear: both; */
+/*  clear: both; */
   float: left;
   background-color: #E5E4E2;
   padding: 5px;
   border: 1px solid grey;
   margin: 5px 5px 5px 5px;
   height: 143px;
-  width: 60.4%; }
+  width: 60.4%;
+}
 
 #section2-2 {
   float: right;
@@ -74,10 +86,12 @@
   border: 1px solid grey;
   margin: 5px 5px 5px 12px;
   height: 143px;
-  width: 18.6%; }
+  width: 18.6%;
+}
+
 
 #section3-1 {
-  /*  clear: left; */
+/*  clear: left; */
   clear: right;
   float: left;
   background-color: #E5E4E2;
@@ -85,7 +99,8 @@
   border: 1px solid grey;
   margin: 5px 17px 5px 5px;
   height: 120px;
-  width: 18.6%; }
+  width: 18.6%;
+}
 
 #section3-2 {
   float: left;
@@ -94,8 +109,8 @@
   border: 1px solid grey;
   margin: 5px 17px 5px 0px;
   height: 120px;
-  width: 18.6%; }
-
+  width: 18.6%;
+}
 #section3-3 {
   float: left;
   background-color: #E5E4E2;
@@ -103,8 +118,8 @@
   border: 1px solid grey;
   margin: 5px 12px 5px 0px;
   height: 120px;
-  width: 18.6%; }
-
+  width: 18.6%;
+}
 #section3-4 {
   float: right;
   background-color: #E5E4E2;
@@ -112,7 +127,8 @@
   border: 1px solid grey;
   margin: 5px 5px 5px 5px;
   height: 120px;
-  width: 18.6%; }
+  width: 18.6%;
+}
 
 #footer {
   clear: both;
@@ -120,6 +136,5 @@
   padding: 30px;
   border: 1px solid grey;
   margin: 5px;
-  width: 94.3%; }
-
-/*# sourceMappingURL=style.css.map */
+  width: 94.3%;
+}
