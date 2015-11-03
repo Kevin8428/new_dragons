@@ -1,9 +1,9 @@
 #header {
   font-size: 3em;
   font-weight: bold;
-  background-color: lightblue;
+  background-color: #E5E4E2;
   padding: 5px;
-  border: 3px dashed black;
+  border: 1px solid grey;
   margin: 5px;
 }
 
@@ -11,34 +11,37 @@
 
 #section1 {
   float: left;
-  background-color: skyblue;
+  background-color: #E5E4E2;
   padding: 5px;
-  border: 3px dashed grey;
+  border: 1px solid grey;
   margin: 5px 5px 5px 5px;
-  width: 15%;
+  height: 500px;
+  width: 15.3%;
 }
 
 #section2 {
   float: left;
-  background-color: skyblue;
+  background-color: #E5E4E2;
   padding: 5px;
-  border: 3px dashed grey;
+  border: 1px solid grey;
   margin: 5px 0px 5px 0px;
-  width: 60%;
+  height: 500px;
+  width: 65%;
 }
 
 #section3 {
   float: right;
-  background-color: skyblue;
+  background-color: #E5E4E2;
   padding: 5px;
-  border: 3px dashed grey;
+  border: 1px solid grey;
   margin: 5px 5px 5px 5px;
-  width: 15%;
+  height: 500px;
+  width: 15.3%;
 }
 
 #footer {
   clear: both;
-  background-color: green;
+  background-color: #E5E4E2;
   padding: 30px;
   border: 3px dashed black;
   margin: 5px;

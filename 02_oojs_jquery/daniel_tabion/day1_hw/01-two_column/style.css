@@ -1,34 +1,35 @@
 #header {
   font-size: 3em;
   font-weight: bold;
-  background-color: lightblue;
+  background-color: #E5E4E2;
   padding: 30px;
-  border: 3px dashed black;
+  border: 1px solid grey;
   margin: 5px;
 }
 
 #footer {
   clear: both;
-  background-color: green;
+  background-color: #E5E4E2;
   padding: 30px;
-  border: 3px dashed black;
+  border: 1px solid grey;
   margin: 5px;
 }
 
 #section1 {
   float: left;
-  background-color: skyblue;
+  background-color: #E5E4E2;
   padding: 30px;
-  border: 3px dashed grey;
-  margin: 5px 5px 5px 5px;
-  width: 42%;
+  border: 1px solid grey;
+ dashed grey;
+  margin: 5px 0px 5px 5px;
+  width: 44.5%;
 }
 
 #section2 {
   float: right;
-  background-color: skyblue;
+  background-color: #E5E4E2;
   padding: 30px;
-  border: 3px dashed grey;
-  margin: 5px 5px 5px 5px;
-  width: 42%;
+  border: 1px solid grey;
+  margin: 5px 5px 5px 0px;
+  width: 44.5%;
 }
