@@ -5,7 +5,7 @@
         <!-- head:start -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>HTML &amp; CSS Layouts | WDI Chicago #3: Dragons</title>
+        <title>Colour Theory 101 | WDI Chicago #3: Dragons</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -29,10 +29,10 @@
         
     
     
-    <link rel="next" href="../02_oojs_jquery/d01-hw.html" />
+    <link rel="next" href="../02_oojs_jquery/d02-fonts.html" />
     
     
-    <link rel="prev" href="../02_oojs_jquery/d01-objects-again.html" />
+    <link rel="prev" href="../02_oojs_jquery/d02-sass.html" />
     
 
         <!-- head:end -->
@@ -40,7 +40,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.1.4" data-basepath=".." data-revision="Tue Nov 03 2015 09:27:57 GMT-0600 (CST)">
+    <div class="book" data-level="2.2.3" data-basepath=".." data-revision="Tue Nov 03 2015 16:03:43 GMT-0600 (CST)">
     
 
 <div class="book-summary">
@@ -654,17 +654,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.4" data-path="02_oojs_jquery/html_css_layout.html">
+        <li class="chapter " data-level="2.1.4" data-path="02_oojs_jquery/html_css_laxyout.html">
             
-                
-                    <a href="../02_oojs_jquery/html_css_layout.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.1.4.</b>
-                        
-                        HTML &amp; CSS Layouts
-                    </a>
+            <span><b>2.1.4.</b> HTML &amp; CSS Layouts</span>
             
             
         </li>
@@ -701,6 +693,102 @@
                         Wireframe to Production
                     </a>
             
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="02_oojs_jquery/d02-me.html">
+            
+                
+                    <a href="../02_oojs_jquery/d02-me.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.1.</b>
+                        
+                        Morning Exercise
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="02_oojs_jquery/d02-sass.html">
+            
+                
+                    <a href="../02_oojs_jquery/d02-sass.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.2.</b>
+                        
+                        Sass &amp; CSS Variables
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2.3" data-path="02_oojs_jquery/d02-colourtheory.html">
+            
+                
+                    <a href="../02_oojs_jquery/d02-colourtheory.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.3.</b>
+                        
+                        Colour Theory 101
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="02_oojs_jquery/d02-fonts.html">
+            
+                
+                    <a href="../02_oojs_jquery/d02-fonts.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.4.</b>
+                        
+                        Fonts
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="02_oojs_jquery/d02-style-guide.html">
+            
+                
+                    <a href="../02_oojs_jquery/d02-style-guide.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.5.</b>
+                        
+                        Style Guides
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="02_oojs_jquery/d02-hw.html">
+            
+                
+                    <a href="../02_oojs_jquery/d02-hw.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.6.</b>
+                        
+                        Homework
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -994,82 +1082,27 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="sample-html-css-layout">Sample HTML &amp; CSS Layout</h2>
-<p>This layout uses floats to create a two column (content and sidebar) layout that may be used for any future project!</p>
-<p><em>index.html</em></p>
-<pre><code class="lang-html"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">&quot;utf-8&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Box Model Intro<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">&apos;stylesheet&apos;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&apos;style.css&apos;</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;wrapper&apos;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;logo&apos;</span>&gt;</span>
-      Random Website Goes Here
-    <span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;navbar&apos;</span>&gt;</span>
-      Links to places will go here!
-    <span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;content&apos;</span>&gt;</span>
-      Lorem Ipsum Text
-    <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">aside</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;sidebar&apos;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>things<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>to<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>do<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">aside</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">footer</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;goodbye&apos;</span>&gt;</span>
-      Copyright nobody 2015...
-    <span class="hljs-tag">&lt;/<span class="hljs-title">footer</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
-</code></pre>
-<p><em>style.css</em></p>
-<pre><code class="lang-css"><span class="hljs-comment">/* ids are identifiable using a #name */</span>
-<span class="hljs-id">#wrapper</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">90%</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> auto</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> auto</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> relative</span></span>;
-  <span class="hljs-comment">/*margin: auto;*/</span>
-}</span>
-<span class="hljs-id">#logo</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">font-size</span>:<span class="hljs-value"> <span class="hljs-number">3em</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> bold</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">3px</span> dashed orange</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">3px</span></span></span>;
-}</span>
-<span class="hljs-id">#navbar</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">font-size</span>:<span class="hljs-value"> <span class="hljs-number">1.5rem</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> bold</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">3px</span> dashed purple</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">3px</span></span></span>;
-}</span>
-<span class="hljs-id">#sidebar</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> right</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">3px</span> dashed green</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">3px</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">25%</span></span></span>;
-}</span>
-<span class="hljs-id">#content</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">3px</span> dashed navy</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">3px</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">65%</span></span></span>;
-}</span>
-<span class="hljs-id">#goodbye</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">3px</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">3px</span> dashed red</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">clear</span>:<span class="hljs-value"> both</span></span>;
-}</span>
-</code></pre>
+                        <h2 id="colour-theory">Colour Theory</h2>
+<ul>
+<li>Two types of colour - colours you can <strong>touch</strong> and color you <strong>can&apos;t touch</strong>.</li>
+<li>Touched colours are called <em>subtractive</em>; <em>additive</em> is colour you can&apos;t touch.</li>
+<li>Subtractive is measured in CMYK (cyan, magenta, yellow)</li>
+<li>Additive is measured by RGB (red, green, blue)</li>
+<li>Humans process color via HSL - hue, saturation, lightness</li>
+</ul>
+<h4 id="emotions-evoked-from-colour">Emotions evoked from Colour</h4>
+<ul>
+<li>Red - heat, passion, excitement.</li>
+<li>Orange- warmth, vitality.</li>
+<li>Yellow - optimism, creativity.</li>
+<li>Green - serenity, health.</li>
+<li>Blue - security, truth, stability.</li>
+<li>Purple - spirituality, intelligence, wealth.</li>
+<li>Pink - youthful, intensity.</li>
+<li>Brown - durability, class.</li>
+<li>Black - power, drama.</li>
+<li>White - simplicity, cleanliness.</li>
+</ul>
 
                     
                     </section>
@@ -1080,10 +1113,10 @@
         </div>
 
         
-        <a href="../02_oojs_jquery/d01-objects-again.html" class="navigation navigation-prev " aria-label="Previous page: this, hasOwnProperty, .keys"><i class="fa fa-angle-left"></i></a>
+        <a href="../02_oojs_jquery/d02-sass.html" class="navigation navigation-prev " aria-label="Previous page: Sass &amp; CSS Variables"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../02_oojs_jquery/d01-hw.html" class="navigation navigation-next " aria-label="Next page: Homework: Layout Challenges"><i class="fa fa-angle-right"></i></a>
+        <a href="../02_oojs_jquery/d02-fonts.html" class="navigation navigation-next " aria-label="Next page: Fonts"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
