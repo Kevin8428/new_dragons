@@ -69,8 +69,5 @@ elonmusk.tellStory = function() {
 
 
 
-Object.keys[elonmusk];
-
-
 self.quirk(self.weirdFact);
 self.funFact(self.funFact);
