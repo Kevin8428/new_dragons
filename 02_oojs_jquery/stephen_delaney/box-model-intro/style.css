@@ -18,6 +18,7 @@ section {
 position: absolute or relative
  */
 
+
 #logo {
   font-size: 3em;
   font-weight: bold;
@@ -40,11 +41,19 @@ position: absolute or relative
   width: 25%;
 }
 
+#sidebizzar {
+  float: right;
+  border: 3px dashed green;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 25%;
+}
+
 #content {
   float: left;
   border: 3px dashed navy;
   margin: 3px;
-  width: 65%;
+  width: 30%;
 }
 
 #goodbye {
