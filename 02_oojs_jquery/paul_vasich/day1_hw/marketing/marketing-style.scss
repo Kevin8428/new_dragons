@@ -1,0 +1,69 @@
+// vars
+$wrapper-width: 90%;
+$cell-width: 32%;
+$cell-padding: 10% 0 10%;
+$content-width: 48.5%;
+$content-padding: 20% 0 20%;
+$horizontal-bar-padding: 8% 0 8%;
+
+.title {
+  font-family: Open Sans;
+  font-style: condensed;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.gray-box {
+  background-color: lightgrey;
+  border: 2px solid darkgrey;
+  margin: 7px 0 7px;
+}
+
+#content-wrapper {
+  width: $wrapper-width;
+  margin: 0 auto;
+}
+
+#headline {
+  padding: $horizontal-bar-padding;
+}
+
+.column-wrapper {
+  clear: both;
+  width: 100%;
+  text-align: center;
+}
+
+#content-left {
+  width: $content-width;
+  padding: $content-padding;
+  float: left;
+}
+
+#content-right {
+  width: $content-width;
+  padding: $content-padding;
+  float: right;
+}
+
+#cell-right {
+  width: $cell-width;
+  padding: $cell-padding;
+  float: right;
+}
+
+#cell-left {
+  width: $cell-width;
+  padding: $cell-padding;
+  float: left;
+}
+
+#cell-center {
+  width: $cell-width;
+  padding: $cell-padding;
+  display: inline-block;
+}
+#boot {
+  clear: both;
+  padding: $horizontal-bar-padding;
+}
