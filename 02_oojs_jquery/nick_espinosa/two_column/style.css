@@ -1,0 +1,38 @@
+header,#sidebar,#content,#goodbye {
+  background: #ddd;
+  border: 1px solid #ccc;
+  padding: 2%;
+}
+
+html,body {
+  margin: 1% 0;
+  padding: 0;
+}
+
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+header{
+height: 120px;
+}
+
+#logo {
+
+}
+#sidebar {
+  margin: 2% 0 2%;
+  float: right;
+  width: 20%;
+  min-height: 400px;
+}
+#content {
+  margin: 2% 0 2%;
+  float: left;
+  width: 69.5%;
+  min-height: 400px;
+}
+#goodbye {
+  clear:both;
+  min-height: 120px;
+}
