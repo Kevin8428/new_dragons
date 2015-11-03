@@ -1,35 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 #wrapper {
   width: 90%;
   margin: 0 auto;
+}
+
+#logo, #navbar, #goodbye {
+  padding: 10px;
+  margin: 5px;
 }
 
 #logo {
   border: 3px dashed orange;
   font-size: 3em;
   font-weight: bold;
-  margin: 3px;
-  padding: 10px;
 }
 #navbar {
   border: 3px dashed purple;
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 3px;
 }
 #sidebar {
   border: 3px dashed green;
-  margin: 3px;
   width: 25%;
   float: right;
+  margin: 5px;
 }
 #content {
   border: 3px dashed navy;
-  margin: 3px;
-  width: 65%;
+  width: 63%;
   float: left;
 }
+#one,#two,#three{
+  width: 33%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
 #goodbye {
-  margin: 3px;
   border: 3px dashed red;
   clear:both;
 }
