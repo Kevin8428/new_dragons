@@ -37,6 +37,7 @@
     * [this, hasOwnProperty, .keys](02_oojs_jquery/d01-objects-again.md)
     * [HTML & CSS Layouts](02_oojs_jquery/html_css_layout.md)
     * [Homework: Layout Challenges](02_oojs_jquery/d01-hw.md)
+  * [Wireframe to Production](02_oojs_jquery/d02.md)
 * [Advanced Front End](03_advanced_front_end/README.md)
 * [Front End Project](04_frontend_project/README.md)
 * [Ruby101](05_ruby101/README.md)
