@@ -3,18 +3,41 @@
   margin: 0 auto;
 }
 
-#coupons {
-  width: 100%;
-  margin: 1em auto;
-  background: black;
-  overflow: hidden;
+header {
+  padding: 1em;
+  border: 1px solid black;
 }
 
-#coupons div {
-  width: 40%;
-  background: white;
-  border: 5px dashed #333;
-  padding: 1.5%;
-  margin: 2.5%;
+nav {
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid black;
+}
+
+#content, #sidebar-left, #sidebar-right {
+  border: 1px solid black;
+  margin: 1em;
+  padding: 1em;
+}
+
+#content {
+  margin: 0 auto;
   float: left;
+  width: 40%;
+}
+
+#sidebar-left, #sidebar-right {
+  float: left;
+  width: 15%;
+}
+
+#sidebar-right {
+  float: right;
+}
+
+#goodbye {
+  margin: 1em auto;
+  clear: both;
+  padding: 1em;
+  border: 1px solid black;
 }
