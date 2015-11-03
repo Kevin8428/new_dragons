@@ -8,51 +8,56 @@ body {
 }
 header {
     font-weight: bold;
-    border: .2em solid black;
-    margin: .2em;
+    border: .1em solid black;
+    margin: .4em;
+    margin-bottom: .9em;
     padding: .2em;
     background-color: lightgrey;
     text-align: center;
+    min-height: 75px;
+    float: left;
+    width: 25%;
+
     /*postion: absolute; in relation to parent = wrapper */
 }
-aside {
-    border: .2em solid black;
+.topnav {
+    border: .1em solid black;
     margin: .2em;
+    margin-top: 22px;
+    margin-bottom: 22px;
     padding: .2em;
-    width: 25%;
-    float: left;
     background-color: lightgrey;
-    min-height: 200px;
+    min-height: 31px;
+    float: right;
+    width: 10%;
 }
-#content {
-    border: .2em solid black;
-    margin: .2em;
+#oneColumnDiv {
+    border: .1em solid black;
+    margin: .4em;
     padding: .2em;
-    width: 41%;
-    float: left;
     background-color: lightgrey;
     min-height: 200px;
-
+    clear: both;
 }
-nav {
-    font-size: 1em;
-    font-weight: bold;
-    border: .2em solid black;
-    margin: .2em;
+#threeColumnDiv {
+    border: .1em solid black;
+    margin: .4em;
+    margin-bottom: .9em;
     padding: .2em;
-    width: 25%;
+    width: 30%;
     float: left;
     background-color: lightgrey;
-    min-height: 200px;
-    overflow: hidden;
+    min-height: 100px;
 }
 #goodbye {
-    border: .2em solid black;
-    margin: .2em;
+    border: .1em solid black;
+    margin: .4em;
+    margin-top: .4em;
     padding: .2em;
     clear: both; /* clears floated elements above */
     background-color: lightgrey;
-    text-align: center;
+    min-height: 75px;
+
 }
 
 

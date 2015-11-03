@@ -8,51 +8,41 @@ body {
 }
 header {
     font-weight: bold;
-    border: .2em solid black;
-    margin: .2em;
+    border: .1em solid black;
+    margin: .4em;
     padding: .2em;
     background-color: lightgrey;
     text-align: center;
+    min-height: 75px;
     /*postion: absolute; in relation to parent = wrapper */
 }
-aside {
-    border: .2em solid black;
-    margin: .2em;
+#twoColumnDiv {
+    border: .1em solid black;
+    margin: .4em;
     padding: .2em;
-    width: 25%;
+    width: 46.6%;
     float: left;
     background-color: lightgrey;
     min-height: 200px;
 }
-#content {
-    border: .2em solid black;
-    margin: .2em;
+#threeColumnDiv {
+    border: .1em solid black;
+    margin: .4em;
     padding: .2em;
-    width: 41%;
+    width: 30.1%;
     float: left;
     background-color: lightgrey;
-    min-height: 200px;
-
-}
-nav {
-    font-size: 1em;
-    font-weight: bold;
-    border: .2em solid black;
-    margin: .2em;
-    padding: .2em;
-    width: 25%;
-    float: left;
-    background-color: lightgrey;
-    min-height: 200px;
-    overflow: hidden;
+    min-height: 100px;
 }
 #goodbye {
-    border: .2em solid black;
-    margin: .2em;
+    border: .1em solid black;
+    margin: .4em;
+    margin-top: .4em;
     padding: .2em;
     clear: both; /* clears floated elements above */
     background-color: lightgrey;
-    text-align: center;
+    min-height: 75px;
+
 }
 
 
