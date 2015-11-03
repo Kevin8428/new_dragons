@@ -26,34 +26,27 @@
 #content {
   float: left;
   border: 3px dashed navy;
-  margin: 3px;
-  width: 65%;
+  margin-top: 45px;
+  width: 30%;
+}
+#content2 {
+
+  margin-top: 100px;
+  border: 5px dashed black;
+  width: 40%;
+}
+#content3 {
+  border: 6px dashed red;
+  background: black;
+  color: white;
+  font-size: 50px;
+  margin-top: 30px;
 }
 #goodbye {
   margin: 3px;
   border: 3px dashed red;
+  clear: both;
 }
-  <div id='wrapper'>
-    <header id='logo'>
-      Random Website Goes Here
-    </header>
-
-    <nav id='navbar'>
-      Links to places will go here!
-    </nav>
-
-    <section id='content'>
-      Lorem Ipsum Text
-    </section>
-
-    <aside id='sidebar'>
-      <ul>
-        <li>things</li>
-        <li>to</li>
-        <li>do</li>
-      </ul>
-    </aside>
-  </div>
 
 
 
