@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 //////////////////////////////// //////////////////////////////// VARIABLES
 
 // NOTE: This is overkill, but it was fun to map out!
@@ -46,6 +51,7 @@ $column-width: $horizontal-space / $n-horizontal;
 /*                                header
 */
 header#banner-top {
+  min-height: 100px;
   margin: $margin-size;
   height: $header-height;
   width: $header-width;
@@ -55,6 +61,8 @@ header#banner-top {
   flex-direction:column;
 } #banner-top:hover {
     cursor:default;
+} #banner-top[name='home'] {
+  margin-bottom: 300px;
 }
 
 /*                                logo
@@ -70,7 +78,7 @@ header#banner-top {
 */
 nav#navbar {
   margin: $margin-size*2 auto;
-  height: $header-height/3;
+//  height: $header-height/3;
   width:  $header-width * 0.9;
   display: flex;
   justify-content:space-around;
@@ -81,7 +89,7 @@ nav#navbar {
 /*                                nav buttons
 */
 .navbutt {
-  font-family: PT Sans;
+  font-family: Arvo;
   list-style: none;
   width: $navbar-width/8;
   padding-top: $navbar-height/16;
@@ -89,6 +97,7 @@ nav#navbar {
   text-align: center;
   user-select: none;
   -webkit-user-select:none;
+  font-size: 15px;
 } .navbutt:hover {
     background-color: #88F133;
     cursor:default;
@@ -100,36 +109,46 @@ nav#navbar {
 */
 .column-wrapper {
   width: $horizontal-space;
-  height: $column-height + ($margin-size * 2) auto;
+  //height: $column-height + ($margin-size * 2)+20% auto;
   display: flex;
   justify-content:space-between;
   align-items: stretch;
   flex-direction: row;
   margin: 0 auto;
+  font-family: PT Sans;
 }
 
 /*                                content (left column)
 */
 .content {
   width: $horizontal-space * 0.75;
-  height: $column-height;
+  // height: $column-height;
   margin: $margin-size;
+  text-align: center;
+  padding: 1%;
 }
 
 /*                                column (right column) TODO: change this name
 */
 .column {
   width: $horizontal-space * 0.25;
-  height: $column-height;
+//  height: $column-height;
   margin: $margin-size;
+  text-align: left;
+  padding: 1%;
 }
 
 /*                                footer
 */
 #banner-bottom {
   width: $header-width;
-  height: $header-height;
+//  height: $header-height;
+  padding: 1%;
   margin: $margin-size;
+  font-family: Arvo;
+  font-size: 13px;
+  color:black;
+  text-align:center;
 }
 
 /*                                mockup
