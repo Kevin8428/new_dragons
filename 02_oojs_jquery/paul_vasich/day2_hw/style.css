@@ -2,10 +2,15 @@
   margin: 0;
   padding: 0; }
 
+/*/////////////////////////////// //////////////////////////////// CSS
+                                  wrapper
+*/
 #content-wrapper {
   width: 90%;
   margin: 0 auto; }
 
+/*                                header
+*/
 header#banner-top {
   margin: 0.5%;
   height: 20%;
@@ -18,12 +23,16 @@ header#banner-top {
 #banner-top:hover {
   cursor: default; }
 
+/*                                logo
+*/
 #logo {
   font-family: Arvo;
   font-weight: 700;
   text-align: center;
   font-size: 32px; }
 
+/*                                navbar
+*/
 nav#navbar {
   margin: 1% auto;
   height: 6.66667%;
@@ -33,25 +42,8 @@ nav#navbar {
   align-items: center;
   flex-direction: row; }
 
-.column-wrapper {
-  width: 100%;
-  height: 59% auto;
-  min-width: 24.75%;
-  display: flex;
-  justify-content: space-around;
-  align-items: stretch;
-  flex-direction: row; }
-
-.content {
-  width: 74.25%;
-  height: 58%;
-  margin: 0.5%; }
-
-.column {
-  width: 29.7%;
-  height: 58%;
-  margin: 0.5%; }
-
+/*                                nav buttons
+*/
 .navbutt {
   font-family: PT Sans;
   list-style: none;
@@ -66,11 +58,43 @@ nav#navbar {
   background-color: #88F133;
   cursor: default; }
 
+.navbutt:active {
+  background-color: #6D1; }
+
+/*                                column wrapper
+*/
+.column-wrapper {
+  width: 99%;
+  height: 61% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  margin: 0 auto; }
+
+/*                                content (left column)
+*/
+.content {
+  width: 74.25%;
+  height: 60%;
+  margin: 0.5%; }
+
+/*                                column (right column) TODO: change this name
+*/
+.column {
+  width: 24.75%;
+  height: 60%;
+  margin: 0.5%; }
+
+/*                                footer
+*/
 #banner-bottom {
   width: 100%;
   height: 20%;
   margin: 0.5%; }
 
+/*                                mockup
+*/
 .frame {
   border: 2px solid darkgray;
   background: lightgray; }

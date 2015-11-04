@@ -3,29 +3,48 @@
   padding: 0;
 }
 
+//////////////////////////////// //////////////////////////////// VARIABLES
+
+// NOTE: This is overkill, but it was fun to map out!
+
 $scale: 10%;      // think of the page as a 10 x 10 grid
 $n-horizontal: 2; // max horizontal elements
 $n-vertical: 4;   // max vertical elements
 
 $margin-size: 0.5%;
 
-$header-height: $scale*2;
-$header-width: $scale*10;
+$header-height: $scale*2; // 20%
+$header-width: $scale*10; // 100%
 
-$footer-height: $scale*2;
-$footer-width: $scale*10;
+$footer-height: $scale*2; // 20%
+$footer-width: $scale*10; // 100%
 
+// who cares what the percent is, I want 1/3 of the header
 $navbar-height: $header-height/3;
+
+// 10% more narrow, for the style
 $navbar-width: $header-width * 0.9;
 
-$column-height: 100% - $header-height - $footer-height - ($margin-size * $n-vertical);
-$column-width: (100% - ($margin-size * $n-horizontal)) / $n-horizontal;
+// 100% - whatever header-height is - whatever footer-height is - margins
+//  fill up the rest
+$column-height: 100% - $header-height - $footer-height;
 
+// 100% - (margin * n-horizontal elements) is the useable space
+$horizontal-space: 100% - ($margin-size * $n-horizontal);
+//   horizontal-space / n-horizontal elements gives us the appropriate
+//   size for each column or what-have-you.
+$column-width: $horizontal-space / $n-horizontal;
+
+/*/////////////////////////////// //////////////////////////////// CSS
+                                  wrapper
+*/
 #content-wrapper {
   width: 90%;
   margin: 0 auto;
 }
 
+/*                                header
+*/
 header#banner-top {
   margin: $margin-size;
   height: $header-height;
@@ -34,11 +53,12 @@ header#banner-top {
   justify-content:center;
   align-content:center;
   flex-direction:column;
-}
-#banner-top:hover {
-  cursor:default;
+} #banner-top:hover {
+    cursor:default;
 }
 
+/*                                logo
+*/
 #logo {
   font-family: Arvo;
   font-weight: 700;
@@ -46,6 +66,8 @@ header#banner-top {
   font-size: 32px;
 }
 
+/*                                navbar
+*/
 nav#navbar {
   margin: $margin-size*2 auto;
   height: $header-height/3;
@@ -56,28 +78,8 @@ nav#navbar {
   flex-direction:row;
 }
 
-.column-wrapper {
-  width: $column-width * $n-horizontal + ($margin-size * $n-horizontal);
-  height: $column-height + ($margin-size * 2) auto;
-  min-width: $column-width/2;
-  display: flex;
-  justify-content: space-around;
-  align-items: stretch;
-  flex-direction: row;
-}
-
-.content {
-  width: $column-width * 1.5;
-  height: $column-height;
-  margin: $margin-size;
-}
-
-.column {
-  width: $column-width * .6;
-  height: $column-height;
-  margin: $margin-size;
-}
-
+/*                                nav buttons
+*/
 .navbutt {
   font-family: PT Sans;
   list-style: none;
@@ -87,17 +89,51 @@ nav#navbar {
   text-align: center;
   user-select: none;
   -webkit-user-select:none;
-}
-.navbutt:hover {
-  background-color: #88F133;
-  cursor:default;
+} .navbutt:hover {
+    background-color: #88F133;
+    cursor:default;
+} .navbutt:active {
+    background-color: #6D1;
 }
 
+/*                                column wrapper
+*/
+.column-wrapper {
+  width: $horizontal-space;
+  height: $column-height + ($margin-size * 2) auto;
+  display: flex;
+  justify-content:space-between;
+  align-items: stretch;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+/*                                content (left column)
+*/
+.content {
+  width: $horizontal-space * 0.75;
+  height: $column-height;
+  margin: $margin-size;
+}
+
+/*                                column (right column) TODO: change this name
+*/
+.column {
+  width: $horizontal-space * 0.25;
+  height: $column-height;
+  margin: $margin-size;
+}
+
+/*                                footer
+*/
 #banner-bottom {
   width: $header-width;
   height: $header-height;
   margin: $margin-size;
 }
+
+/*                                mockup
+*/
 .frame {
   border: 2px solid darkgray;
   background: lightgray;
