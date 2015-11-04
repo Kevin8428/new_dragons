@@ -11,6 +11,7 @@ var comp= {
     this.domElement = document.createElement('img'); //<img />
     domSelector.appendChild(this.domElement);
   },
+  
   render:function(imageSrc){
     this.domElement.src=imageSrc; //<img src='' />
   }
