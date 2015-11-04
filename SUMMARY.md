@@ -23,33 +23,27 @@
   * [Functions, Loops, Objects](01_front_end_fundamentals/d03.md)
     * [Homework](01_front_end_fundamentals/d03-ah.md)
   * [Drawing on the Web](01_front_end_fundamentals/d04.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> f19fd7c7dcf2f88daa8075e77725b62fb2a88f3b
     * [HTML and CSS](01_front_end_fundamentals/d04-htmlcss.md)
     * [The DOM](01_front_end_fundamentals/d04-dom.md)
     * [Converting Pixels to EM](01_front_end_fundamentals/d04-em-to-px.md)
     * [Canvas](01_front_end_fundamentals/d04-canvas.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 669804fbfd7c21e415039dbe57a943027913747c
-=======
->>>>>>> 022c557bfe43106c7e63641406336831f478a509
-=======
   * [Second Pass Friday](01_front_end_fundamentals/d05.md)
     * [Weekend Practice](01_front_end_fundamentals/d05-ah.md)
     * [Bonus Weekend Practice](01_front_end_fundamentals/d05-ah-bonus.md)
-<<<<<<< HEAD
->>>>>>> edade26e33c030f426eaa71ae9575010a155462f
-=======
->>>>>>> 51936a62fc91b975527854601003fbfa0038c777
->>>>>>> 022c557bfe43106c7e63641406336831f478a509
->>>>>>> f19fd7c7dcf2f88daa8075e77725b62fb2a88f3b
 * [Object Oriented JS & jQuery](02_oojs_jquery/README.md)
+  * [Objects and CSS](02_oojs_jquery/d01.md)
+    * [Morning Review](02_oojs_jquery/d01_me.md)
+    * [Object Methods](02_oojs_jquery/d01-object-methods.md)
+    * [this, hasOwnProperty, .keys](02_oojs_jquery/d01-objects-again.md)
+    * [HTML & CSS Layouts](02_oojs_jquery/html_css_laxyout.md)
+    * [Homework: Layout Challenges](02_oojs_jquery/d01-hw.md)
+  * [Wireframe to Production](02_oojs_jquery/d02.md)
+    * [Morning Exercise](02_oojs_jquery/d02-me.md)
+    * [Sass & CSS Variables](02_oojs_jquery/d02-sass.md)
+    * [Colour Theory 101](02_oojs_jquery/d02-colourtheory.md)
+    * [Fonts](02_oojs_jquery/d02-fonts.md)
+    * [Style Guides](02_oojs_jquery/d02-style-guide.md)
+    * [Homework](02_oojs_jquery/d02-hw.md)
 * [Advanced Front End](03_advanced_front_end/README.md)
 * [Front End Project](04_frontend_project/README.md)
 * [Ruby101](05_ruby101/README.md)
