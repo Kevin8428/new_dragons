@@ -77,26 +77,25 @@ aaron.buildAboutMe();
 
 
 
-
+var currentLevel = 3+'rd';
 var dante = {
   name: 'Dante',
   ghostType: 'Ghastly Ghost',
   nationality: 'Italian',
   inHell: 'Not currently',
-  circleLevel: 9,
+  circleLevel: currentLevel+' circle',
   location: 'hell',
   friendly: true,
 
   travelling: function(onTheRun){
-    onTheRun === true;
     if(onTheRun == true){
-      return ' is escaping the ' +circleLevel+ ' of ' +location+'!!!';
+      return ' is escaping the ' +this.circleLevel+ ' of ' +this.location+'!!!';
     }else{
-      return 'Dante is resting.'
+      return ' is resting.'
     }
   },
   tellStory: function(){
-    return this.name+' is on the run! ' +'The '+this.ghostType+' '+this.name+this.travelling();
+    return this.name+' is on the run! ' +'The '+this.ghostType+' '+this.name+this.travelling(true);
   }
 }
 dante.tellStory();

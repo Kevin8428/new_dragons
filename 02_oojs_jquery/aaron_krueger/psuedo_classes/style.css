@@ -1,0 +1,32 @@
+body{
+  margin: 0;
+}
+.content{
+  background-color: blue;
+  width: 30%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  /*float: left;*/
+  border-right: 3px solid;
+  margin-right: 2px;
+  display: inline-flex;
+
+}
+.content:nth-child(odd){
+  background-color: red;
+}
+p{
+  margin: 0;
+}
+a{
+  display: inline;
+  color: black;
+  text-decoration: none;
+  width: inherit;
+  border: 2px solid black;
+}
+a:hover{
+  color: green;
+  font-size: 5vw;
+}
