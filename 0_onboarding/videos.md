@@ -5,6 +5,8 @@ It is not uncommon for the instructional staff to record screencasts in the midd
 #### Videos
 
 * Javascript 101 Recap: https://www.youtube.com/watch?v=24dV8xpEljU
+* Selector Recap: https://youtu.be/dlRXcwgcigQ
+* User Interface Component Recap: https://youtu.be/bp6HzzRtkjc
 
 #### Source Code
 

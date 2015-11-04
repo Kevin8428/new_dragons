@@ -2,7 +2,7 @@
 
 #### Declare a DOM Element to bind to (using a selector)
 
-`var body = document.getElementsByTagName('body')[0];``
+`var body = document.getElementsByTagName('body')[0];`
 
 #### We need to add a listener for events to an element
 
