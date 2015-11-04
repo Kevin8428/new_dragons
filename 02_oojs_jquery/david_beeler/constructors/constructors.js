@@ -24,6 +24,6 @@ function bike(speeds, color, size, price, brand) {
 }
 
 // declare a variable called annasBike
-//  create a "new" INSTANCE of "bike"
+//  create a "new" INSTANCE of "bike" ... instanciation
 //  create a new copy of bike
 var annasBike = new bike(21, "teal", "small", 350, "diamondback");
