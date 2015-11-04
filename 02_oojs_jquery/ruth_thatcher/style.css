@@ -1,6 +1,5 @@
 div {
   border-right: solid 1px;
-  display: inline-block;
   width: 30%;
 }
 
@@ -18,4 +17,14 @@ p {
 
 div:nth-child(even){
   background-color: blue;
+}
+
+body{
+  margin: 0px;
+  display: inline-block;
+  background-image: url("http://cias.rit.edu/~lcc1009/256/homework1/images/frenchy.jpg" );
+  /*background-repeat: no-repeat;*/
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: 50%;
 }
