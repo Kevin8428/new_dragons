@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+#content-wrapper {
+  width: 90%;
+  margin: 0 auto; }
+
+header#banner-top {
+  margin: 0.5%;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column; }
+
+#banner-top:hover {
+  cursor: default; }
+
+#logo {
+  font-family: Arvo;
+  font-weight: 700;
+  text-align: center;
+  font-size: 32px; }
+
+nav#navbar {
+  margin: 1% auto;
+  height: 6.66667%;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row; }
+
+.column-wrapper {
+  width: 100%;
+  height: 59% auto;
+  min-width: 24.75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-direction: row; }
+
+.content {
+  width: 74.25%;
+  height: 58%;
+  margin: 0.5%; }
+
+.column {
+  width: 29.7%;
+  height: 58%;
+  margin: 0.5%; }
+
+.navbutt {
+  font-family: PT Sans;
+  list-style: none;
+  width: 11.25%;
+  padding-top: 0.41667%;
+  padding-bottom: 0.41667%;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none; }
+
+.navbutt:hover {
+  background-color: #88F133;
+  cursor: default; }
+
+#banner-bottom {
+  width: 100%;
+  height: 20%;
+  margin: 0.5%; }
+
+.frame {
+  border: 2px solid darkgray;
+  background: lightgray; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$scale: 10%;      // think of the page as a 10 x 10 grid
+$n-horizontal: 2; // max horizontal elements
+$n-vertical: 4;   // max vertical elements
+
+$margin-size: 0.5%;
+
+$header-height: $scale*2;
+$header-width: $scale*10;
+
+$footer-height: $scale*2;
+$footer-width: $scale*10;
+
+$navbar-height: $header-height/3;
+$navbar-width: $header-width * 0.9;
+
+$column-height: 100% - $header-height - $footer-height - ($margin-size * $n-vertical);
+$column-width: (100% - ($margin-size * $n-horizontal)) / $n-horizontal;
+
+#content-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header#banner-top {
+  margin: $margin-size;
+  height: $header-height;
+  width: $header-width;
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column;
+}
+#banner-top:hover {
+  cursor:default;
+}
+
+#logo {
+  font-family: Arvo;
+  font-weight: 700;
+  text-align:center;
+  font-size: 32px;
+}
+
+nav#navbar {
+  margin: $margin-size*2 auto;
+  height: $header-height/3;
+  width:  $header-width * 0.9;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-direction:row;
+}
+
+.column-wrapper {
+  width: $column-width * $n-horizontal + ($margin-size * $n-horizontal);
+  height: $column-height + ($margin-size * 2) auto;
+  min-width: $column-width/2;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-direction: row;
+}
+
+.content {
+  width: $column-width * 1.5;
+  height: $column-height;
+  margin: $margin-size;
+}
+
+.column {
+  width: $column-width * .6;
+  height: $column-height;
+  margin: $margin-size;
+}
+
+.navbutt {
+  font-family: PT Sans;
+  list-style: none;
+  width: $navbar-width/8;
+  padding-top: $navbar-height/16;
+  padding-bottom: $navbar-height/16;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select:none;
+}
+.navbutt:hover {
+  background-color: #88F133;
+  cursor:default;
+}
+
+#banner-bottom {
+  width: $header-width;
+  height: $header-height;
+  margin: $margin-size;
+}
+.frame {
+  border: 2px solid darkgray;
+  background: lightgray;
+}
