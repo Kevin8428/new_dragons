@@ -1,5 +1,5 @@
   body {
-    background:url('https://drscdn.500px.org/photo/74310963/m=2048_k=1_a=1/e5724f6ef6c1fa5bce1a6973bc858bd9');
+    /*background:url('https://drscdn.500px.org/photo/74310963/m=2048_k=1_a=1/e5724f6ef6c1fa5bce1a6973bc858bd9');*/
     background-size: cover;
 
     color:green;
@@ -43,4 +43,9 @@ div:nth-child(odd) {
 }
 div:nth-child(even) {
   border:dashed green 2px;
+}
+
+.picture {
+  display:block;
+  width:100%;
 }
