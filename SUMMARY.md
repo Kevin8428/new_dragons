@@ -48,7 +48,7 @@
     * [Selectors](02_oojs_jquery/d03-selectors.md)
     * [DOM Events](02_oojs_jquery/d03-events.md)
     * [Components 101](02_oojs_jquery/d03-components101.md)
-    * [Constructors](02_oojs_jquery/d03-constructors.mdgit a)
+    * [Constructors](02_oojs_jquery/d03-constructors.md)
     * [Homework](02_oojs_jquery/d03-hw.md)
 * [Advanced Front End](03_advanced_front_end/README.md)
 * [Front End Project](04_frontend_project/README.md)
