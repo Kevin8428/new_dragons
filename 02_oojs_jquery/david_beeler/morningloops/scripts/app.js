@@ -1,3 +1,4 @@
+
 console.log("something");
 
 // write out an array of five foods
@@ -8,32 +9,29 @@ console.log("something");
 // style your button give it a border, color, radius, etc....(Maybee put it inside a div and center the dive on your screen)
 // using javascript console.log my button is working when it is clicked
 //Invoke your objects method using your button by passing in the object property that includes its arrray
-window.onload = function(){
 
-  var foods = ['pizza','burgers','steak','mac n cheese', 'apple pie'];
+var foods = ['pizza','burgers','steak','mac n cheese', 'apple pie'];
+var david = {
+  name: "David",
+  age: 28,
+  cats: ["loki","thor"],
+  eat: function(foods) {
+    for (var food in foods) {
+      console.log("I like to eat ... " + foods[food]);
+    }
+  }
+}
+
+window.onload = function(){
 
   for (var food in foods) {
     console.log("I like to eat ... " + foods[food]);
   }
 
-  var david = {
-    name: "David",
-    age: 28,
-    cats: ["loki","thor"],
-    eat: function(foods) {
-      for (var food in foods) {
-        console.log("I like to eat ... " + foods[food]);
-      }
-    }
-  }
-
-  //david.eat(foods);
-
-  //var btn = document.getElementById("main_button");
-
   main_button.onclick = function() {
     console.log("My button is working!!!!!");
     david.eat(foods);
+    david.eat(david.cats);
   }
 
 };

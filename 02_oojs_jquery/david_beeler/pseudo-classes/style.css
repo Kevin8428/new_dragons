@@ -1,0 +1,60 @@
+/*div {
+  float: left;
+  width: 30%;
+  border-right: 1px solid black;
+}*/
+
+div {
+  display: inline-block;
+  width: 33%;
+}
+
+a {
+  display: block;
+  width: 5%;
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 0 auto;
+  border: 1rem solid black;
+  border-radius: 1rem;
+}
+
+a:active {
+  background-color: rgb(73, 41, 87);
+}
+
+/*.red:hover {
+  background-color: rgb(51, 55, 4);
+}*/
+
+/*a method to center an image (and have text infront)*/
+img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 50%;
+    opacity: 0.5;
+}
+
+/*A method to center an image*/
+/*body {
+  margin: 0px;
+  display: inline-block;
+  background-image: url("https://media0.giphy.com/media/MtkKhHDM86tsQ/200_s.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}*/
+
+/*div:nth-child(even) {
+  background-color: rgb(38, 52, 68)
+}*/
+
+/*p {
+  background-color: rgb(226, 76, 36);
+}*/
+
+/*.red {
+  background-color: rgb(255, 37, 0);
+}*/

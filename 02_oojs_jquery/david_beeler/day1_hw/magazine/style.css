@@ -7,7 +7,7 @@
   position: relative; }
 
 #logo {
-  background-image: url(http://www.freeliquidtemplates.com/free-headers-for-websites/header11.jpg);
+  background-image: url("http://www.freeliquidtemplates.com/free-headers-for-websites/header11.jpg");
   font-size: 1em;
   width: 25%;
   padding: 2% 0 1% 0;
