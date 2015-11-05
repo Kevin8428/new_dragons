@@ -13,33 +13,11 @@ var leonardo = new turtle('Leonardo', 'blue', 'twin katana swords', 'onions, bla
 function lego(x, y, z) {
   this.x = x;
   this.y = y;
-  this.z = function() {
-    names = z;
-    if (typeof(z) == 'string') {
+  this.tellAboutName = function(name) {
+    if (typeof(name) == 'string') {
       hasName = true;
     } else {
       hasName = false;
-    } return [names, hasName];
+    } return [name, hasName];
   }
-}
-
-
-
-  function() {
-    namer = name;
-    if (name == true) {
-      hasName = true;
-    } else {
-      hasName = false;
-    } return [namer, hasName];
-  }
-}
-
-function tellAboutName(name) {
-  names = name;
-  if (typeof(name) == 'string') {
-    hasName = true;
-  } else {
-    hasName = false;
-  } return [names, hasName];
 }
