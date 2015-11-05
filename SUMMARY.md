@@ -57,6 +57,8 @@
     * [jQuery](02_oojs_jquery/d04-jquery.md)
     * [jQuery Boilerplate](02_oojs_jquery/d04-jquery-boilerplate.md)
     * [document.ready](02_oojs_jquery/d04-document-ready.md)
+    * [Homework](02_oojs_jquery/d04-hw.md)
+  * [Second Pass Friday](02_oojs_jquery/d05.md)
 * [Advanced Front End](03_advanced_front_end/README.md)
 * [Front End Project](04_frontend_project/README.md)
 * [Ruby101](05_ruby101/README.md)
