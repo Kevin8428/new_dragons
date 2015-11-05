@@ -4,7 +4,9 @@ window.onload = function () {
 
 
 
-  function whileLoop (centerX, centerY, lolDegree, radius) {
+  function whileLoop (centerX, centerY) {
+    var lolDegree = 0;
+    var radius = Math.random() * 100;
     while (lolDegree < Math.PI * 2) {
       context.beginPath();
       context.moveTo(centerX, centerY);
@@ -25,8 +27,8 @@ window.onload = function () {
       var centerX = parseInt(Math.random() * 1000);
       var centerY = parseInt(Math.random() * 1000);
       var radius = parseInt(Math.random() * 100);
-      var lolDegree = 0;
-      whileLoop(centerX, centerY, lolDegree, radius);
+
+      whileLoop(centerX, centerY);
     }
   }
 
