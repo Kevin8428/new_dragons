@@ -1,0 +1,76 @@
+header {
+  background: lime;
+  color: purple;
+  /* margin == "moat" */
+  margin: 50px;
+  /* border == "fence"? */
+  border: 5px dashed;
+  /* padding == "courtyard"? */
+  padding: 50px;
+
+}
+
+section {
+  color: beige;
+  background: salmon;
+  border: 2px dashed;
+  margin: 15px;
+  padding: 15px;
+  width: 400px;
+  text-align: center;
+}
+
+#wrapper {
+  width: 80%;
+  margin: auto;
+  position: absolute;
+}
+#logo {
+  font-size: 3em;
+  font-weight: bold;
+  border: 3px dashed orange;
+  margin: 3px;
+}
+#navbar {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 3px dashed purple;
+  margin: 3px;
+  background-color: hotpink;
+}
+#left {
+  float: left;
+  border: 3px dashed navy;
+  width: 27%;
+  color: black;
+  background-color:lightgray;
+  padding: 15px;
+  text-align: center;
+}
+#center {
+  padding: 15px;
+  text-align: center;
+  border: 3px dashed green;
+  width: 27%;
+  background-color: lightblue;
+  display:inline-block;
+  margin: 0 auto;
+}
+#right {
+  text-align: center;
+  padding: 15px;
+  float: right;
+  border: 3px dashed orange;
+  width: 27%;
+  background-color: cyan;
+}
+#column-wrapper {
+  width: 100%;
+  text-align: center;
+}
+#goodbye {
+  margin: 3px;
+  border: 3px dashed red;
+  clear: both;
+  background-color: darkorange;
+}
