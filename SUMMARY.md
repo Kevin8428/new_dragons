@@ -52,6 +52,7 @@
     * [Component Constructor Boilerplate](02_oojs_jquery/d03-constructor-component.md)
     * [Videos](02_oojs_jquery/d03-videos.md)
     * [Homework](02_oojs_jquery/d03-hw.md)
+  * [Write Less & Do More avec jQuery](02_oojs_jquery/d04.md)
 * [Advanced Front End](03_advanced_front_end/README.md)
 * [Front End Project](04_frontend_project/README.md)
 * [Ruby101](05_ruby101/README.md)
