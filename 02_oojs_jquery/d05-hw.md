@@ -15,13 +15,7 @@ This weekend, we would like you to take these skills and create a small project 
 #### Getting Started
 
 * Create a folder inside of `02_oojs/your_name/` called `weekend`
-* Inside of your folder, create a structure that mimics the following:
-  ```
-  weekend/
-  |------index.html
-  |------scripts/app.js
-  |------styles/main.scss
-  ```
+* Inside of your folder, create a structure that mimics the following: `index.html`, `styles/main.scss`, and `scripts/app.js`.
 * Create something that utilizes the skills above! This is your playground - create whatever you'd like.
 * When you've completed, `add`, `commit`, and `push origin master`
 * Create a pull request in Github for your submission
