@@ -1,0 +1,46 @@
+// variables
+$wrapper-width: 90%;
+$border: 3px dashed orange;
+$font-family: arial;
+$min-height: 100px;
+
+
+#wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#logo {
+    font-size: 3em;
+    font-weight: bold;
+    border: $border;
+    margin: 3px;
+    font-family: $font-family;
+    /*postion: absolute; in relation to parent = wrapper */
+}
+#navbar {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: $border;
+    margin: 3px;
+    min-height: $min-height;
+}
+#sidebar {
+    border: $border;
+    margin: 3px;
+    width: 20%;
+    float: right;
+    min-height: $min-height;
+}
+#content {
+    margin: 3px;
+    border: $border;
+    float: left;
+    width: 65%;
+    min-height: $min-height;
+}
+#goodbye {
+    margin: 3px;
+    border: $border;
+    clear: both; /* clears floated elements above */
+}
