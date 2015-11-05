@@ -1,77 +1,23 @@
-body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  color: #000000;
-  background: #FFFFFF;
-}
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-}
-
-header, footer, #content, #sidebar-left, #sidebar-right {
-  background: #EFEFEF;
-  padding: 2%;
-}
-
-header {
-  margin-bottom: 3%;
-}
-
-#content-wrapper {
-  overflow: hidden;
-  padding-bottom: 3%;
-}
-
-#content, #sidebar-left, #sidebar-right {
-  margin-bottom: -99999px;
-  padding-bottom: 99999px;
-}
-
-#content {
-  width: 40%;
-  margin-right: 3%;
-  float: left;
-}
-
-#sidebar-left, #sidebar-right {
-  width: 21%;
-  float: left;
-}
-
-#sidebar-left {
-  margin-right: 3%;
-}
-
-#body-wrapper {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-header, footer {
-  text-align: center;
-  width: 96%;
-  clear: both;
-}
-
-footer {
-  margin-top: 3%;
-}
-
-@media only screen and (max-width: 767px) {
-  #content, #sidebar-left, #sidebar-right {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 3%;
-    padding: 3% 5%;
-    width: 90%;
-    float: none;
-  }
-  #content-wrapper {
-    padding-bottom: 0;
-  }
-  footer {
-    margin-top: 0;
-  }
-}
+Backtrace:
+/Users/andrewdushane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:482:in `read'
+/Users/andrewdushane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:482:in `update_stylesheet'
+/Users/andrewdushane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/andrewdushane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/andrewdushane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/andrewdushane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:293:in `watch'
+/Users/andrewdushane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin.rb:108:in `method_missing'
+/Users/andrewdushane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
+/Users/andrewdushane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/andrewdushane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
+/Users/andrewdushane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
+/Users/andrewdushane/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/bin/sass:13:in `<top (required)>'
+/Users/andrewdushane/.rbenv/versions/2.2.3/bin/sass:23:in `load'
+/Users/andrewdushane/.rbenv/versions/2.2.3/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss"; }
