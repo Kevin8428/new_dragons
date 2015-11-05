@@ -1,5 +1,7 @@
 body{
   margin: 0;
+  background: url('Shiny_mudkip.png') no-repeat;
+  background-position: right -280%;
 }
 .content{
   background-color: blue;
