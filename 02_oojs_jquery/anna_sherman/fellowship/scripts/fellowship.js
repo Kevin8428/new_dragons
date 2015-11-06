@@ -31,7 +31,7 @@ makeMiddleEarth();
 
 
 var makeHobbits = function () {
-      $('article:nth-child(2)').append('<ul></ul>');
+      $('article:nth-child(1)').append('<ul></ul>');
       for (var hobbit in hobbits){
         $('ul').append('<li class="hobbit">' + hobbits[hobbit] + '</li>');
       }
@@ -50,3 +50,25 @@ var keepItSecretKeepItSafe = function () {
 };
 
 keepItSecretKeepItSafe();
+
+
+var makeBuddies = function () {
+  $('<aside id="asideTag"></aside>').appendTo('#middle-earth article:nth-child(2)');
+  $('#asideTag').append('<ul id="listOfBuddies"></ul>');
+  for (var dude in buddies){
+  $('#listOfBuddies').append('<li>' + buddies[dude] + '</li>');
+  }
+   // create an `aside` tag
+   // attach an `unordered list` of the `'buddies'` in the aside
+   // insert your aside as a child element of `rivendell`
+};
+
+makeBuddies();
+
+
+var beautifulStranger = function () {
+  $('#listOfBuddies li:nth-child(4)').html('Aragorn');
+   // change the `'Strider'` text to `'Aragorn'`
+};
+
+beautifulStranger();
