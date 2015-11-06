@@ -109,23 +109,25 @@ var forgeTheFellowShip = function () {
    // create a new div called `'the-fellowship'` within `rivendell`
    // add each `hobbit` and `buddy` one at a time to `'the-fellowship'`
    // after each character is added make an alert that they // have joined your party
-   var fellowship = [];
+
    $('#Rivendell').append('<div id="the-fellowship"></div>');
 
-   for (var i = 0; i < hobbits.length; i++) {
-     fellowship.push(hobbits[i]);
-   };
 
-   for (var i = 0; i < buddies.length; i++) {
-     fellowship.push(buddies[i]);
-   }
+    $('.hobbits').each(function() {
+      $(this).appendTo( "#Rivendell" );
+    });
+    $('.buddies').each(function() {
+      $(this).appendTo( "#Rivendell" );
+    });
 
-   $('.hobbits').remove();
-   $('.buddies').remove();
+    //  For some reason these alerts are firing twice.
 
-   for (var i = 0; i < fellowship.length; i += 1) {
-     $('#the-fellowship').append('<li id="' + fellowship[i] + '">' + fellowship[i] + '</li>');
-   };
+    //  for (var i = 0; i < hobbits.length; i++) {
+    //    alert(hobbits[i] + ' has joined the Fellowship!');
+    //  };
+    //  for (var i = 0; i < buddies.length; i++) {
+    //    alert(buddies[i] + ' has joined the Fellowship!');
+    //  };
 };
 
 
@@ -136,8 +138,9 @@ var theBalrog = function () {
    // change the `'Gandalf'` text to `'Gandalf the White'`
    // apply the following style to the element, make the // background 'white', add a grey border
    $('#Gandalf_the_Grey').remove();
-   $('#the-fellowship').append('<li id="Gandalf_the_White">Gandalf_the_White</li>');
-   $('#Gandalf_the_White').css({'background-color': 'white', 'border': 'grey'});
+   $('.buddies').prepend('<li id="Gandalf_the_White">Gandalf_the_White</li>');
+   $('#Gandalf_the_White').css({'background-color': 'white', 'border': '1px solid grey', 'color': 'grey'});
+
 };
 
 
@@ -148,7 +151,10 @@ var hornOfGondor = function () {
    // pop up an alert that the horn of gondor has been blown
    // Boromir's been killed by the Uruk-hai!
    // Remove `Boromir` from the Fellowship
-   alert('The Horn of Gondor has been blown!');
+
+  //  For some reason this alert is firing twice, as well.
+
+  //  alert('The Horn of Gondor has been blown!');
    $('#Boromir').remove();
 };
 
@@ -161,10 +167,8 @@ var itsDangerousToGoAlone = function (){
    // add a div with an id of `'mount-doom'` to `Mordor`
    $('#Frodo_Baggins').appendTo('#Mordor');
 
-   // What happened to the Ring?
-
    $("#Samwise_Gamgee").appendTo('#Mordor');
-   $('#Morder').append('<div id="Mount_Doom">Mount Doom</div>')
+   $('#Mordor').append('<div id="Mount_Doom">Mount Doom</div>')
 };
 
 
@@ -178,9 +182,7 @@ var weWantsIt = function () {
   $('#Mordor').append('<div id="Gollum">Gollum</div>');
   $('#the-ring').appendTo('#Gollum');
 
-  // Still don't know where the ring went.
-
-  $('#Gollum').appendTo('#Mordor')
+  $('#Gollum').appendTo('#Mount_Doom')
 };
 
 
@@ -191,8 +193,7 @@ var thereAndBackAgain = function () {
    // remove `Gollum` and `the Ring` from the document
    // Move all the `hobbits` back to `the shire`
    $('#Gollum').remove();
-   $('#Meriadoc_Brandybuck').remove();
-   $('#Peregrin_Took').remove();
+   $('.hobbits').remove();
    $('#Frodo_Baggins').remove();
    $('#Samwise_Gamgee').remove();
    makeHobbits();
