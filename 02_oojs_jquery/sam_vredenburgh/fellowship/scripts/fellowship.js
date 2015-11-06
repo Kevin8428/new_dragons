@@ -91,12 +91,27 @@ var makeBuddies = function () {
 makeBuddies();
 
 var beautifulStranger = function () {
-   // change the `'Strider'` text to `'Aragorn'`
+   //change the `'Strider'` text to `'Aragorn'`
+   var strider = $('li')[7];//need to select the DOM of strider, not in this file
+   var aragorn = "<li>Aragorn</li>"
+   console.log(strider);
+   $(strider).replaceWith(aragorn);
 };
+beautifulStranger();
 
 var leaveTheShire = function () {
    // assemble the `hobbits` and move them to `rivendell`
+   //$('.hobbit').remove();//remove hobbits from shire
+  var riv = $('article')[1];
+  var hobs = $('ul')[0];
+  console.log(hobs);
+  console.log(riv);
+
+
+    $(riv).append(hobs);
+  
 };
+leaveTheShire();
 
 var forgeTheFellowShip = function () {
    // create a new div called `'the-fellowship'` within `rivendell`
