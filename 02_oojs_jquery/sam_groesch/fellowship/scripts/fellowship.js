@@ -91,10 +91,16 @@ var itsDangerousToGoAlone = function (){
 itsDangerousToGoAlone();
 
 var weWantsIt = function () {
-  // Create a div with an id of `'gollum'` and add it to Mordor
-  // Remove `the ring` from `Frodo` and give it to `Gollum`
-  // Move Gollum into Mount Doom
+  $('article:nth-child(3)').append('<div id="gollum"></div>');
+  $('#the-ring').detach().appendTo('#gollum');
+  $('#gollum').detach().appendTo('#mount-doom');
 };
 weWantsIt();
+
+var thereAndBackAgain = function () {
+   // remove `Gollum` and `the Ring` from the document
+   // Move all the `hobbits` back to `the shire`
+};
+thereAndBackAgain();
 
 } //end of window.onload
