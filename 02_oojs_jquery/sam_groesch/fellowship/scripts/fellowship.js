@@ -98,8 +98,8 @@ var weWantsIt = function () {
 weWantsIt();
 
 var thereAndBackAgain = function () {
-   // remove `Gollum` and `the Ring` from the document
-   // Move all the `hobbits` back to `the shire`
+  $('#gollum').detach();
+  $('.hobbit').detach().appendTo('article:nth-child(1)')
 };
 thereAndBackAgain();
 
