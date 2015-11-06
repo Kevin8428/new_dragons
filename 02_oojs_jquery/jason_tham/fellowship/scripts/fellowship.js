@@ -139,9 +139,18 @@ var weWantsIt = function () {
   // Create a div with an id of `'gollum'` and add it to Mordor
   // Remove `the ring` from `Frodo` and give it to `Gollum`
   // Move Gollum into Mount Doom
+  $('<div>', {'id' : 'Gollum'}).appendTo('#mount-doom');
+  $('#Gollum').html('Gollum');
+  $('#the-ring').appendTo('#Gollum');
 };
+
+weWantsIt();
 
 var thereAndBackAgain = function () {
    // remove `Gollum` and `the Ring` from the document
    // Move all the `hobbits` back to `the shire`
+   $('#Gollum').remove();
+   $('.hobbit').appendTo('#The\\ Shire');
 };
+
+thereAndBackAgain();
