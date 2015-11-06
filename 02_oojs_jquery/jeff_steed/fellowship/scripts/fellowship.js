@@ -21,8 +21,8 @@ var body = document.body;
 
 
 //\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\
-
-
+//                              Part 1                                        \\
+//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\
 var makeMiddleEarth = function() {
   // create a section tag with an id of `middle-earth`
 
@@ -71,7 +71,8 @@ var makeMiddleEarth = function() {
 makeMiddleEarth();
 
 //\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\
-
+//                                Part 2                                      \\
+//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\
 var makeHobbits = function () {
   // display an `unordered list` of hobbits in the shire
     // (which is the second article tag on the page)
@@ -104,7 +105,8 @@ var makeHobbits = function () {
 makeHobbits();
 
 //\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\
-
+//                                  Part 3                                    \\
+//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\
 var keepItSecretKeepItSafe = function () {
   // create a div with an id of `'the-ring'`
   // give the div a class of `'magic-imbued-jewelry'`
@@ -125,3 +127,98 @@ var keepItSecretKeepItSafe = function () {
 };
 
 keepItSecretKeepItSafe();
+
+//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\
+//                                Part 4                                      \\
+//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\
+var makeBuddies = function () {
+  // create an `aside` tag
+  // attach an `unordered list` of the `'buddies'` in the aside
+
+  // Using jQuery
+  var $aside = $('<aside>');
+  var $buddies = $('<ul>');
+  for (var buddy in buddies) {
+    var $li = $('<li>');
+    $li.html(buddies[buddy]);
+    $buddies.append($li);
+  }
+  $aside.append($buddies);
+
+  //**************************************************************************//
+  // // Using vanilla JavaScript                                              //
+  // var aside = document.createElement('aside');                             //
+  // var buds = document.createElement('ul');                                 //
+  // for (var buddy in buddies) {                                             //
+  //   var li = document.createElement('li');                                 //
+  //   li.innerHTML = buddies[buddy];                                         //
+  //   console.log(li);                                                       //
+  //   buds.appendChild(li);                                                  //
+  // }                                                                        //
+  // aside.appendChild(buds);                                                 //
+  //**************************************************************************//
+
+
+  // insert your aside as a child element of `rivendell`
+
+  // Using jQuery
+  $('#middle-earth article:nth-child(2)').append($aside);
+
+
+  //**************************************************************************//
+  // // Using vanilla JavaScript                                              //
+  // var middleEarth = document.getElementById('middle-earth');               //
+  // middleEarth.firstChild.nextSibling.appendChild(aside);                   //
+  //**************************************************************************//
+};
+
+makeBuddies();
+
+//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\
+//                                 Part 5                                     \\
+//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\
+var beautifulStranger = function () {
+  // change the `'Strider'` text to `'Aragorn'`
+
+  // Using jQuery
+  $('#middle-earth article:nth-child(2) ul:first-child li:nth-child(4)').html('Aragorn')
+
+  //**************************************************************************\\
+  // // Using vanilla JavaScript                                              \\
+  // var middleEarth = document.getElementById('middle-earth');               \\
+  // var buds = middleEarth.firstChild.nextSibling.lastChild.firstChild;      \\
+  // buds.getElementsByTagName('li')[3].innerHTML = 'Aragorn';                \\
+  //**************************************************************************\\
+};
+
+beautifulStranger();
+
+//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\
+//                                   Part 6                                   \\
+//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\
+var leaveTheShire = function () {
+  // assemble the `hobbits` and move them to `rivendell`
+
+  // Using jQuery
+  var $hobbits = $('#middle-earth article:first-child ul');
+  $('#middle-earth article:nth-child(2)').append($hobbits);
+
+  //**************************************************************************\\
+  // // Using vanilla JavaScript                                              \\
+  // var middleEarth = document.getElementById('middle-earth');               \\
+  // var rivendell = middleEarth.firstChild.nextSibling;                      \\
+  // var daHobbits = middleEarth.firstChild.lastChild;                        \\
+  // rivendell.appendChild(daHobbits);                                        \\
+  //**************************************************************************\\
+};
+
+leaveTheShire();
+
+//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\
+//                                    Part 7                                  \\
+//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\
+var forgeTheFellowShip = function () {
+  // create a new div called `'the-fellowship'` within `rivendell`
+  // add each `hobbit` and `buddy` one at a time to `'the-fellowship'`
+  // after each character is added make an alert that they // have joined your party
+};
