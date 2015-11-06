@@ -1,4 +1,21 @@
+$(document).ready(function(){
   console.log("Linked.");
+
+
+  makeMiddleEarth();
+  makeHobbits();
+  keepItSecretKeepItSafe();
+  makeBuddies();
+  beautifulStranger();
+  leaveTheShire();
+  forgeTheFellowShip();
+  theBalrog();
+  hornOfGondor();
+  itsDangerousToGoAlone();
+  weWantsIt();
+  thereAndBackAgain();
+});
+
 
   // Dramatis Personae
   var hobbits = [
@@ -178,17 +195,3 @@
     }
 
  };
-
-
-  makeMiddleEarth();
-  makeHobbits();
-  keepItSecretKeepItSafe();
-  makeBuddies();
-  beautifulStranger();
-  leaveTheShire();
-  forgeTheFellowShip();
-  theBalrog();
-  hornOfGondor();
-  itsDangerousToGoAlone();
-  weWantsIt();
-  thereAndBackAgain();
