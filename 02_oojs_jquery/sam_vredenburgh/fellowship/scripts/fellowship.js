@@ -102,14 +102,12 @@ beautifulStranger();
 var leaveTheShire = function () {
    // assemble the `hobbits` and move them to `rivendell`
    //$('.hobbit').remove();//remove hobbits from shire
-  var riv = $('article')[1];
-  var hobs = $('ul')[0];
-  console.log(hobs);
-  console.log(riv);
-
-
-    $(riv).append(hobs);
-  
+  // var riv = $('article: nth-child(2) aside ul');
+  // var hobs = $('ul')[0];
+  // console.log(hobs);
+  // console.log(riv);
+  //   $(riv).append(hobs);
+  $('.hobbit').appendTo('article:nth-child(2) aside ul')
 };
 leaveTheShire();
 
@@ -117,18 +115,44 @@ var forgeTheFellowShip = function () {
    // create a new div called `'the-fellowship'` within `rivendell`
    // add each `hobbit` and `buddy` one at a time to `'the-fellowship'`
    // after each character is added make an alert that they // have joined your party
-};
+   var riv = $('article')[1];
+   var fellowship = "<div id='the-fellowship'></div>"
+
+   var fellows = $(riv).append(fellowship);
+   console.log(riv);
+   var fellows = $('li');
+   console.log(fellows[0].innerHTML);
+   for(i=0;i<fellows.length;i++){
+     $('#the-fellowship').append(fellows[i]);
+     if(i == 5) {
+       //alert("Frodo has joined The Fellowship");
+     } else {
+     //alert((fellows[i].innerHTML) + " has joined The Fellowship");
+    }
+   }
+console.log(riv);
+ };
+forgeTheFellowShip();
 
 var theBalrog = function () {
    // change the `'Gandalf'` text to `'Gandalf the White'`
    // apply the following style to the element, make the // background 'white', add a grey border
+   var gandalf = $('div li:nth-child(1)').replaceWith('<li>Gandalf the White</li>');
+   console.log(gandalf);
+   $('div li:nth-child(1)').css('background', 'white');
+   $('div li:nth-child(1)').css('border', '3px solid grey');
+
 };
+theBalrog();
 
 var hornOfGondor = function () {
    // pop up an alert that the horn of gondor has been blown
    // Boromir's been killed by the Uruk-hai!
    // Remove `Boromir` from the Fellowship
+   alert("The Horn of Gondor has been blown!");
+   $('div li:nth-child(5)').remove();
 };
+hornOfGondor();
 
 var itsDangerousToGoAlone = function (){
    // take `Frodo` and `Sam` out of the fellowship and move // them to `Mordor`
