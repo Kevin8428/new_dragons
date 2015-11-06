@@ -1,0 +1,16 @@
+/*div {
+  float: left;
+  width: 29.33%;
+  margin: 1%;
+  padding: 1%;
+}*/
+div {
+  display: inline-block;
+  width: 29.33%;
+  margin: 1%;
+  margin-left: -4px;
+  padding: 1%;
+}
+div:nth-child(odd) {
+  background: #EEE;
+}
