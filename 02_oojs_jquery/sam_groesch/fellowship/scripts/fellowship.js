@@ -1,3 +1,4 @@
+window.onload = function() {
 console.log("Linked.");
 
 // Dramatis Personae
@@ -61,12 +62,39 @@ leaveTheShire();
 var forgeTheFellowShip = function () {
   $('article:nth-child(2)').append('<div>the-fellowship</div>');
   var numberOfFollowers = $('aside>ul>li').length;
+
   for (var i = 0; i < numberOfFollowers; i++) {
     $('aside>ul>li:nth-child(1)').detach().appendTo('article>div');
-    alert($('article>div>li:last-child').html() + ' has joined the party');
+    //alert($('article>div>li:last-child').html() + ' has joined the party');
   }
-   // create a new div called `'the-fellowship'` within `rivendell`
-   // add each `hobbit` and `buddy` one at a time to `'the-fellowship'`
-   // after each character is added make an alert that they // have joined your party
 };
 forgeTheFellowShip();
+
+var theBalrog = function () {
+  $('article>div>li:nth-child(1)').html('Gandalf the White');
+  $('article>div>li:nth-child(1)').css({'background': 'white', 'border':'1px solid gray'});
+};
+theBalrog();
+
+var hornOfGondor = function () {
+    //alert('The Horn of Gondor has been blown!');
+    $('article>div>li:nth-child(5)').detach();
+};
+hornOfGondor();
+
+var itsDangerousToGoAlone = function (){
+    for (var i = 0; i < 2; i++) {
+      $('article>div>li:nth-child(5)').detach().appendTo('article:nth-child(3)');
+    }
+    $('article:nth-child(3)').append('<div id="mount-doom"></div>');
+};
+itsDangerousToGoAlone();
+
+var weWantsIt = function () {
+  // Create a div with an id of `'gollum'` and add it to Mordor
+  // Remove `the ring` from `Frodo` and give it to `Gollum`
+  // Move Gollum into Mount Doom
+};
+weWantsIt();
+
+} //end of window.onload
