@@ -53,7 +53,7 @@ var makeHobbits = function () {
      console.log(hobbitList);
      var ul = $('ul')[0];
      console.log(ul);
-     
+
      $(ul).append(hobbitList);
    }
 };
@@ -73,16 +73,22 @@ var makeBuddies = function () {
    // create an `aside` tag
    // attach an `unordered list` of the `'buddies'` in the aside
    // insert your aside as a child element of `rivendell`
-   var side = "<aside><ul></ul></aside>"
    var riv = $('article')[1];
+   var side = $(riv).append("<aside>");
+   var unordered = $(side).append("<ul>");
    console.log(riv);
-   var rivside = $(riv).append(side);
+   //var rivside = $(riv).append(side);
    for (i=0;i<buddies.length;i++){
      var buds = "<li>" + buddies[i] +"</li>";
-     var sidebuds = $(side).append(buds);
-     $(rivside).append(sidebuds);
+     var aside = $('aside')[0];
+     var ul = $('ul')[1];
+     var ubuds = $(ul).append(buds);
+     $(aside).append(ubuds);
+     //$(side).append(buds);
+     //$(rivside).append(sidebuds);
    }
 };
+makeBuddies();
 
 var beautifulStranger = function () {
    // change the `'Strider'` text to `'Aragorn'`
