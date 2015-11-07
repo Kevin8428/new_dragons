@@ -84,8 +84,7 @@ var makeBuddies = function () {
      var ul = $('ul')[1];
      var ubuds = $(ul).append(buds);
      $(aside).append(ubuds);
-     //$(side).append(buds);
-     //$(rivside).append(sidebuds);
+
    }
 };
 makeBuddies();
@@ -101,12 +100,7 @@ beautifulStranger();
 
 var leaveTheShire = function () {
    // assemble the `hobbits` and move them to `rivendell`
-   //$('.hobbit').remove();//remove hobbits from shire
-  // var riv = $('article: nth-child(2) aside ul');
-  // var hobs = $('ul')[0];
-  // console.log(hobs);
-  // console.log(riv);
-  //   $(riv).append(hobs);
+
   $('.hobbit').appendTo('article:nth-child(2) aside ul')
 };
 leaveTheShire();
@@ -125,9 +119,9 @@ var forgeTheFellowShip = function () {
    for(i=0;i<fellows.length;i++){
      $('#the-fellowship').append(fellows[i]);
      if(i == 5) {
-       //alert("Frodo has joined The Fellowship");
+       alert("Frodo has joined The Fellowship");
      } else {
-     //alert((fellows[i].innerHTML) + " has joined The Fellowship");
+     alert((fellows[i].innerHTML) + " has joined The Fellowship");
     }
    }
 console.log(riv);
@@ -157,15 +151,34 @@ hornOfGondor();
 var itsDangerousToGoAlone = function (){
    // take `Frodo` and `Sam` out of the fellowship and move // them to `Mordor`
    // add a div with an id of `'mount-doom'` to `Mordor`
+   var pals = $('li');
+   var mordor = $('article')[2];
+   var riv = $('article')[1];
+   console.log(riv);
+   for(i=4;i<6;i++) {
+     $(mordor).append(pals[i]);
+   }
+   $('article:nth-child(3)').append("<div id='mount-doom'></div>");
+
 };
+itsDangerousToGoAlone();
 
 var weWantsIt = function () {
   // Create a div with an id of `'gollum'` and add it to Mordor
   // Remove `the ring` from `Frodo` and give it to `Gollum`
   // Move Gollum into Mount Doom
+  var mordor = $('article')[2];
+  var ring = "<div id='the-ring' class='magic-imbued-jewelry'></div>";
+  $('#mount-doom').append("<div id='gollum'></div>");
+  $('#the-ring').remove();
+  $('#gollum').append(ring);
+  console.log(mordor);
 };
-
+weWantsIt();
 var thereAndBackAgain = function () {
    // remove `Gollum` and `the Ring` from the document
    // Move all the `hobbits` back to `the shire`
+   $('#gollum').remove();
+   $('.hobbit').appendTo('article:nth-child(1)');
 };
+thereAndBackAgain();
