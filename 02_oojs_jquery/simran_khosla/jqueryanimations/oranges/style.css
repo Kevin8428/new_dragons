@@ -1,0 +1,21 @@
+button {
+  font-size: 18px;
+  border: 2px dashed #BADA55;
+  background: aliceblue;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+li {
+  padding: 20px;
+  display: inline-block;
+  list-style: none;
+}
+
+#grove {
+  background-image: url(http://weknowyourdreams.com/image.php?pic=/images/tree/tree-07.jpg);
+}
+
+img {
+  width: 200px;
+}
