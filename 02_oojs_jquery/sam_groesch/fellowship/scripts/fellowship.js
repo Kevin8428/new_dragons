@@ -21,7 +21,7 @@ var lands = ['The Shire', 'Rivendell', 'Mordor'];
 var body = document.body;
 
 var makeMiddleEarth = function () {
-    $('body').prepend('<section id="middle-earth"></section>'); //Check if problems later
+    $('body').prepend('<section id="middle-earth"></section>');
     for (var i = 0; i < lands.length; i++) {
       $('#middle-earth').append('<article><h1>'+lands[i]+'</h1></article>');
     };
@@ -65,7 +65,7 @@ var forgeTheFellowShip = function () {
 
   for (var i = 0; i < numberOfFollowers; i++) {
     $('aside>ul>li:nth-child(1)').detach().appendTo('article>div');
-    //alert($('article>div>li:last-child').html() + ' has joined the party');
+    alert($('article>div>li:last-child').html() + ' has joined the party');
   }
 };
 forgeTheFellowShip();
@@ -77,7 +77,7 @@ var theBalrog = function () {
 theBalrog();
 
 var hornOfGondor = function () {
-    //alert('The Horn of Gondor has been blown!');
+    alert('The Horn of Gondor has been blown!');
     $('article>div>li:nth-child(5)').detach();
 };
 hornOfGondor();
