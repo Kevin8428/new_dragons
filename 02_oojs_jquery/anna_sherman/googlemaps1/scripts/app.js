@@ -1,17 +1,13 @@
 $(document).ready(function(){
 
-
-
-
+//asynchronous...so js executes the last function before the first finishes
 $.ajax(getLandlords);
 initialize();
-getLandlords.makeMarkers();
 
 }); //end doc ready.
 
 var latCoor = [];
 var longCoor = [];
-
 
 var getLandlords = {
   type: 'get',
@@ -24,25 +20,26 @@ var getLandlords = {
       console.log(latCoor);
       latCoor.push(data[issue].latitude);
       longCoor.push(data[issue].longitude);
-  };
-},
-  makeMarkers: function() {
-    console.log("here we are");
-    console.log(latCoor.length);
-    for (var i = 0; i < latCoor.length; i++) {
-      console.log("entered the for loop");
-      new google.maps.Marker({
-        position: new google.maps.LatLng(latCoor[i], longCoor[i]),
-        map: map,
-        animation: google.maps.Animation.DROP
-      });
-    }
+    };
+    makeMarkers();
 },
   error: function() {
     console.log("it didnt work");
   }
 }
 
+function makeMarkers() {
+  console.log("here we are");
+  console.log(latCoor.length);
+  for (var i = 0; i < latCoor.length; i++) {
+    console.log("entered the for loop");
+    new google.maps.Marker({
+      position: new google.maps.LatLng(latCoor[i], longCoor[i]),
+      map: map,
+      animation: google.maps.Animation.DROP
+    });
+  }
+}
 
 
 
