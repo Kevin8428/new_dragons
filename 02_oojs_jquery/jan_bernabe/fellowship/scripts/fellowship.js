@@ -54,5 +54,15 @@ makeHobbits();
 // add the ring as a child of `Frodo`
 
 var keepItSecretKeepItSafe = function () {
-  '<div id="the-ring" class="#magic-imbued-jewelry"></div>'
+  $('li').first().append('<div id="the-ring" class="#magic-imbued-jewelry"></div>')
+};
+keepItSecretKeepItSafe();
+
+// create an `aside` tag
+// attach an `unordered list` of the `'buddies'` in the aside
+// insert your aside as a child element of `rivendell`
+
+var makeBuddies = function () {
+  $.append'<aside></aside>'
+
 };
