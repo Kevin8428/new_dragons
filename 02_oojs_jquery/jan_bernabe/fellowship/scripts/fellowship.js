@@ -19,7 +19,7 @@ var buddies = [
 var lands = ['The Shire', 'Rivendell', 'Mordor'];
 var body = document.body;
 
-// create a section tag with an id of `middle-earth`
+// 1. create a section tag with an id of `middle-earth`
 // add each land as an `article` tag
 // inside each `article` tag include an `h1` with the name of the land
 // append `middle-earth` to your document `body`
@@ -34,7 +34,7 @@ var makeMiddleEarth = function () {
 
 makeMiddleEarth();
 
-// display an `unordered list` of hobbits in the shire
+// 2. display an `unordered list` of hobbits in the shire
 // (which is the second article tag on the page)
 // give each hobbit a class of `hobbit`
 
@@ -49,7 +49,7 @@ makeMiddleEarth();
 };
 makeHobbits();
 
-// create a div with an id of `'the-ring'`
+// 3. create a div with an id of `'the-ring'`
 // give the div a class of `'magic-imbued-jewelry'`
 // add the ring as a child of `Frodo`
 
@@ -58,15 +58,22 @@ var keepItSecretKeepItSafe = function () {
 };
 keepItSecretKeepItSafe();
 
-// create an `aside` tag
+// 4. create an `aside` tag
 // attach an `unordered list` of the `'buddies'` in the aside
 // insert your aside as a child element of `rivendell`
 
 var makeBuddies = function () {
   var buddyList = $('<ul>');
   for (var b in buddies) {
-    buddyList.append('<li>' + buddies[b] + '</li>');
+    buddyList.append('<li id="' + buddies[b] + '">' + buddies[b] + '</li>');
   }
   $("article:eq(1)").append(buddyList);
 };
 makeBuddies();
+
+// 5. change the `'Strider'` text to `'Aragorn'`
+
+var beautifulStranger = function () {
+$('#Strider').text('Aragon')
+};
+beautifulStranger();
