@@ -107,3 +107,13 @@ $('#Gandalf\\ the\\ Grey').css("border-style","solid");
 $('#Gandalf\\ the\\ Grey').css("background-color","white");
 };
 theBalrog();
+
+// pop up an alert that the horn of gondor has been blown
+// Boromir's been killed by the Uruk-hai!
+// Remove `Boromir` from the Fellowship
+
+var hornOfGondor = function () {
+  alert('The Horn of Gondor Has Been Blown!');
+  $( "#Boromir" ).remove();
+};
+hornOfGondor();
