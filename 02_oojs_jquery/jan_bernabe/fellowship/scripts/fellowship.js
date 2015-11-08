@@ -63,6 +63,10 @@ keepItSecretKeepItSafe();
 // insert your aside as a child element of `rivendell`
 
 var makeBuddies = function () {
-  $.append'<aside></aside>'
-
+  var buddyList = $('<ul>');
+  for (var b in buddies) {
+    buddyList.append('<li>' + buddies[b] + '</li>');
+  }
+  $("article:eq(1)").append(buddyList);
 };
+makeBuddies();
