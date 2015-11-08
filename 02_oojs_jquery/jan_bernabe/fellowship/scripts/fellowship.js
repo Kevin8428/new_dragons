@@ -28,7 +28,7 @@ var makeMiddleEarth = function () {
 
    $('body').append('<section id = "middle-earth"></section>');
    for (var i = 0; i < lands.length; i++) {
-   $('#middle-earth').append('<article><h1> '+ lands[i] +' </h1></article>');
+   $('#middle-earth').append('<article id="'+ lands[i] + '"><h1> '+ lands[i] +' </h1></article>');
   }
 };
 
@@ -39,7 +39,7 @@ makeMiddleEarth();
 // give each hobbit a class of `hobbit`
 
   var makeHobbits = function () {
-  var hobbitFriends = '<ul>'
+  var hobbitFriends = '<ul id="hf">'
 
   for (var h in hobbits) {
     hobbitFriends += '<li>' + hobbits[h] + '</li>';
@@ -77,3 +77,11 @@ var beautifulStranger = function () {
 $('#Strider').text('Aragon')
 };
 beautifulStranger();
+
+// 6. assemble the `hobbits` and move them to `rivendell`
+
+var leaveTheShire = function () {
+$('#hf').appendTo('#Rivendell');
+
+};
+leaveTheShire();
