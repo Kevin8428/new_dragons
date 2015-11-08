@@ -1,0 +1,43 @@
+/*div {
+  float: left;
+  width: 30%;
+  border-right: solid; 1px;
+}*/
+
+body {
+  margin: 0px;
+  display: inline-block;
+  background-image: url (http://7-themes.com/data_images/out/12/6810120-snowflakes-falling-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div {
+  width: 30%;
+}
+
+a:hover{
+  background-color: yellow;
+}
+
+div:nth-child(3) {
+  background-color: blue;
+}
+
+#dire {
+  float: right;
+}
+
+#dire img {
+  border-radius: 25px;
+  width: 85%;
+  height: 85%;
+}
+
+/*p {
+  background-color: blue;
+}*/
+
+/*.red {
+  background-color: red;
+}*/

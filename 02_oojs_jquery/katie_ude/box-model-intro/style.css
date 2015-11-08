@@ -35,6 +35,30 @@
   width: 65%;
 }
 
+#container {
+  clear: both;
+  min-width: 600px;
+  position: relative;
+}
+#left_col {
+  float: left;
+  width: 200px;
+  background: orchid;
+  position: relative;
+}
+#right_col {
+  float: right;
+  width: 200px;
+  background: magenta;
+  position: relative;
+}
+#page_content {
+  margin-left: 200px;
+  margin-right: 200px;
+  background: turquoise;
+  position: relative;
+}
+
 #goodbye {
   margin: 3px;
   border: 3px dashed red;
