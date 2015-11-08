@@ -96,3 +96,14 @@ $('ul').appendTo(the_fellowship);
 $('#Rivendell').append(the_fellowship);
 };
 forgeTheFellowShip();
+
+// 8. change the `'Gandalf'` text to `'Gandalf the White'`
+// apply the following style to the element, make the // background 'white', add a grey border
+
+var theBalrog = function () {
+$('#Gandalf\\ the\\ Grey').text('Gandalf the White');
+$('#Gandalf\\ the\\ Grey').css("border-color","grey");
+$('#Gandalf\\ the\\ Grey').css("border-style","solid");
+$('#Gandalf\\ the\\ Grey').css("background-color","white");
+};
+theBalrog();
