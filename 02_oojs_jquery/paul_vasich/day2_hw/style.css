@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+/*/////////////////////////////// //////////////////////////////// CSS
+                                  wrapper
+*/
+#content-wrapper {
+  width: 90%;
+  margin: 0 auto; }
+
+/*                                header
+*/
+header#banner-top {
+  min-height: 100px;
+  margin: 0.5%;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column; }
+
+#banner-top:hover {
+  cursor: default; }
+
+#banner-top[name='home'] {
+  margin-bottom: 300px; }
+
+/*                                logo
+*/
+#logo {
+  font-family: Arvo;
+  font-weight: 700;
+  text-align: center;
+  font-size: 32px; }
+
+/*                                navbar
+*/
+nav#navbar {
+  margin: 1% auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row; }
+
+/*                                nav buttons
+*/
+.navbutt {
+  font-family: Arvo;
+  list-style: none;
+  width: 11.25%;
+  padding-top: 0.41667%;
+  padding-bottom: 0.41667%;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  font-size: 15px; }
+
+.navbutt:hover {
+  background-color: #88F133;
+  cursor: default; }
+
+.navbutt:active {
+  background-color: #6D1; }
+
+/*                                column wrapper
+*/
+.column-wrapper {
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  margin: 0 auto;
+  font-family: PT Sans; }
+
+/*                                content (left column)
+*/
+.content {
+  width: 74.25%;
+  margin: 0.5%;
+  text-align: center;
+  padding: 1%; }
+
+/*                                column (right column) TODO: change this name
+*/
+.column {
+  width: 24.75%;
+  margin: 0.5%;
+  text-align: left;
+  padding: 1%; }
+
+/*                                footer
+*/
+#banner-bottom {
+  width: 100%;
+  padding: 1%;
+  margin: 0.5%;
+  font-family: Arvo;
+  font-size: 13px;
+  color: black;
+  text-align: center; }
+
+/*                                mockup
+*/
+.frame {
+  border: 2px solid darkgray;
+  background: lightgray; }
+
+/*# sourceMappingURL=style.css.map */
