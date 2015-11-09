@@ -11,7 +11,7 @@
   font-size: 3em;
   font-weight: bold;
   border: 3px dashed orange;
-  margin: 3px;
+  margin: 10px;
 
 }
 
@@ -19,24 +19,35 @@
   font-size: 1.5rem;
   font-weight: bold;
   border: 3px dashed purple;
-  margin: 3px;
+  margin: 10px;
 }
 
 #sidebar {
   float: right;
   border: 3px dashed green;
-  margin: 3px;
+  margin: 10px;
+  width: 25%;
+}
+
+#leftside{
+  float:left;
+  border: 3px dashed yellow;
+  margin: 10px;
   width: 25%;
 }
 #content {
   float: left;
-  border: 3px dashed navy;
-  margin:3px;
+  border: 3px solid navy;
+  margin:10px;
   width: 65%;
+  font-style: italic;
+  font-size: 35px;
+  font_color: red;
+  font-weight: bold;
 }
 
 #goodbye{
-  margin: 3px;
+  margin: 10px;
   border: 3px dashed red;
   clear: both;
 }
