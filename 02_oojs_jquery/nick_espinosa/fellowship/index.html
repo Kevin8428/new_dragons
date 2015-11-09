@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>The Fellowship of the Ring</title>
+  <link rel="stylesheet" href="./stylesheets/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="scripts/fellowship.js"></script>
+</head>
+<body>
+  <div class="overlay">
+    <div id="the-ring" class="magic-imbued-jewelry">
+    </div>
+    <section id="middle-earth">
+      <article id="the-shire">
+        <h1>The Shire</h1>
+      </article>
+      <article id="rivendell">
+        <h1>Rivendell</h1>
+        <ul class="hobbitList">
+        </ul>
+      </article>
+      <article id="mordor">
+        <h1>Mordor</h1>
+      </article>
+    </section>
+  </div>
+  <audio id="nazgul-screech" src="./media/nazgul_screech.mp3"></audio>
+  <audio id="hobbit-theme" src="./media/hobbit_theme.mp3"></audio>
+  <script charset="utf-8">
+    var nazgulScreech = function () {
+      document.getElementById("nazgul-screech").play();
+    };
+    var playTheme = function () {
+      document.getElementById("hobbit-theme").play();
+    };
+    playTheme();
+  </script>
+  <script src="./scripts/fellowship.js"></script>
+</body>
+</html>
