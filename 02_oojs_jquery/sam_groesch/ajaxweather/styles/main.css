@@ -1,0 +1,13 @@
+div {
+  width: 400px;
+  height: 400px;
+  color: rgb(0, 221, 251);
+  border: 50px solid rgb(250, 0, 255);
+  border-radius: 60px;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+  font-size: 20px;
+}
