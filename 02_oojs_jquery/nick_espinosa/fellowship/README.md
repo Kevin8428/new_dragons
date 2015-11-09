@@ -43,6 +43,8 @@ makeMiddleEarth();
 
 #### Part 2
 ```js
+
+anonymous function
 var makeHobbits = function () {
    // display an `unordered list` of hobbits in the shire
       // (which is the second article tag on the page)
