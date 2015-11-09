@@ -1,0 +1,33 @@
+body { margin: 0; }
+$wrapper-width: 90%;
+$standard-height: 10em;
+$small-margin: .5em;
+
+#wrapper {
+  width: $wrapper-width;
+}
+
+.columnsContainer, footer, header { position:
+  relative; margin: $small-margin; }
+
+.leftColumn, .rightColumn, footer, header {
+  border: 8px solid  #ccc; padding: 1.25em; }
+
+.leftColumn {
+  margin-bottom: $small-margin;
+  float: left;
+  position: relative;
+  height: $standard-height;
+  width: 50%;
+  }
+
+.rightColumn {
+  float: right;
+  position: relative;
+  height: $standard-height;
+  width: 40%;
+  }
+
+footer {
+  clear: both;
+  }
