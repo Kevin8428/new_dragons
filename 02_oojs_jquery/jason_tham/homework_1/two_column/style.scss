@@ -1,3 +1,8 @@
+$regw: 90%;
+$mar: 3px;
+$test: 3px dashed blue;
+
+
 html{
   height: 98%;
 }
@@ -7,49 +12,41 @@ body{
 }
 
 #wrapper {
-  width: 90%;
-  height: 95%;
+  width: $regw;
+  height: $regw;
   margin-left: auto;
   margin-right: auto;
 }
 
 #content {
   float: left;
-  border: 3px dashed navy;
-  margin: 3px;
+  border: $mar dashed navy;
+  margin: $mar;
   width: 65%;
   height: 75%;
 }
 
 #top{
-  border: 3px dashed orange;
+  border: $mar dashed orange;
   font-size: 3em;
   font-weight: bold;
-  margin: 3px;
+  margin: $mar;
   height: 15%;
 }
 
-#leftbar {
-  float: left;
-  border: 3px dashed green;
-  margin: 3px;
-  width: 16%;
-  height: 75%;
-}
-
-#rightbar {
+#sidebar {
   float: right;
-  border: 3px dashed green;
-  margin: 3px;
-  width: 16%;
+  border: $mar dashed green;
+  margin: $mar;
+  width: 33%;
   height: 75%;
 }
 
 #foot {
-  border: 3px dashed blue;
+  border: $mar dashed blue;
   font-size: 3em;
   font-weight: bold;
-  margin: 3px;
+  margin: $mar;
   height: 10%;
   clear: both;
 }
