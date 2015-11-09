@@ -1,0 +1,46 @@
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  /*prevents browsers from defaulting to their crappy margin settings*/
+}
+
+header{
+  background-color: rgba(103, 226, 122, 0.75);
+  width: 100%;
+  height: 200px;
+}
+
+h1{
+  float:left;
+  margin: 1rem;
+  display: none;
+}
+
+
+.box1{
+  background: repeating-radial-gradient(rgba(120, 205, 232, 0.64), rgba(94, 173, 191, 0.31) 3px, rgba(80, 205, 74, 0.64) 5px, rgba(17, 250, 179, 0.78) 10px);
+  height: 200px;
+  width: 200px;
+  left: 50px;
+  top: 100px;
+  position:absolute;
+  margin-left: 50%;
+  border-radius: 40%;
+  border: 3px dotted black;
+}
+button {
+  display: block; /*will display them vertically */
+  margin-bottom: 1%;
+  width: 75px;
+  padding: 20px;
+  background-color: rgb(235, 233, 113);
+  position: relative;
+  box-shadow: 10px 5px 5px black;
+  font-family: helvetica;
+  font-size: 1.1rem;
+  margin-left: 10px;
+  margin-top: 1%;
+  text-align: center;
+}

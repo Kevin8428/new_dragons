@@ -49,6 +49,7 @@ console.log(y);
 function transmogrifier(a, b, c) {
   var x = a*b;
   var y = Math.pow(x,c);
+//OR return Math.pow((a*b),c);
   console.log(y);
   return y;
 }
@@ -104,7 +105,7 @@ function letterReverse(string){
   var arrayOne = string.split(' ');
 //  x = string.split('').reverse().join('');  sadly doesnt work, b/c we want to keep the order of the words the same. so close.
   //console.log(arrayOne);
-  var finalStr = "";
+  var finalStr = ""; //it's good practice to declare what you want to return to help work towards that end goal.
   for (var i in arrayOne){
     //console.log(arrayOne[i]);
     x = arrayOne[i].toString();
@@ -114,7 +115,7 @@ function letterReverse(string){
     //console.log(y);
     finalStr += y + " ";
   }
-  //console.log(finalStr); -- commented out to get rid of duplication in the repMaster function.
+  console.log(finalStr);// -- commented out to get rid of duplication in the repMaster function.
   return finalStr;
 }
 
