@@ -1,0 +1,74 @@
+// variables
+$wrapper-width: 90%;
+$border: 3px solid grey;
+$float: left;
+$background: lightgrey;
+
+#wrapper {
+  width: $wrapper-width;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border: $border;
+  height: 940px;
+}
+
+#tiptop {
+  border: $border;
+  margin: 6px;
+  height: 120px;
+  background: $background;
+}
+
+#square1 {
+  float: $float;
+  border: $border;
+  margin: 6px;
+  height: 420px;
+  width: 48%;
+  background: $background;
+}
+
+#square2 {
+  float: $float;
+  border: $border;
+  margin: 6px;
+  height: 420px;
+  width: 48%;
+  background: $background;
+}
+
+#column1 {
+  float: $float;
+  margin: 10px;
+  width: 31%;
+  border: $border;
+  background: $background;
+  height: 200px;
+}
+
+#column2 {
+  float: $float;
+  margin: 10px;
+  width: 31%;
+  border: $border;
+  background: $background;
+  height: 200px;
+}
+
+#column3 {
+  float: $float;
+  margin: 10px;
+  width: 31%;
+  border: $border;
+  background: $background;
+  height: 200px;
+}
+
+#so_long{
+  clear: both;
+  background: $background;
+  height: 120px;
+  margin: 6px;
+  border: $border;
+}
