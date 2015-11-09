@@ -59,7 +59,7 @@ $(document).ready(function(){
 
      for(var hobbit in hobbits){
        console.log(hobbits[hobbit]);
-       $('#middle-earth article:first h1').append('<ul>'+hobbits[hobbit]+'</ul>');
+       $('#middle-earth article:first h1').append('<ul class="hobbit">'+hobbits[hobbit]+'</ul>');
      }
   };
 
