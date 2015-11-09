@@ -20,6 +20,10 @@ hornOfGondor();
 
 itsDangerousToGoAlone();
 
+weWantsIt();
+
+thereAndBackAgain();
+
 console.log("Linked.");
 })
 // Dramatis Personae
@@ -96,6 +100,7 @@ var forgeTheFellowship = function() {
       var fellowBuddies = $('.buddies').detach();
       $('#the-fellowship').append(fellowBuddies);
       alert($(this).text() + ' has joined the fellowship.');
+      $('#elfHobbits').remove();
     })
 }
 
@@ -111,8 +116,23 @@ var hornOfGondor = function() {
 
 var itsDangerousToGoAlone = function() {
   var Frodo = $("div ul:nth-child(1)").detach();
-  var Sam = $("div ul:nth-child(2)").detach();
+  var Sam = $("div ul:nth-child(1)").detach();
   $('article:eq(2) h1').append(Frodo);
   $('article:eq(2) h1').append(Sam);
   $('article:eq(2) h1').append("<div id='mount-doom'></div>");
+
+}
+
+var weWantsIt = function() {
+  $('article:eq(2) h1').append("<div id='gollum'></div>");
+  var theOne = $('#the-ring').detach();
+  $('#gollum').append(theOne);
+  var onTheMove = $('#gollum').detach();
+  $('#mount-doom').append(onTheMove);
+}
+
+var thereAndBackAgain = function() {
+  $('#gollum').remove();
+  var frodoHome = $('.hobbit').detach();
+  $('article:eq(0) h1').append(frodoHome);
 }
