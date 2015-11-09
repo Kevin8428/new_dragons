@@ -24,6 +24,8 @@ function bike(speeds, colour, size, price, brand) {
 //create a 'new' instance of 'bike'
 //create a new copy of bike
 //constructor is a blueprint of an object
+//component has dom element, initiator, renderer
+
 var annasBike = new bike(21, 'teal', 'small', 350, 'diamondback');
 
 var jamesBike = new bike(6, 'white', 'medium', 200, 'biria');

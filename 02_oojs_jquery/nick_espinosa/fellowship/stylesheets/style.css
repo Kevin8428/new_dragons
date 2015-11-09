@@ -36,10 +36,13 @@ body {
   background-color: rgba(0,0,0,0.3); /*dim the background*/
 }
 
-.hobbitList {
+.hobbit, .buddies {
 list-style: none;
 }
-
+.gandalf {
+  background-color: white;
+  border: 1px solid grey;
+}
 section {
   font-weight: bold;
   position: absolute;
