@@ -1,0 +1,36 @@
+body {
+  font-size: 20px; }
+
+.wrapper {
+  width: 95%; }
+
+.column {
+  width: 30%;
+  height: 3000px;
+  font-family: "Permanent Marker", cursive;
+  float: left;
+  background-color: rgba(88, 57, 38, 0.52);
+  text-align: center; }
+  .column p {
+    background-color: #235a79;
+    font-size: 1em;
+    text-align: left; }
+
+#first {
+  clear: both; }
+
+header {
+  text-align: center;
+  font-size: 3em; }
+
+p {
+  background-color: #bc00ff;
+  font-size: 2em;
+  clear: both;
+  float: left; }
+
+img {
+  clear: both;
+  float: left; }
+
+/*# sourceMappingURL=style.css.map */
