@@ -124,6 +124,17 @@ hornOfGondor();
 var itsDangerousToGoAlone = function (){
 $('#hf li').first().appendTo('#Mordor');
 $('#hf li').first().appendTo('#Mordor');
-$('#Mordor').append('<div id="mount-doom"></div>')
+$('#Mordor').append('<div id="Mount-Doom"></div>');
 };
 itsDangerousToGoAlone();
+
+// 11. Create a div with an id of `'gollum'` and add it to Mordor
+// Remove `the ring` from `Frodo` and give it to `Gollum`
+// Move Gollum into Mount Doom
+
+var weWantsIt = function () {
+$('#Mordor').append('<div id="Gollum"></div>');
+$("#the-ring").appendTo('#Gollum');
+$('#Gollum').appendTo('#Mount-Doom');
+};
+weWantsIt();
