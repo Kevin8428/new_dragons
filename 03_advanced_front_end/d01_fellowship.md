@@ -2,7 +2,8 @@
 
 Below is one of *many* solutions to this weekend's homework.
 
-```javascript$(function() {
+```javascript
+$(function() {
 
   console.log("Linked.");
 
