@@ -138,3 +138,13 @@ $("#the-ring").appendTo('#Gollum');
 $('#Gollum').appendTo('#Mount-Doom');
 };
 weWantsIt();
+
+// 12. remove `Gollum` and `the Ring` from the document
+// Move all the `hobbits` back to `the shire`
+
+var thereAndBackAgain = function () {
+$('#Gollum').remove();
+$('#hf').appendTo('#The\\ Shire');
+$('#Mordor li').appendTo('#The\\ Shire');
+};
+thereAndBackAgain();
