@@ -34,6 +34,12 @@ function addLand(){
 }
 addLand();
 
+
+//.text is equal to innerText
+
+
+
+
 //--------------------------part 2
 
 var makeHobbits = function () {
