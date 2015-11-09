@@ -14,7 +14,7 @@ $(document).ready(function(){
     itsDangerousToGoAlone();
     weWantsIt();
     thereAndBackAgain();
-    //console.log(document);
+    console.log(document);
 
 });
 
