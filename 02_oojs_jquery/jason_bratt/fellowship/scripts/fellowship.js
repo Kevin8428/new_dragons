@@ -82,8 +82,8 @@ var forgeTheFellowShip = function () {
   $('article:nth-child(2)').append('<div id="the-fellowship"></div>');
   $('article:nth-child(2) ul li').each(function(i, val) {
     $('#the-fellowship').append(val);
+    alert($(val).text() +  ' has joined the party!');
   });
-  alert('Fellowship has joined the party!');
    // create a new div called `'the-fellowship'` within `rivendell`
    // add each `hobbit` and `buddy` one at a time to `'the-fellowship'`
    // after each character is added make an alert that they // have joined your party
