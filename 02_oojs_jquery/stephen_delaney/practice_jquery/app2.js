@@ -14,7 +14,7 @@ $(document).ready(function(){ // start
   })(jQuery);
 
   //end audio function
-
+$ ("#britney1").hide();
 $ ("#britney2").hide();
 $ ("#britney3").hide();
 $ ("#britney4").hide();
@@ -23,9 +23,17 @@ $ ("#britney6").hide();
 $ ("#britney7").hide();
 $ ("#britney8").hide();
 
+//appear1
+$( "#begin" ).click(function() {
+ $.playSound('Clips/bomt');
+  $( "#britney1" ).slideDown( "slow", function() {
+  });
+$( "#begin" ).remove();
+});
+
 //appear 2
 $( "#clickme" ).click(function() {
- $.playSound('Clips/bomt');
+   $.playSound('Clips/oops');
   $( "#britney2" ).slideDown( "slow", function() {
   });
   $( "#britney1" ).animate({
@@ -40,7 +48,7 @@ $( "#clickme" ).click(function() {
 
 // appear 3
 $( "#clickme2" ).click(function() {
-   $.playSound('Clips/oops');
+$.playSound('Clips/sfy');
   $( "#britney3" ).slideDown( "slow", function() {
   });
   $( "#britney1" ).animate({
@@ -59,6 +67,7 @@ $( "#clickme2" ).click(function() {
 
 // appear 4
 $( "#clickme3" ).click(function() {
+  $.playSound('Clips/toxic');
   $( "#britney4" ).slideDown( "slow", function() {
   });
   $( "#britney1" ).animate({
@@ -80,6 +89,7 @@ $( "#clickme3" ).click(function() {
 
 // appear 5
 $( "#clickme4" ).click(function() {
+  $.playSound('Clips/gimmemore');
   $( "#britney5" ).slideDown( "slow", function() {
   });
   $( "#britney1" ).animate({
@@ -105,6 +115,7 @@ $( "#clickme4" ).click(function() {
 
 // appear 6
 $( "#clickme5" ).click(function() {
+  $.playSound('Clips/womanizer');
   $( "#britney6" ).slideDown( "slow", function() {
   });
   $( "#britney1" ).animate({
@@ -134,6 +145,7 @@ $( "#clickme5" ).click(function() {
 
 // appear 7
 $( "#clickme6" ).click(function() {
+  $.playSound('Clips/worldends');
   $( "#britney7" ).slideDown( "slow", function() {
   });
   $( "#britney1" ).animate({
@@ -167,6 +179,7 @@ $( "#clickme6" ).click(function() {
 
 // appear 8
 $( "#clickme7" ).click(function() {
+  $.playSound('Clips/workb');
   $( "#britney8" ).slideDown( "slow", function() {
   });
   $( "#britney1" ).animate({
