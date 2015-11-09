@@ -12,7 +12,7 @@ return newArray
 // Round 2 *COMPLETE*
 
 function transmogrifier(a, b, c) {
-  return Math.pow((a *b), c)
+  return Math.pow((a * b), c)
 }
 
 /* transmogrifier(5, 4, 3) = 8000
@@ -28,8 +28,9 @@ console.log(newstr);
 }
 else if (accent == 'elmer') {
   var newstr = sentence.replace(/r/g, 'w');
-console.log(newstr);
-}}
+console.log(newstr);}
+else {console.log(sentence)}
+}
 
 // Round 4 *complete*
 
