@@ -4,6 +4,13 @@ body, html {
   margin: 0;
   padding: 0;
 }
+
+.button{
+  font-size: 2rem;
+  border-radius: 3px;
+  background-color: rgb(233, 183, 71);
+}
+
 .wrapper{
   background-image: url('http://www.clipartsfree.net/vector/large/9857-tree-vector.png');
   background-size: contain;
