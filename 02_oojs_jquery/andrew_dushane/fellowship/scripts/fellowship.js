@@ -97,7 +97,7 @@ var forgeTheFellowShip = function () {
    var rivendell = $('article:nth-child(2) ul li');
    rivendell.each( function() {
      fellowshipElem.append($(this));
-     //alert($(this).text() + ' added.');
+     alert($(this).text() + ' added.');
    });
 };
 forgeTheFellowShip();
@@ -115,7 +115,7 @@ var hornOfGondor = function () {
    // pop up an alert that the horn of gondor has been blown
    // Boromir's been killed by the Uruk-hai!
    // Remove `Boromir` from the Fellowship
-   //alert('The horn of Gondor has sounded.');
+   alert('The horn of Gondor has sounded.');
    $('#middle-earth > article:nth-child(2) > div > li:nth-child(5)').remove();
 };
 hornOfGondor();
@@ -142,12 +142,25 @@ var weWantsIt = function () {
   // Move Gollum into Mount Doom
   var gollum = $('<div></div>');
   gollum.prop('id', 'gollum');
-  
+  $('#middle-earth > article:nth-child(3)').append(gollum);
+  var ring = $('.magic-imbued-jewelry')
+  ring.detach();
+  $(gollum).append(ring);
+  $('#mount-doom').append(gollum);
 };
 weWantsIt();
 
 var thereAndBackAgain = function () {
    // remove `Gollum` and `the Ring` from the document
    // Move all the `hobbits` back to `the shire`
+   $('.magic-imbued-jewelry').remove();
+   $('#gollum').remove();
+   var frodoAndSam = $('#middle-earth > article:nth-child(3) > li');
+   frodoAndSam.detach();
+   var otherHobbits = $('#middle-earth > article:nth-child(2) > div > li:nth-child(5), #middle-earth > article:nth-child(2) > div > li:nth-child(6)');
+   otherHobbits.detach();
+   var theShire = $('#middle-earth > article:nth-child(1)');
+   theShire.append(frodoAndSam);
+   theShire.append(otherHobbits);
 };
 thereAndBackAgain();
