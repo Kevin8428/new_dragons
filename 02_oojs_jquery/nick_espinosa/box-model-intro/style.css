@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#logo, #navbar, #goodbye {
+  padding: 10px;
+  margin: 5px;
+}
+
+#logo {
+  border: 3px dashed orange;
+  font-size: 3em;
+  font-weight: bold;
+}
+#navbar {
+  border: 3px dashed purple;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#sidebar {
+  border: 3px dashed green;
+  width: 25%;
+  float: right;
+  margin: 5px;
+}
+#content {
+  border: 3px dashed navy;
+  width: 63%;
+  float: left;
+}
+#one,#two,#three{
+  width: 33%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+#goodbye {
+  border: 3px dashed red;
+  clear:both;
+}
+/*header {
+  background: turquoise;
+  text-align: center;
+  padding: 15px;
+  border: 5px dotted #000;
+}
+header img {
+  width: 75%;
+  opacity: .7;
+  border: 5px dotted #000;
+  margin-bottom: 5px;
+}
+header h1 {
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+section {
+  text-align: center;
+  border: 5px dotted #000;
+  padding: 20px;
+  margin: 20px;
+  background: yellow;
+}
+section p{
+  font-weight:bold;
+  font-size: 1.5em;
+  font-style: italic;
+}
+section h1{
+font-size: 3em;
+margin: 0;
+padding: 0;
+text-shadow: 1px 1px 1px #fff;
+}*/

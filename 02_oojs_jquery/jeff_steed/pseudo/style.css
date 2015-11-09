@@ -1,0 +1,32 @@
+/*div {
+  float: left;
+  width: 30%;
+  border: 1px solid black;
+  margin: 1%;
+}*/
+
+div {
+  display: inline-block;
+  width: 30%;
+}
+
+div:nth-child(odd) {
+  color: pink;
+}
+
+/*p {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}*/
+
+.red:active {
+  background-color: rgb(187, 89, 203);
+}
+
+a:hover {
+  font-size: 3em;
+  color: pink;
+}

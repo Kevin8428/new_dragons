@@ -1,0 +1,9 @@
+/*keep the width as a percent b/c that can scale with the webpage & using the height as 'px' will allow the height to remain consistent across devices.*/
+
+#map-canvas {
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  background-color: black;
+  border: 3px solid rgb(203, 30, 113);
+}

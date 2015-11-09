@@ -1,0 +1,18 @@
+.weather, .landlord{
+  width: 300px;
+  height: 300px;
+  color: green;
+  border: 3px dotted black;
+  border-radius: 30%;
+  margin: 3rem;
+  padding: 3rem;
+  font-size: 2rem;
+}
+
+.weather{
+  float: left;
+}
+
+.landlord{
+  float: right;
+}

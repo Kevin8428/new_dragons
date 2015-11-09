@@ -1,0 +1,25 @@
+#weather {
+  width: 500;
+  height: auto;
+  color: black;
+  border: 3px dotted rgb(32, 89, 156);
+  display: none; // temp
+}
+
+#brokendocks {
+  width: 500px;
+  height: auto;
+  color: black;
+  border: 3px dotted green;
+}
+
+#sorteddocks {
+  width: 500px;
+  height: auto;
+  color: black;
+  border: 3px dotted blue;
+}
+
+/*li {
+  display: inline;
+}*/

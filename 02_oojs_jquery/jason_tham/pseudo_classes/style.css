@@ -1,0 +1,35 @@
+div{
+  display: inline-block;
+  width: 40%;
+  height: 90%;
+}
+
+p {
+  text-align: justify;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: left;
+  height: 90%;
+}
+.block{
+  display: inline;
+  background-color: blue;
+}
+.red:hover {
+  background-color: red;
+}
+
+a:hover{
+  background-color: yellow;
+}
+
+.yoshi{
+  padding: 30px;
+  width: 75%;
+
+}

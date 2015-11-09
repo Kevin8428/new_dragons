@@ -1,0 +1,220 @@
+body {
+    border-top: 3px solid #21ff6a;
+    background: #f2f2f2;
+    font-family: 'Play', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    height: 90px;
+    width: 100%;
+    background: linear-gradient(#444343, #121212);
+    overflow: hidden;
+}
+
+h1 {
+    color: #21ff6a;
+    font-family: 'Play', sans-serif;
+    font-size: 32px;
+    font-style: italic;
+    text-shadow: -3px 3px 4px #000;
+}
+
+.head-wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-top: 20px;
+    float: left;
+}
+
+.upload {
+    margin-top: 32px;
+    float: right;
+}
+
+.upload.btn a {
+    width: 90px;
+    height: 40px;
+    background: linear-gradient(#21ff6a, #44da76);
+    padding: 4px 15px;
+    border-radius: 5px 5px 5px 5px;
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 2px solid #6eff9e;
+}
+
+.upload.btnclicked a {
+    width: 90px;
+    height: 40px;
+    background: linear-gradient(#44da76, #21ff6a);
+    padding: 4px 15px;
+    border-radius: 5px 5px 5px 5px;
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 2px solid #6eff9e;
+}
+
+.arrow-wrap {
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow {
+    width: 90px;
+    height: 20px;
+}
+
+.arrow.left {
+    margin-left: 90px;
+    float: left;
+}
+
+.arrow.left img:hover {
+    width: 85px;
+    height: 85px;
+}
+
+.arrow.right img:hover {
+    width: 85px;
+    height: 85px;
+}
+
+.arrow.right {
+    margin-right: 90px;
+    float: right;
+}
+
+.arrow img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 75px;
+    transition: width 1s, height 1s;
+}
+
+.image-container {
+    height: 600px;
+    width: 100%;
+    white-space: nowrap;
+    margin-top: 30px;
+    background: gainsboro;
+    margin-bottom: 30px;
+}
+
+.frame {
+    width: 766px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+.frame span {
+    display: block;
+    position: absolute;
+    margin-left: -2px;
+    margin-top: 2px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 480px;
+    background: #000;
+    z-index: 99;
+    opacity: 0;
+    transition: opacity .5s ease;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.frame span:hover {
+    opacity:0.5;
+}
+
+.frame img {
+    border: 2px solid #000;
+    box-shadow: 0 8px 6px -6px black;
+    border-radius: 5px 5px 5px 5px;
+    max-width: 760px;
+    max-height: 480px;
+    z-index: 1;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.current {
+    display: block;
+}
+
+footer {
+    background-color: #444343;
+    width: 100%;
+    height: 266px;
+    border-top: 3px solid #21ff6a;
+}
+
+.upload-box {
+    position: absolute;
+    top: 150px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 600px;
+    height: 450px;
+    background-color: #444343;
+    z-index: 111;
+    display: none;
+}
+
+.upload-box h3 {
+    color: #21ff6a;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.upload-box p {
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.close-box {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 30px;
+    margin: 6px 10px;
+    color: red;
+    font-weight: bold;
+}
+
+.close-box a {
+    color: red;
+}
+
+
+@keyframes arrowmoveleft {
+    0%   {left:2px;}
+    100% {left:10px;}
+}
+
+@-webkit-keyframes arrowmoveleft {
+    0%   {left:2px;}
+    100% {left:10px;}
+}

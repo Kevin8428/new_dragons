@@ -1,0 +1,52 @@
+$regw: 90%;
+$mar: 3px;
+$test: 3px dashed blue;
+
+
+html{
+  height: 98%;
+}
+
+body{
+  height: 98%;
+}
+
+#wrapper {
+  width: $regw;
+  height: $regw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content {
+  float: left;
+  border: $mar dashed navy;
+  margin: $mar;
+  width: 65%;
+  height: 75%;
+}
+
+#top{
+  border: $mar dashed orange;
+  font-size: 3em;
+  font-weight: bold;
+  margin: $mar;
+  height: 15%;
+}
+
+#sidebar {
+  float: right;
+  border: $mar dashed green;
+  margin: $mar;
+  width: 33%;
+  height: 75%;
+}
+
+#foot {
+  border: $mar dashed blue;
+  font-size: 3em;
+  font-weight: bold;
+  margin: $mar;
+  height: 10%;
+  clear: both;
+}
