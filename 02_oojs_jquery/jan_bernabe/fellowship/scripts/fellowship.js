@@ -108,7 +108,7 @@ $('#Gandalf\\ the\\ Grey').css("background-color","white");
 };
 theBalrog();
 
-// pop up an alert that the horn of gondor has been blown
+// 9. pop up an alert that the horn of gondor has been blown
 // Boromir's been killed by the Uruk-hai!
 // Remove `Boromir` from the Fellowship
 
@@ -117,3 +117,13 @@ var hornOfGondor = function () {
   $( "#Boromir" ).remove();
 };
 hornOfGondor();
+
+// 10. take `Frodo` and `Sam` out of the fellowship and move // them to `Mordor`
+// add a div with an id of `'mount-doom'` to `Mordor`
+
+var itsDangerousToGoAlone = function (){
+$('#hf li').first().appendTo('#Mordor');
+$('#hf li').first().appendTo('#Mordor');
+$('#Mordor').append('<div id="mount-doom"></div>')
+};
+itsDangerousToGoAlone();
