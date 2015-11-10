@@ -1,0 +1,47 @@
+$device-phone: 320px;
+$device-tablet: 700px;
+$device-laptop: 1200px;
+
+$body-text: black;
+$body-background: aliceblue;
+$radius: 15px;
+
+.phone {
+  background: magenta;
+  display: none;
+}
+.tablet {
+  background: orange;
+  display: none;
+}
+.laptop {
+  background: yellow;
+  display: none;
+}
+
+@media (min-width: $device-phone) {
+  .phone {
+    display: block;
+  }
+}
+
+@media (min-width: $device-tablet) {
+  .phone {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+}
+
+@media (min-width: $device-laptop) {
+  .phone {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
+  .laptop {
+    display: block;
+  }
+}
