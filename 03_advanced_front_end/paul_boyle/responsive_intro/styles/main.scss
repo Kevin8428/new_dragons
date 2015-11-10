@@ -1,0 +1,99 @@
+//generic-device width:
+
+$device-phone: 320px;
+$device-tablet: 700px;
+$device-laptop: 1000px;
+$device-phone-landscape:400px;
+$device-phablet:550px;
+$device-netbook: 768px;
+$device-notebook: 900px;
+$body-text: black;
+$gray:rgb(80, 73, 62);
+$radius:15px;
+
+body {
+  background-color: $gray;
+}
+
+.phone {
+  display:none;
+  background-color:rgb(157, 65, 95);
+
+}
+
+.tablet {
+  display:none;
+  background-color:rgb(164, 124, 56);
+}
+
+.laptop {
+  display:none;
+  background-color:rgb(83, 110, 68);
+}
+
+.phone-landscape {
+  display:none;
+  background-color:rgb(83, 110, 68);
+}
+
+.phablet {
+  display:none;
+  background-color:rgb(83, 110, 68);
+}
+
+.netbook {
+  display:none;
+  background-color:rgb(83, 110, 68);
+}
+
+.notebook {
+  display:none;
+  background-color:rgb(83, 110, 68);
+}
+
+//maxWidth also works
+@media (min-width:$device-phone) {
+  .phone {
+    display:block;
+  }
+}
+
+@media (min-width: $device-tablet){
+  .phablet {
+    display:none;
+  }
+  .tablet {
+    display:block;
+  }
+}
+  @media (min-width: $device-laptop){
+    .phone {
+      display:none;
+    }
+    .tablet {
+      display:none;
+    }
+    .laptop {
+      display:block;
+    }
+  }
+
+  @media (min-width: $device-phone-landscape) {
+    .phone {
+      display:none;
+    }
+
+    .phone-landscape {
+      display:block;
+    }
+
+  }
+
+  @media (min-width: $device-phablet){
+    .phone-landscape{
+      display:none;
+    }
+    .phablet {
+      display:block;
+    }
+  }
