@@ -36,54 +36,122 @@ var makeMiddleEarth = function(){
   }
 
 }
+var $shire = $('#middle-earth > article:nth-child(1)');
 
 var makeHobbits = function(){
-  var $shire = $('#middle-earth > article:nth-child(1)');
+  var shire = $('#middle-earth > article:nth-child(1)');
+  var hobbitList = $('<ul>');
   for(var i = 0; i < hobbits.length; i++){
-    $shire.append('<li class="hobbit">'+hobbits[i]+'</li>')
+    hobbitList.append('<li class="hobbit">'+hobbits[i]+'</li>')
   }
+  shire.append(hobbitList);
 }
+
+var frodo = $('#middle-earth > article:nth-child(1) > ul > li:nth-child(1)');
+
 var keepItSecretKeepItSafe = function(){
    var theRing = '<div id="the-ring" class="magic-imbued-jewelry"></div>';
-   var $frodo = '#middle-earth > article:nth-child(1) > li:nth-child(2)';
+   var $frodo = '#middle-earth > article:nth-child(1) > ul > li:nth-child(1)';
    $($frodo).append(theRing);;
 }
 var makeBuddies = function(){
   var mkBdsHolder = '<aside></aside>';
+  var buddiesList = $('<ul>');
   $('#middle-earth > article:nth-child(2)').append(mkBdsHolder);
   var $bdsHolder = $('aside');
   for(var i = 0; i < buddies.length; i++){
-    $($bdsHolder).append('<li>'+buddies[i]+'</li>');
+    $(buddiesList).append('<li>'+buddies[i]+'</li>');
   }
+  $($bdsHolder).append(buddiesList);
 }
 var beautifulStranger = function(){
-  buddies.splice(3,1,'Aragorn');
+  var $theChosen = $('#middle-earth > article:nth-child(2) > aside > ul > li:nth-child(4)');
+  $theChosen.html('Aragorn');
 }
+
+var hobbitsAgain = $shire.find('ul').eq(0);
+var $rivendell = $('#middle-earth > article:nth-child(2)');
+
 var leaveTheShire = function(){
-  $rivendell = $('#middle-earth > article:nth-child(2)');
-  for (var i = 0; i < hobbits.length; i++) {
-    //$(hobbits[i]).appendTo($rivendell);
-    hobbits[i].appendto($rivendell);
-  }
-  //$('.hobbit').appendTo($rivendell);
+  $rivendell.append(hobbitsAgain);
 }
+
+
+var fellowshipMembers = $rivendell.find('li');
+
 var forgeTheFellowShip = function(){
-  var mkFriends = '<div ="the-fellowship"></div>';
-  $('#middle-earth > article:nth-child(2)').append(mkFriends);
+  var theFellowship = $('<div>');
+  theFellowship.prop('id', 'the-fellowship');
+  for (var i = 0; i < fellowshipMembers.length; i++) {
+    theFellowship.append(fellowshipMembers.eq(i));
+    alert(fellowshipMembers.eq(i).text + ' has joined the fellowship');
+  }
+  theFellowship.append(fellowshipMembers);
 
 }
 var theBalrog = function(){
-  //$('#middle-earth > article:nth-child(2) > aside > li:nth-child(1)').inner('Gandalf the White');
-  $('#middle-earth > article:nth-child(2) > aside > li:nth-child(1)').css('backgroundColor', 'white');
+  var portrait = {
+    backgroundColor : "white",
+    border : "grey solid 2px"
+  }
+  var GtW = 'Gandalf the White';
+  var $whitey = $('#middle-earth > article:nth-child(2) > aside > ul > li:nth-child(1)');
+  $($whitey).html(GtW);
+  $($whitey).css(portrait);
 }
-//var hornOfGondor = fucntion(){
 
-//}
+var boromir = fellowshipMembers.eq(4);
+
+var hornOfGondor = function(){
+  alert('the horn of gondor has been blown');
+  boromir.css('text-decoration', 'line-through');
+  $rivendell.append(boromir);
+}
+
+var sam = fellowshipMembers.eq(5);
+var mordor = $('#middle-earth > article:nth-child(3)');
+var itsDangerousToGoAlone = function (){
+
+  mordor.append(frodo);
+  mordor.append(sam);
+
+  var mntDoom = $('<div>');
+  mntDoom.prop('id', 'mount-doom');
+  mordor.append(mntDoom);
+}
+
+var gollum;
+var the_ring;
+
+var weWantsIt = function(){
+  gollum = $('div');
+  gollum.prop('id', 'gollum');
+
+  mordor.append(gollum);
+  the_ring = frodo.find('#the-ring').eq(0);
+  gollum.append(the_ring);
+  var mntDoom = mordor.find('#mount-doom').eq(0);
+  mntDoom.append(gollum);
+}
+
+var thereAndBackAgain = function(){
+  gollum.remove();
+  var hobbitsList = $('<ul>');
+  var hobbits = $('.hobbit');
+  for (var i = 0; i < hobbits.length; i++) {
+    hobbitsList.append(hobbits.eq(i));
+  }
+  $shire.append(hobbitsList);
+}
 makeMiddleEarth();
 makeHobbits();
 keepItSecretKeepItSafe();
-beautifulStranger();
 makeBuddies();
+beautifulStranger();
 leaveTheShire();
 forgeTheFellowShip();
 theBalrog();
+hornOfGondor();
+itsDangerousToGoAlone();
+weWantsIt();
+thereAndBackAgain();
