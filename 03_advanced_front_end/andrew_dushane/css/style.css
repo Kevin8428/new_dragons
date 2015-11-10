@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 2%;
+  width: 100%;
+  color: #FFF;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+article, aside {
+  float: left;
+  padding: 3%;
+  background: #333; }
+
+aside {
+  width: 30.5%; }
+
+article {
+  width: 35%; }
+
+.left, article {
+  margin-right: 2%; }
+
+/*# sourceMappingURL=style.css.map */
