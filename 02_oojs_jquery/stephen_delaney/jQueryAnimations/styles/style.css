@@ -1,0 +1,48 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-position: 3px 0, 3px 0, 15px -150px, 15px -150px;
+  background-color: #E04332;
+  background-repeat: repeat-x;
+  background-size: 24px 300px;
+  background-image: linear-gradient(135deg, slategray 25%, transparent 25%), linear-gradient(45deg, transparent 75%, slategray 75%),
+  linear-gradient(45deg, slategray 25%, transparent 25%),
+  linear-gradient(135deg, transparent 75%, slategray 75%);
+}
+
+header {
+  width: 100%;
+  height: 200px;
+}
+
+h1 {
+  float: right;
+  margin-right: 45%;
+  display: none;
+  color: white;
+}
+
+.box1 {
+  background: repeating-radial-gradient(green, black 5px, blue 5px, green 10px);
+  height: 200px;
+  width: 200px;
+  left: 50px;
+  top: 100px;
+  position: absolute;
+  margin-left: 50%;
+  border-radius: 50%;
+  border: 6px;
+}
+
+button {
+  display: block;
+  margin-bottom: 1%;
+  width: 100px;
+  padding: 20px;
+  background-color: rgb(15, 12, 131);
+  position: relative;
+  box-shadow: 10px 5px 5px black;
+  color: white;
+}

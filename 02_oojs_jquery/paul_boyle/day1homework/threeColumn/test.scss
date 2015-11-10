@@ -1,0 +1,75 @@
+$wrapper-width:90%;
+$standard-height:40%;
+$normal-font-size:1rem;
+
+
+
+//Sass
+
+body {
+  background-color: black;
+  color:green;
+  margin:0;
+  padding: 0;
+  text-align:center;
+}
+
+#navbar  {
+  margin:1%;
+  background-color: gray;
+  text-align:center;
+  font-size: 1rem;
+  font-size: $normal-font-size;
+}
+
+#content {
+  background-color:gray;
+  margin:1%;
+  text-align: center;
+  font-size: 1rem;
+  font-size: $normal-font-size;
+  float:left;
+  width:31%;
+  height:$standard-height;
+
+}
+
+#content2 {
+
+  background-color: gray;
+  margin: 1%;
+  text-align: center;
+  font-size: 1rem;
+  font-size: $normal-font-size;
+  float: right;
+  width:31%;
+  height: $standard-height;
+  padding:70%,0;
+}
+
+#content3 {
+
+  background-color: gray;
+  margin: 1%;
+  text-align: center;
+  font-size: 1rem;
+  font-size: $normal-font-size;
+  float: right;
+  width:31%;
+  height: $standard-height;
+  padding:70%,0;
+}
+
+#contentWrapper {
+  width:$wrapper-width;
+
+}
+
+#foot {
+  background-color: gray;
+  text-align: center;
+  font-size: 1rem;
+  font-size: $normal-font-size;
+  clear:both;
+  margin: 1%;
+}

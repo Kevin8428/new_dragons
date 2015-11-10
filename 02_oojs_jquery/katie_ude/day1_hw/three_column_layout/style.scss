@@ -1,0 +1,54 @@
+$wrapper-width: 90%;
+$border: 3px solid grey;
+
+
+#wrapper {
+  width: $wrapper-width;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border: $border;
+  height: 600px;
+}
+
+#tiptop {
+  border: $border;
+  margin: 3px;
+  height: 120px;
+  background: lightgrey
+}
+
+#column1 {
+  float: left;
+  margin: 10px;
+  width: 19%;
+  border: $border;
+  background: lightgrey;
+  height: 280px;
+}
+
+#column2 {
+  float: left;
+  margin: 10px;
+  width: 55%;
+  border: $border;
+  background: lightgrey;
+  height: 280px;
+}
+
+#column3 {
+  float: left;
+  margin: 10px;
+  width: 19%;
+  border: $border;
+  background: lightgrey;
+  height: 280px;
+}
+
+#so_long{
+  clear: both;
+  background:lightgrey;
+  height: 120px;
+  margin: 3px;
+  border: $border;
+}

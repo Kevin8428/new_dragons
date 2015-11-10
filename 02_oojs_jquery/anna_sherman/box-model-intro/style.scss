@@ -1,0 +1,114 @@
+$wrapper-width: 90%;
+$border: 3px dashed limegreen;
+$font-size: 1.5em;
+$big-font: 3em;
+$margin: auto 0px;
+
+
+$sans-serif: 'Open Sans', sans-serif;
+$serif: 'Slabo 27px', serif;
+$widefont: 'Raleway', sans-serif;
+
+
+/*ids are identifiable using a name */
+
+#wrapper {
+  width: $wrapper-width;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  border: $border;
+}
+
+#logo{
+  border: $border;
+  font-size: $big-font;
+  font-weight: bold;
+  margin: 3px;
+  font-family: $serif;
+}
+
+#navbar{
+  border: $border;
+  font-size: $font-size;
+  font-weight: bold;
+  padding: 3px;
+  margin: 3px;
+}
+
+#sidebar {
+  border: 3px dashed green;
+  float: left;
+  width:29%;
+  height: 30em;
+  font-family: $sans-serif;
+}
+
+#content{
+  border: 3px dashed navy;
+  margin: 0 auto;
+  display: inline-block;
+  width:28%;
+  height: 30em;
+}
+
+#content2{
+  float:right;
+  border:3px dashed black;
+  width:29%;
+  height: 30em;
+  font-family: $wide-font; 
+}
+
+
+#goodbye{
+  margin: 3px;
+  border: 3px dashed red;
+  clear: both; /*clear floats*/
+}
+
+/*li{
+  display: inline;
+}*/
+
+/*elements are WRAPPED */
+/*you should only ever use exact pixels if your content needs a specific height. aka never.*/
+/*we use a wrapper to contain b/c things mess up */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*header {
+  background-color: rgb(100, 252, 120);
+  border: 10px dashed;
+  padding: 20px;
+  margin-top: 20px;
+}
+img{
+  height: 50%;
+  width: 50%;
+}
+/*moat = margin */
+/*border = courtyard helps define */
+/*padding expands the courtyard. takes the edge of it and pushes it back*/
+
+
+/*section {
+  background-color: rgb(105, 171, 171);
+  border: 10px dashed;
+  padding: 20px;
+  margin: 20px;
+}*/

@@ -1,0 +1,62 @@
+/*div {
+  /*float: left;*/
+  /*width: 30%;*/
+  /*border-right: 1px solid black;
+}*/
+
+
+body{
+  text-align: center;
+}
+
+
+div{
+  display: inline-block;
+  width: 20%;
+}
+
+
+/*div:nth-child(odd){
+  background-color: rgba(105, 201, 199, 0.68);
+}*/
+
+/*div:nth-child(){
+  color: rgba(117, 68, 194, 0.99);
+}*/
+
+
+
+p{
+  background-color: rgba(59, 219, 113, 0.52);
+  border-right: 1px solid black;
+}
+
+.red {
+  background-color: red;
+}
+
+.red:hover{
+  background-color: blue;
+}
+
+a{
+  display:block;
+  width: 5%;
+  margin: 0 auto; 
+}
+
+a:active{
+  background-color: yellow;
+}
+
+img{
+  border: 3px dashed black;
+  /*display: block;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  height: 10%;
+  width: 10%;
+}
+
+
+/*you can try to set the image as a background*/

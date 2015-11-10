@@ -1,0 +1,12 @@
+div{
+  float: left;
+  display: inline-block;
+  width: 30%;
+  border: 1px solid;
+  height: 300px;
+  /*height: 300px;*/
+}
+
+p {
+  border: 1px solid;
+}

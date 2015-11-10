@@ -1,0 +1,29 @@
+
+/*body {
+    background-image:url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTqDw-Nca874kn53YmEWemZqSbayn63diEnjxbNcL7-VXW6TdTSw");
+    repeat: none;
+}*/
+div {
+    width: 20%;
+    background-color: yellow;
+    display: bl
+    float: left;
+}
+#puppy {
+    float: right;
+}
+.red {
+    background-color: red;
+}
+
+/*pseudoclasses*/
+div:nth-child(odd) {
+    border: 4px solid black;
+}
+.red:hover {
+    background-color: green;
+}
+a:active {
+    color: green;
+    font-weight: bold;
+}
