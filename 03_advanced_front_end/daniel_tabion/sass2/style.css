@@ -1,0 +1,24 @@
+body {
+  border: 3px solid white;
+  background-color: black;
+  height: 500px;
+  width: 500px; }
+  body header {
+    border: 3px solid white;
+    height: 30px;
+    width: 90%;
+    margin: auto; }
+  body .left-column {
+    float: left;
+    border: 3px solid orange;
+    height: 450px;
+    width: 28%;
+    margin: 6px; }
+  body .right-column {
+    float: right;
+    border: 3px solid orange;
+    height: 450px;
+    width: 28%;
+    margin: 6px 6px 6px 0px; }
+
+/*# sourceMappingURL=style.css.map */
