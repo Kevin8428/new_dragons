@@ -1,3 +1,5 @@
+var component = function()
+
 $(document).ready(function(){
   $article=$('article');
   $('body').css('background-color','slategray');
