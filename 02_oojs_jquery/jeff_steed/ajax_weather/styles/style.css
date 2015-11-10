@@ -1,0 +1,12 @@
+.weather {
+  width: 300px;
+  height: 300px;
+  color: #555;
+  border: 2px solid grey;
+  font-size: 2rem;
+}
+
+.weather li {
+  margin: 5px;
+  list-style: none;
+}

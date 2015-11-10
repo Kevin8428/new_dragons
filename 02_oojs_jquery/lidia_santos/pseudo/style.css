@@ -1,0 +1,41 @@
+/*div{
+  float:left;
+  width: 30%;
+  border-right: solid 3px;
+
+}*/
+h1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body{
+  background-image: url(http://i.istockimg.com/file_thumbview_approve/20440249/5/stock-illustration-20440249-dog-paw-and-bone-stroke-seamless-pattern.jpg);
+}
+img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+div{
+  margin-left: auto;
+  margin-right: auto;
+ background: white;
+  width: 30%;
+}
+
+a:hover{
+  background-color: yellow;
+}
+.red:active{
+  background-color: yellow;
+}
+
+
+/*p{
+  background-color: blue;
+}
+/*.red{
+  background-color: red;
+}
+*/

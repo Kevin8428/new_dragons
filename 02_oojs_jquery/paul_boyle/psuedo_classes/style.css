@@ -1,0 +1,51 @@
+  body {
+    /*background:url('https://drscdn.500px.org/photo/74310963/m=2048_k=1_a=1/e5724f6ef6c1fa5bce1a6973bc858bd9');*/
+    background-size: cover;
+
+    color:green;
+  }
+
+  p {
+    color: green;
+    border:solid green 1px;
+    background-color:rgba(0,0,100,1);
+  }
+
+  div {
+    display:inline-block;
+    width:30%;
+  }
+
+  .red {
+    background-color: rgba(100,0,0,1);
+  }
+
+  a:hover {
+    background-color:red;
+    color:white;
+  }
+
+  a:active {
+    background-color:limegreen;
+    color:magenta;
+  }
+
+.red:active {
+  background-color:yellow;
+}
+
+div:hover {
+  background-color: brown;
+}
+
+div:nth-child(odd) {
+  background-color:gray;
+}
+div:nth-child(even) {
+  border:dashed green 2px;
+}
+
+.picture {
+  display:block;
+  width:100%;
+}

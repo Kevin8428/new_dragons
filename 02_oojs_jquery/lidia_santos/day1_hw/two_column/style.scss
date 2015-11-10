@@ -1,0 +1,61 @@
+//variables
+
+$wrapper-width: 90%;
+$border: 3px solid black;
+$margin-left: auto;
+$margin-right: auto;
+$position: relative;
+$fontsize: 5em;
+$fontweight: bold;
+$textalign: center;
+$margin12: 12px;
+$floattoleft: left;
+$margin15: 15px;
+$margin6: 6px;
+$width65: 65%;
+$width28: 28%;
+$clearboth: both;
+
+#wrapper {
+  width: $wrapper-width;
+  margin-left:$margin-left;
+  margin-right: $margin-right;
+  position: $position;
+
+
+}
+
+#logo {
+  font-size: $fontsize;
+  font-weight: $fontweight;
+  text-align: $textalign;
+  border: $border;
+  margin:$margin12;
+
+
+}
+
+#leftcolumn{
+  float: $floattoleft;
+  border: $border;
+  margin: $margin15;
+  width: $width65;
+}
+
+#rightcolumn{
+  float: right;
+  border: $border;
+  margin: $margin15;
+  width: $width28;
+
+
+}
+
+#bottom{
+
+margin: $margin6;
+border:$border;
+clear: $clearboth;
+
+
+}

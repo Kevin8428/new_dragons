@@ -1,71 +1,72 @@
 #header {
+  background-color: grey;
   float: left;
   margin-bottom: 1%;
   padding: 1%;
-  border: 1px solid;
-}
+  border: 1px solid; }
 
 #wrapper {
   margin-left: 1%;
-  margin-right: 1%;
-}
+  margin-right: 1%; }
 
 #title {
+  background-color: grey;
   margin-bottom: 1%;
   padding: 1%;
   float: right;
   border: 1px solid;
-  width: 77.5%;
-}
+  width: 77.5%; }
 
 #leftColumn {
+  background-color: grey;
   margin-bottom: 1%;
   padding: 1%;
   float: left;
   border: 1px solid;
   clear: both;
-  width: 17%;
-}
+  width: 17%; }
 
 #content {
+  background-color: grey;
   margin-bottom: 1%;
   margin-left: 1%;
   margin-right: 1%;
   border: 1px solid;
   padding: 1%;
   float: right;
-  width: 57.3%;
-}
+  width: 57.3%; }
 
 #rightColumn {
+  background-color: grey;
   margin-bottom: 1%;
   padding: 1%;
   float: right;
   border: 1px solid;
-  width: 17%;
-}
+  width: 17%; }
 
 .small {
+  background-color: grey;
   margin-bottom: 1%;
   margin-left: 1%;
   border: 1px solid;
   padding: 1%;
   float: right;
-  width: 17%;
-}
+  width: 17%; }
 
 #footer {
+  background-color: grey;
   margin: 1%;
   padding: 1%;
   border: 1px solid;
-  clear: both;
-}
+  clear: both; }
 
 .tiny {
+  background-color: grey;
   margin-bottom: 1%;
   margin-left: 1%;
   padding: 1%;
   border: 1px solid;
   float: right;
-  width: 10%;
-}
+  width: 10%; }
+
+/*# sourceMappingURL=magazine_style.css.map */

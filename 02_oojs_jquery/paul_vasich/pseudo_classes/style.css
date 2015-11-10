@@ -1,0 +1,32 @@
+h1 {
+  font-family: PT Sans;
+}
+
+.cell {
+  font-family: Arvo;
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+
+.cell:nth-child(odd) {
+  background-color: #60B060;
+}
+
+.cell:nth-child(even) {
+  background-color: #DDEEFF
+}
+
+.cell:hover {
+  background-color: #808;
+}
+
+.cell:active {
+  background-color: hotpink;
+}
+
+.wrap {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
