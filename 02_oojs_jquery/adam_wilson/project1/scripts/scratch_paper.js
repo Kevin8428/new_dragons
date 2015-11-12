@@ -5,6 +5,7 @@ $(document).ready(function() {
 
 /////////map code///////////////////////
 //++++++++++++++ will need call initialize
+///++++++++++++can in initialize with parameters of new Lat.Lng?????? each time change states?
 ///////map constructor ////////////////
 var mapCanvas, mapOptions, map;
 function initialize() {

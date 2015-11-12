@@ -57,6 +57,7 @@ var getWeather = {
       console.log('it didnt work');
    }
 } // end getWeather object
+
 var mapCanvas, mapOptions, map;
 function initialize() {
   mapCanvas = document.getElementById('map-canvas');
@@ -79,6 +80,7 @@ function initialize() {
 
  function setMarker (lat, long) {
     console.log('test');
+    console.log(lat, long);
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(lat, long),
       map: map,

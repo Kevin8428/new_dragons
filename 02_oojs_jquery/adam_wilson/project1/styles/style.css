@@ -1,33 +1,59 @@
 
 body {
-   background-image:url(https://i.guim.co.uk/img/static/sys-images/GUARDIAN/Pix/pictures/2011/8/12/1313169612900/man-reading-library-007.jpg?w=1200&q=85&auto=format&sharp=10&s=11a614fa8e2263b550ef2306d041ffca);
+
    margin: 0;
    font-family: font-family: 'Raleway', sans-serif;
 }
 header {
-   width: 100%;
+
+   width: 98%;
    height: 50px;
    color: white;
-   background-color: rgba(47, 49, 179, .8);
-   padding: 10px; /* change to 30 */
+   background-color: rgb(47, 49, 179);
+   padding: 15px; /* change to 30 */
+   padding-left: 25px;
 }
-.quizArea {
-   width: 50%;
-   min-height: 1000px;
+/*.quizArea {
+   width: 40%;
+   float: left;
+   min-height: 400px;
    color: white;
    background-color: rgba(95, 151, 209, .8);
-   padding: 30px;
-   font-family: 'Raleway', sans-serif;
-}
+   padding-top: 30px;
+   max-height: 400px;
+
+}*/
 .quizBackground {
-   width: 400px;
-   height: 200px;
-   background-color: rgb(47, 49, 179);
-   padding: 1em;
+   width: 49%; /*of parent*/
+   height: 400px;
+   /*background-color: rgb(47, 49, 179);*/
+   background-color: rgba(95, 151, 209, .8);
+   /*padding: 1em;*/
+   /*margin-top: 1em;*/
+   padding-left: 1em;
+   font-family: 'Raleway', sans-serif;
+   color: white;
+   font-weight: bold;
+   font-size: 1.5em;
+   max-height: 400px;
+   float: left;
+
+}
+#imageLocation {
+   clear: both;
+   margin-top: .5em;
 
 }
 button {
-   font-size: 2em;
+   font-size: 1.5em;
+   font-weight: bold;
+   color: rgb(47, 49, 179);
+   background-color: white;
+   font-family: 'Raleway', sans-serif;
+   /*border: 5px solid rgb(164, 235, 178);
+   border-style: outset;*/
+   margin: .5em .5em 0 0;
+
 }
 img {
    float: left;
@@ -35,10 +61,12 @@ img {
    width: 100px;
 }
 #map-canvas {
-   width: 100%
-   margin: 0 auto;
+   width: 49%;
+   float: left;
+   margin: 0;
    background-color: black;
-   height: 400px;
+   min-height: 400px;
+   max-height: 400px;
 }
 h1, h2, h3 {
    font-family: 'Roboto Condensed', sans-serif;
