@@ -37,7 +37,6 @@ $(".btn").click(function(){
     displayQuestion();
     displayAnswer();
     displayInfo();
-    console.log(questionInc);
 });
 // end of click functions
 
@@ -62,12 +61,18 @@ function displayAnswer() { //start of display answer function
   $('#answer3').text(answerThree);
 } // end of display answer function
 
-function checkAnswer() {
 
-}
+//select the button clicked
+// grab the text of btn
+// compare to the correct answer
+
+function checkAnswer(){  // start of check answer function
+
+
+}//end of check answer function
 
 function displayInfo() { // start of display info function
-  $('#roundNumber').text('Round Number ' + questionInc);
+  $('#roundNumber').text('Round Number ' + (questionInc + 1));
 
   $('#player_one').html(playerOneName + '<br>' + 'Correct: '+ playerOneCorrect + ' Wrong: ' + playerOneWrong);
 
@@ -106,7 +111,7 @@ var questions = [ // start of questions array
   },
   {
     youtubeUrl: "https://www.youtube.com/embed/ZwJKKOa_RHg",
-    question: 'hat is the Actress name in this clip?',
+    question: 'What is the Actress name in this clip?',
     aOne: 'Selma Hayek',
     aTwo: 'Denise Richards',
     aThree: 'Claire Danes',
