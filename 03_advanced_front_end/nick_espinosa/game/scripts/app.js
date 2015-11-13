@@ -20,8 +20,8 @@ function checkAnswerAndAddScore(usersAnswer) {
     playerOneWrong ++;
     console.log('wrong');
   }
-  if (questionInc == 5) {
-    console.log('fuck');
+  if (questionInc == 6) {
+    return alert('End of the Game');
   }
 }
 
@@ -88,7 +88,7 @@ function displayAnswer() { //start of display answer function
 function displayInfo() { // start of display info function
   $('.questionNumber').text('Question # ' + (questionInc + 1));
 
-  $('#player_one').html(playerOneName + '<br>' + 'Correct: '+ '<span>' + playerOneCorrect +'</span>' + ' Wrong: ' + playerOneWrong);
+  $('#player_one').html(playerOneName + '<br>' + 'Correct: '+ '<span>' + playerOneCorrect +'</span>' + ' Wrong: ' + '<span>' + playerOneWrong + '</span>');
 
 
   // $('#player_two').html(playerTwoName + '<br>' + 'Correct: '+ playerTwoCorrect + ' Wrong: ' + playerTwoWrong);
