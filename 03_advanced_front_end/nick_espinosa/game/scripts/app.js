@@ -3,20 +3,28 @@ var questionInc = 0;
 var playerOneName = '';
 var playerOneCorrect = 0;
 var playerOneWrong = 0;
-var playerTwoName = '';
-var playerTwoCorrect = 0;
-var playerTwoWrong = 0;
+// var playerTwoName = '';
+// var playerTwoCorrect = 0;
+// var playerTwoWrong = 0;
+var currentCorrectAnswer;
 
-// var ui = {};
-// ui.questionBox = $('#question_box'); // update with $(ui.questionBox).html('new content');
-// ui.firstAnswer = $('#answer1') //
-// //questions[0].youtubeUrl
-// // var currentQuestion = questions[i]
-// // currentQuestion.youtubeUrl
+function checkAnswerAndAddScore(usersAnswer) {
+
+  if (usersAnswer == currentCorrectAnswer) {
+    // add points
+    // tell them they were right
+    console.log('right');
+  } else {
+    // tell them they were wrong
+    console.log('wrong');
+  }
+
+}
+
 
 $(document).ready(function(){ //start of document ready function
   playerOneName = prompt('please enter player 1 name');
-  playerTwoName = prompt('please enter player 2 name');
+  // playerTwoName = prompt('please enter player 2 name');
   displayQuestion();
   displayAnswer();
   displayInfo();
@@ -33,18 +41,24 @@ $(document).ready(function(){ //start of document ready function
 // });
 $(".btn").click(function(){
   // checkAnswer
+  var selectedAnswer = $(this).html();
+  checkAnswerAndAddScore(selectedAnswer);
+  console.log(selectedAnswer);
     questionInc ++;
     displayQuestion();
     displayAnswer();
     displayInfo();
+
 });
 // end of click functions
 
 }); // end of document ready function
 
+
 function displayQuestion(){ // start of display question function
   // we take in a question and change h1 text
   url = questions[questionInc].youtubeUrl;
+  currentCorrectAnswer = questions[questionInc].correctAnswer;
   var youTubeTemplate = '<iframe width="560" height="315" src="' + url + '" frameborder="0" allowfullscreen></iframe>'
   $('#youtube_box').html(youTubeTemplate);
 
@@ -66,10 +80,6 @@ function displayAnswer() { //start of display answer function
 // grab the text of btn
 // compare to the correct answer
 
-function checkAnswer(){  // start of check answer function
-
-
-}//end of check answer function
 
 function displayInfo() { // start of display info function
   $('#roundNumber').text('Round Number ' + (questionInc + 1));
@@ -77,7 +87,7 @@ function displayInfo() { // start of display info function
   $('#player_one').html(playerOneName + '<br>' + 'Correct: '+ playerOneCorrect + ' Wrong: ' + playerOneWrong);
 
 
-  $('#player_two').html(playerTwoName + '<br>' + 'Correct: '+ playerTwoCorrect + ' Wrong: ' + playerTwoWrong);
+  // $('#player_two').html(playerTwoName + '<br>' + 'Correct: '+ playerTwoCorrect + ' Wrong: ' + playerTwoWrong);
 
   var currentPlayer = playerOneName;
   $('#currentPlayer').text('Current Player: ' + currentPlayer);
