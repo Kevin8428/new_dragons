@@ -35,7 +35,7 @@
 var quizBackground = $('.quizBackground');
 var img = $('img')
 var imageLocation = $('#imageLocation');
-
+var p = $('p'); // paragraph text
 ///////////////////////////////////////
 //  replacing arrays with objects    //
 //   to bundle values by family      //
@@ -47,10 +47,41 @@ families[0] = {
    state: 'Ohio',
    lat: 39.74354,
    long: -84.07497,
-   names: ['howard', 'kathy'],
+   names: ['Howard', 'Kathy'],
    images: ['<img src="images/howard.jpg" />', '<img src="images/kathy.jpg" />']
    // streetView: 'https://www.google.com/maps/@39.7437098,-84.0753218,3a,75y,126.99h,80.3t/data=!3m6!1e1!3m4!1s7f6_BUyGt0IJeEy92jF1eA!2e0!7i13312!8i6656!6m1!1e1'
 };
+families[1] = {
+   objectName: 'Renee',
+   city: 'Chicago',
+   state: 'Illinois',
+   lat: 41.86704,
+   long: -87.62465,
+   names: ['Renee', 'Adam'],
+   images: ['<img src="images/renee.jpg" />', '<img src="images/adam.jpg" />']
+   // streetView: 'https://www.google.com/maps/@39.7437098,-84.0753218,3a,75y,126.99h,80.3t/data=!3m6!1e1!3m4!1s7f6_BUyGt0IJeEy92jF1eA!2e0!7i13312!8i6656!6m1!1e1'
+};
+families[2] = {
+   objectName: 'Anne',
+   city: 'Louisville',
+   state: 'Kentucky',
+   lat: 38.25266,
+   long: -85.75846,
+   names: ['Anne', 'Bill', 'Cole', 'Grayson'],
+   images: ['<img src="images/renee.jpg" />', '<img src="images/adam.jpg" />', '<img src="images/renee.jpg" />', '<img src="images/adam.jpg" />']
+   // streetView: 'https://www.google.com/maps/@39.7437098,-84.0753218,3a,75y,126.99h,80.3t/data=!3m6!1e1!3m4!1s7f6_BUyGt0IJeEy92jF1eA!2e0!7i13312!8i6656!6m1!1e1'
+};
+families[3] = {
+   objectName: 'Anne',
+   city: 'Louisville',
+   state: 'Kentucky',
+   lat: 38.25266,
+   long: -85.75846,
+   names: ['Anne', 'Bill', 'Cole', 'Grayson'],
+   images: ['<img src="images/renee.jpg" />', '<img src="images/adam.jpg" />', '<img src="images/renee.jpg" />', '<img src="images/adam.jpg" />']
+   // streetView: 'https://www.google.com/maps/@39.7437098,-84.0753218,3a,75y,126.99h,80.3t/data=!3m6!1e1!3m4!1s7f6_BUyGt0IJeEy92jF1eA!2e0!7i13312!8i6656!6m1!1e1'
+};
+
 
 
 
@@ -76,119 +107,93 @@ families[0] = {
  // DOM ELEMENTS ETC THEY NEED ARE LOADED    //
  // BEFORE THEY RUN !!! ///////////////////////
 
- $(document).ready(function() {
-      initMap(); // google map
+ $(document).ready ( function() {
       var inc = 0; // common incrementor
+      // initMap with first family in array coordinates
+      // initMap(families[inc].lat, families[inc].long, 8); // didn't work
+      initialize(); // initalize map
 
    /////////button action calls function/////////
-    $('button').click( function() {
+    $('button').click ( function () {
 
-      $("p").remove(); // remove previous text
+      $('.quizBackground').empty(); // empty all appended text for blank slate
+      // p.remove(); // remove previous text
 
       /////////////////////////////////////////////
-      // FOR EVERY FAMILY /////////////////////////
+      // for loop iterates thru array of family objs
       /////////////////////////////////////////////
-      for (var inc = 0; inc < families.length; inc++) {
+      // for (var inc = 0; inc < families.length; inc++) {
 
-         quizBackground.append('<p>Welcome to ' + families[inc].city + '.</p>'); // 0, 1, 2
+         // welcome to city of current family
+         quizBackground.append('<p>Welcome to ' + families[inc].city + '.</p>');
+         quizBackground.append('What State is ' + families[inc].city + ' in?');
 
-         setMarker(families[inc].lat, families[inc].lat);
+         setMarker(families[inc].lat, families[inc].long);
+         // prompt to guess state for that city
+         // refactoring will put these in sep. functions
+         var stateGuess = prompt(' ');
+         // doesn't actually verify match
+         quizBackground.append('<p>Yes! ' + families[inc].state + '.</p>');
 
-         var stateGuess = prompt('What State is ' + families[inc].city + ' in?');
-         quizBackground.append('<p>Yes! '+ families[inc].city + ' is in ' + families[inc].state + '.</p>');
+         quizBackground.append('<p>Type \'go\' to see family in ' + families[inc].state + '</p>');
+         prompt(' ');
 
-         ///// FOR AS LENGTH OF FAMILY NAMES ARRAY - 1
+         // loop through names and images arrays and append
          for (var i = 0; i < families[inc].names.length; i++) {
-            var nameGuess = prompt('Who/who else lives in ' + families[inc].city + '? (type name)');
+            quizBackground.append ('<h4> Hello ' + families[inc].names[i] + ' !</h4>' ) ;
+            imageLocation.append ( families[inc].images[i] );
+         } // end names and images for loop
 
-            // if (inc == inc)
-            // if ( nameGuess.toLocaleLowerCase() ==families[inc].names[i]){
-                  console.log('nameGuess comparison if stmnt running.');
-                  quizBackground.append('<p>Yes! ' + nameGuess + ' lives in ' + families[inc].city + '.</p>');
-                  imageLocation.append(families[inc].images[i]);
-               // } // end if statment
+         inc++;  //
 
-         } // end for loop
+         quizBackground.append('<p>Click Find Family button to Find More Family!</p>');
 
-         // END OF FAMILY NAMES /// MOVE TO NEXT FAMILY......
-         inc++;  // NEXT FAMILY OBJECT NEXT LOOP THROUGH...
-         quizBackground.append('<p>Great! Click button above to find more family!</p>');
+         // i broke this....
+         // reaching end of families for loop,
+         // inc++; // increment to next family in array
+         // quizBackground.append('<p>Click above to FIND MORE FAMILY!</p>'); // cue user to proceed
 
-      } // END FOR LOOP THAT LOOPS THRU EACH FAMILIES OBJECT
-      //////////////////////////////////////////////////////
-      //////////////////////////////////////////////////////
+      // } // end family for loop
 
+         // took this out
+         // "win game" message once "found" all families
+         // quizBackground.append('<p>The Family\'s All Here!</p>');
 
-         // if ( nameGuess.toLocaleLowerCase() == (
-         //    families[inc].name1.toLocaleLowerCase()  ||
-         //    families[inc].name2.toLocaleLowerCase()  || families[inc].child1.toLocaleLowerCase() || families[inc].child2.toLocaleLowerCase() || families[inc].child3.toLocaleLowerCase()
-         //    )
+         // initMap(41.931929, -87.698327, 4); // didn't work
 
-         // )  {
-         //    quizBackground.append('<p>Yes! ' + nameGuess + ' lives in ' + families[inc].city + '.</p>');
-         //    imageLocation.append(families[inc].image1);
-         //
-         // } else if (nameGuess.toLocaleLowerCase() == names[inc + 1].toLocaleLowerCase()) {
-         //    quizBackground.append('<p>Yes! ' + names[inc + 1] + ' lives in ' + cities[inc] + '.</p>');
-         //    imageLocation.append(images[inc + 1]); // add their img
-         // }
-         // var nameGuess = prompt('Who ELSE lives in ' + cities[inc] + '? (type name)');
-         // if (nameGuess.toLocaleLowerCase() == names[inc].toLocaleLowerCase()) {
-         //    quizBackground.append('<p>Yes! ' + names[inc] + '  lives in ' + cities[inc] + '.</p>');
-         //    imageLocation.append(images[inc]); // add their img
-         //    inc++;
-         // } else if (nameGuess.toLocaleLowerCase() == names[inc + 1].toLocaleLowerCase()) {
-         //    quizBackground.append('<p>Yes! ' + names[inc + 1] + ' lives in ' + cities[inc] + '.</p>');
-         //    imageLocation.append(images[inc + 1]); // add their img
-         //    inc++;
-         // }
+  }) // end button click function
 
-         // ONCE THRU ALL FAMILIES OBJECTS YOU  "WIN" THE "GAME"
-        quizBackground.append('The Family is All Here!');
-
-///////////////////////////////////////////
-  }) // end button click function /////////
-  /////////////////////////////////////////
+ } ); // end of doc.ready
 
 
-////////////////////////////////////////
- }); // end of doc.ready              //
- ///////////////////////////////////////
+// map code from chicago.js
+ var mapCanvas, mapOptions, map;
+ function initialize() {
+   mapCanvas = document.getElementById('map-canvas');
+   mapOptions = {
+       center: new google.maps.LatLng(39.74354, -84.07497),
+       zoom: 4,
+       mapTypeId: google.maps.MapTypeId.ROADMAP
+    } // end options
+
+  //the map object constructor takes two arguments
+  // mapCanvas and mapOptions
+   map = new google.maps.Map(mapCanvas, mapOptions);
+} // end initialize function
 
 
 
-/////// map initilize and setmarker(lat, long) from libr locator /
-var mapCanvas, mapOptions, map;
-function initMap() {
-  mapCanvas = document.getElementById('map-canvas');
-  mapOptions = {
-      center: new google.maps.LatLng(41.931929, -87.698327),
-      zoom: 4,
-      mapTypeId: google.maps.MapTypeId.HYBRID
-   } // end options
-
- //the map object constructor takes two arguments
- // mapCanvas and mapOptions
-  map = new google.maps.Map(mapCanvas, mapOptions);
-
-/// THIS IS A STATIC setMARKER, NOT A DYNAMIC ARG DRIVEN ONE
-  // var marker = new google.maps.Marker({
-  //    position: new google.maps.LatLng(41.889793, -87.627270),
-  //    map: map,
-  //    animation: google.maps.Animation.DROP
- // }) // end marker
-} // end initMap function
-
-
- function setMarker (lat, long) {
+// setMarker function takes two coordinate arguments
+ function setMarker(lat, long) {
     console.log('test');
     console.log(lat, long);
-    var marker = new google.maps.Marker({
+    // marker is a method with an obj argument?
+    var marker = new google.maps.Marker ( {
       position: new google.maps.LatLng(lat, long),
       map: map,
       animation: google.maps.Animation.DROP
   }) // end marker
- }
+ } // end setMarker
 
 
 
@@ -196,6 +201,63 @@ function initMap() {
 
 
 
+
+
+
+
+
+
+ // // i broke this...//////////////////////
+ // // map global variables
+ // var mapCanvas, mapOptions, map;
+ //
+ // // map initialize function with 3 parameters
+ // function initMap() {
+ //   mapCanvas = document.getElementById ('map-canvas');
+ //   mapOptions = {
+ //       center: new google.maps.LatLng(39.74354, -84.07497),
+ //       zoom: 4,
+ //       mapTypeId: google.maps.MapTypeId.HYBRID
+ //    } // end options
+ // } // end initMap
+ //
+ // // map object constructor (initMap) takes two arguments
+ // map = new google.maps.Map(mapCanvas, mapOptions);
+
+
+//////////////////////////////////////////
+//       RECYCLE BIN UNUSED CODE        //
+//////////////////////////////////////////
+
+// CENTER MAP AND SETMARKER AT FAMILY[INC] COORDINATES
+// initMap(families[inc].lat, families[inc].long, 8);
+// setMarker(families[inc].lat, families[inc].long);
+
+
+
+ // if ( nameGuess.toLocaleLowerCase() == (
+//    families[inc].name1.toLocaleLowerCase()  ||
+//    families[inc].name2.toLocaleLowerCase()  || families[inc].child1.toLocaleLowerCase() || families[inc].child2.toLocaleLowerCase() || families[inc].child3.toLocaleLowerCase()
+//    )
+
+// )  {
+//    quizBackground.append('<p>Yes! ' + nameGuess + ' lives in ' + families[inc].city + '.</p>');
+//    imageLocation.append(families[inc].image1);
+//
+// } else if (nameGuess.toLocaleLowerCase() == names[inc + 1].toLocaleLowerCase()) {
+//    quizBackground.append('<p>Yes! ' + names[inc + 1] + ' lives in ' + cities[inc] + '.</p>');
+//    imageLocation.append(images[inc + 1]); // add their img
+// }
+// var nameGuess = prompt('Who ELSE lives in ' + cities[inc] + '? (type name)');
+// if (nameGuess.toLocaleLowerCase() == names[inc].toLocaleLowerCase()) {
+//    quizBackground.append('<p>Yes! ' + names[inc] + '  lives in ' + cities[inc] + '.</p>');
+//    imageLocation.append(images[inc]); // add their img
+//    inc++;
+// } else if (nameGuess.toLocaleLowerCase() == names[inc + 1].toLocaleLowerCase()) {
+//    quizBackground.append('<p>Yes! ' + names[inc + 1] + ' lives in ' + cities[inc] + '.</p>');
+//    imageLocation.append(images[inc + 1]); // add their img
+//    inc++;
+// }
 
 
 

@@ -16,7 +16,7 @@
 
 
 // declare some variables outside functions for global access
-// preferably all globals at top of page 
+// preferably all globals at top of page
 
 // put all items in class of hobbits into an Array
 // var hobbits = $('.hobbit');
@@ -121,7 +121,7 @@ var forgeTheFellowship = function () {
    // iterate each li of rivList pusihing it (to end of ) > arr
    var arr = new Array();
    $('#rivendellList li').each(function() {
-     arr.push(this.innerHTML);
+     arr.push(this.innerHTML); // this refers to array push adds to
    })
    console.log(arr);
    //remove all li's from rivList
