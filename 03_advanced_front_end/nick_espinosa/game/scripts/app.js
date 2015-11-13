@@ -13,17 +13,21 @@ function checkAnswerAndAddScore(usersAnswer) {
   if (usersAnswer == currentCorrectAnswer) {
     // add points
     // tell them they were right
+    playerOneCorrect ++;
     console.log('right');
   } else {
     // tell them they were wrong
+    playerOneWrong ++;
     console.log('wrong');
   }
-
+  if (questionInc == 5) {
+    console.log('fuck');
+  }
 }
 
 
 $(document).ready(function(){ //start of document ready function
-  playerOneName = prompt('please enter player 1 name');
+  // playerOneName = prompt('please enter player 1 name');
   // playerTwoName = prompt('please enter player 2 name');
   displayQuestion();
   displayAnswer();
@@ -59,7 +63,7 @@ function displayQuestion(){ // start of display question function
   // we take in a question and change h1 text
   url = questions[questionInc].youtubeUrl;
   currentCorrectAnswer = questions[questionInc].correctAnswer;
-  var youTubeTemplate = '<iframe width="560" height="315" src="' + url + '" frameborder="0" allowfullscreen></iframe>'
+  var youTubeTemplate = '<iframe width="640" height="385px" src="' + url + '" frameborder="0" allowfullscreen></iframe>'
   $('#youtube_box').html(youTubeTemplate);
 
   var q = questions[questionInc].question;
@@ -82,7 +86,7 @@ function displayAnswer() { //start of display answer function
 
 
 function displayInfo() { // start of display info function
-  $('#roundNumber').text('Round Number ' + (questionInc + 1));
+  $('#questioNumber').text('Question Number ' + (questionInc + 1));
 
   $('#player_one').html(playerOneName + '<br>' + 'Correct: '+ playerOneCorrect + ' Wrong: ' + playerOneWrong);
 
@@ -96,15 +100,15 @@ function displayInfo() { // start of display info function
 
 var questions = [ // start of questions array
   {
-    youtubeUrl: "https://www.youtube.com/embed/wM1P7GMnd38",
+    youtubeUrl: "https://www.youtube.com/embed/wM1P7GMnd38?modestbranding=1&showinfo=0&rel=0",
     question: 'What is the actors name in the clip?',
     aOne: 'Heath Ledger',
-    aTwo: 'Owen Wilson',
+    aTwo: 'Luke Wilson',
     aThree: 'Sean Connery',
-    correctAnswer: 'Owen Wilson'
+    correctAnswer: 'Luke Wilson'
   },
   {
-    youtubeUrl: "https://www.youtube.com/embed/JmxK_pBaG4E",
+    youtubeUrl: "https://www.youtube.com/embed/JmxK_pBaG4E?modestbranding=1&showinfo=0&rel=0",
     question: 'What is the name of the CIA project Jason Bourne Works for?',
     aOne: 'Treadstone',
     aTwo: 'Coldstone',
@@ -112,7 +116,7 @@ var questions = [ // start of questions array
     correctAnswer: 'Treadstone'
   },
   {
-    youtubeUrl: "https://www.youtube.com/embed/EmUIfX9TSJs",
+    youtubeUrl: "https://www.youtube.com/embed/EmUIfX9TSJs?modestbranding=1&showinfo=0&rel=0",
     question: 'What is the name of Rico\'s squad?',
     aOne: 'Thunders',
     aTwo: 'Gremlins',
@@ -120,7 +124,7 @@ var questions = [ // start of questions array
     correctAnswer: 'Roughnecks'
   },
   {
-    youtubeUrl: "https://www.youtube.com/embed/ZwJKKOa_RHg",
+    youtubeUrl: "https://www.youtube.com/embed/ZwJKKOa_RHg?modestbranding=1&showinfo=0&rel=0",
     question: 'What is the Actress name in this clip?',
     aOne: 'Selma Hayek',
     aTwo: 'Denise Richards',
@@ -128,7 +132,7 @@ var questions = [ // start of questions array
     correctAnswer: 'Denise Richards'
   },
   {
-    youtubeUrl: "https://www.youtube.com/embed/WjeptaI2T8E",
+    youtubeUrl: "https://www.youtube.com/embed/WjeptaI2T8E?modestbranding=1&showinfo=0&rel=0",
     question: 'What is Johny-5\'s favorite thing?',
     aOne: 'Input',
     aTwo: 'Books',
@@ -136,11 +140,19 @@ var questions = [ // start of questions array
     correctAnswer: 'Input'
   },
   {
-    youtubeUrl: "https://www.youtube.com/embed/ylRqJapI0wQ",
+    youtubeUrl: "https://www.youtube.com/embed/ylRqJapI0wQ?modestbranding=1&showinfo=0&rel=0",
     question: 'What is the actors name that plays Floyd?',
     aOne: 'Adam Sandler',
     aTwo: 'Norm McDonald',
     aThree: 'Jim Carrey',
     correctAnswer: 'Jim Carrey'
-  }
+  },
+  {
+  youtubeUrl: "",
+  question: 'End of the fucking game',
+  aOne: 'fuck',
+  aTwo: 'fuck',
+  aThree: 'fuck',
+  correctAnswer: 'fuck'
+}
 ] // end of questions array
