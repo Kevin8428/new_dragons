@@ -1,12 +1,14 @@
 $bgred: rgb(204,0,0);
+$bgredhover: #611A1A;
 $bgmoz: -moz-linear-gradient(-45deg,  rgba(204,0,0,1) 0%, rgba(204,0,0,1) 100%);
-$bgwebkt: -webkit-linear-gradient(-45deg,  rgba(204,0,0,1) 0%,rgba(204,0,0,1) 100%);
+$bgmozhover: -moz-linear-gradient(35deg, #611A1A 0%, #cc0000 100%);
+$bgwebkit: -webkit-linear-gradient(-45deg,  rgba(204,0,0,1) 0%,rgba(204,0,0,1) 100%);
+$bgwebkithover: -webkit-linear-gradient(35deg, #611A1A 0%, #cc0000 100%);
 $bglinear: linear-gradient(135deg,  rgba(204,0,0,1) 0%,rgba(204,0,0,1) 100%);
+$bglinearhover: linear-gradient(135deg, #611A1A 0%, #cc0000 100%);
 #youtube_box{
   display: block;
   color: white;
-  clear: both;
-  padding: 20px;
   width: 740px;
   margin: 0 auto;
   text-align: center;
@@ -36,6 +38,13 @@ $bglinear: linear-gradient(135deg,  rgba(204,0,0,1) 0%,rgba(204,0,0,1) 100%);
   margin: 30px;
   text-align: center;
 }
+#currentPlayer{
+  display: none;
+}
+.questionNumber{
+  padding: 15px;
+text-align: center;
+}
 ul{
   list-style: none;
 }
@@ -49,20 +58,25 @@ ul li{
 .btn {
   background: $bgred;
   background: $bgmoz;
-  background: $bgwebkt;
+  background: $bgwebkit;
   background: $bglinear;
-  border-radius: 5px;
+  border-radius: 8px;
   color: #fff;
   border: 1px solid #aaa;
-  height: 115px;
+  height: 125px;
   width: 175px;
   display: inline;
   font-size: 1.2em;
   font-weight: 900;
   padding: 0;
   margin: 0;
+  text-shadow: 1px 1px 1px #000;
 }
 .btn:hover {
+  background: $bgredhover;
+  background: $bgmozhover;
+  background: $bgwebkithover;
+  background: $bglinearhover;
   color:#FFF010;
 }
 h1{
@@ -96,7 +110,7 @@ header {
   padding: 20px 0 0 0;
   background: $bgred;
   background: $bgmoz;
-  background: $bgwebkt;
+  background: $bgwebkit;
   background: $bglinear;
   box-shadow: 0px 3px 3px rgba(0,0,0,0.4);
   border-bottom: 1px solid #FF6C6C;
@@ -112,4 +126,17 @@ footer {
   background: linear-gradient(to bottom,  rgba(204,204,204,1) 0%,rgba(238,238,238,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=0 );
   border-top: 1px #fff;
+  text-align: center;
+}
+#score_box h4{
+  font-size:2.5em;
+  color: #ff0000;
+  font-weight: 900;
+  text-shadow: 1px 1px 1px #000;
+  line-height: 1.7em;
+}
+h4 span{
+  color:#000;
+  margin-right: 20px;
+
 }

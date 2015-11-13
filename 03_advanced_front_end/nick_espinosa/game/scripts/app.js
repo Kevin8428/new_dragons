@@ -86,9 +86,9 @@ function displayAnswer() { //start of display answer function
 
 
 function displayInfo() { // start of display info function
-  $('#questioNumber').text('Question Number ' + (questionInc + 1));
+  $('.questionNumber').text('Question # ' + (questionInc + 1));
 
-  $('#player_one').html(playerOneName + '<br>' + 'Correct: '+ playerOneCorrect + ' Wrong: ' + playerOneWrong);
+  $('#player_one').html(playerOneName + '<br>' + 'Correct: '+ '<span>' + playerOneCorrect +'</span>' + ' Wrong: ' + playerOneWrong);
 
 
   // $('#player_two').html(playerTwoName + '<br>' + 'Correct: '+ playerTwoCorrect + ' Wrong: ' + playerTwoWrong);
@@ -101,7 +101,7 @@ function displayInfo() { // start of display info function
 var questions = [ // start of questions array
   {
     youtubeUrl: "https://www.youtube.com/embed/wM1P7GMnd38?modestbranding=1&showinfo=0&rel=0",
-    question: 'What is the actors name in the clip?',
+    question: 'What is the name of the actor in this clip?',
     aOne: 'Heath Ledger',
     aTwo: 'Luke Wilson',
     aThree: 'Sean Connery',
@@ -109,23 +109,23 @@ var questions = [ // start of questions array
   },
   {
     youtubeUrl: "https://www.youtube.com/embed/JmxK_pBaG4E?modestbranding=1&showinfo=0&rel=0",
-    question: 'What is the name of the CIA project Jason Bourne Works for?',
+    question: 'What is the name of the CIA project Jason Bourne was recruited for?',
     aOne: 'Treadstone',
     aTwo: 'Coldstone',
     aThree: 'Black-Ops',
     correctAnswer: 'Treadstone'
   },
   {
-    youtubeUrl: "https://www.youtube.com/embed/EmUIfX9TSJs?modestbranding=1&showinfo=0&rel=0",
-    question: 'What is the name of Rico\'s squad?',
-    aOne: 'Thunders',
-    aTwo: 'Gremlins',
-    aThree: 'Roughnecks',
-    correctAnswer: 'Roughnecks'
+    youtubeUrl: "https://www.youtube.com/embed/gHBhKbF2xMA?modestbranding=1&showinfo=0&rel=0",
+    question: 'Why did Wesley Snipes go to prison?',
+    aOne: 'Wire Fraud',
+    aTwo: 'Insider Trading',
+    aThree: 'Tax Evasion',
+    correctAnswer: 'Tax Evasion'
   },
   {
     youtubeUrl: "https://www.youtube.com/embed/ZwJKKOa_RHg?modestbranding=1&showinfo=0&rel=0",
-    question: 'What is the Actress name in this clip?',
+    question: 'What is the name of the actress in this clip?',
     aOne: 'Selma Hayek',
     aTwo: 'Denise Richards',
     aThree: 'Claire Danes',
