@@ -1,0 +1,142 @@
+$bgred: rgb(204,0,0);
+$bgredhover: #611A1A;
+$bgmoz: -moz-linear-gradient(-45deg,  rgba(204,0,0,1) 0%, rgba(204,0,0,1) 100%);
+$bgmozhover: -moz-linear-gradient(35deg, #611A1A 0%, #cc0000 100%);
+$bgwebkit: -webkit-linear-gradient(-45deg,  rgba(204,0,0,1) 0%,rgba(204,0,0,1) 100%);
+$bgwebkithover: -webkit-linear-gradient(35deg, #611A1A 0%, #cc0000 100%);
+$bglinear: linear-gradient(135deg,  rgba(204,0,0,1) 0%,rgba(204,0,0,1) 100%);
+$bglinearhover: linear-gradient(135deg, #611A1A 0%, #cc0000 100%);
+#youtube_box{
+  display: block;
+  color: white;
+  width: 740px;
+  margin: 0 auto;
+  text-align: center;
+}
+#title{
+  font-size:2em;
+  font-weight: 900;
+  color: #FFF010;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+  margin: 8px 0 0;
+  padding: 0;
+}
+#title span{
+  color:black;
+  margin-right: 5px;
+  font-style: normal;
+}
+#title .tube{
+  color: white;
+  background: red;
+  border-radius: 9px;
+  padding: 3px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+
+}
+#answer_box {
+  margin: 30px;
+  text-align: center;
+}
+#currentPlayer{
+  display: none;
+}
+.questionNumber{
+  padding: 15px;
+text-align: center;
+}
+ul{
+  list-style: none;
+}
+ul li{
+  display: inline;
+  margin-right: 15px;
+}
+#question_box {
+  font-style: italic;
+}
+.btn {
+  background: $bgred;
+  background: $bgmoz;
+  background: $bgwebkit;
+  background: $bglinear;
+  border-radius: 8px;
+  color: #fff;
+  border: 1px solid #aaa;
+  height: 125px;
+  width: 175px;
+  display: inline;
+  font-size: 1.2em;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+  text-shadow: 1px 1px 1px #000;
+}
+.btn:hover {
+  background: $bgredhover;
+  background: $bgmozhover;
+  background: $bgwebkithover;
+  background: $bglinearhover;
+  color:#FFF010;
+}
+h1{
+  font-size: 2.2em;
+  font-weight: 900;
+  text-align: center;
+}
+body,html {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(45deg,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -webkit-linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+  background: linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=1 );
+}
+h2 {
+  font-weight: 400;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  height: 75px;
+  padding: 20px 0 0 0;
+  background: $bgred;
+  background: $bgmoz;
+  background: $bgwebkit;
+  background: $bglinear;
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.4);
+  border-bottom: 1px solid #FF6C6C;
+}
+footer {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background: rgb(204,204,204);
+  background: -moz-linear-gradient(top,  rgba(204,204,204,1) 0%, rgba(238,238,238,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(238,238,238,1) 100%);
+  background: linear-gradient(to bottom,  rgba(204,204,204,1) 0%,rgba(238,238,238,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=0 );
+  border-top: 1px #fff;
+  text-align: center;
+}
+#score_box h4{
+  font-size:2.5em;
+  color: #ff0000;
+  font-weight: 900;
+  text-shadow: 1px 1px 1px #000;
+  line-height: 1.7em;
+}
+h4 span{
+  color:#000;
+  margin-right: 20px;
+
+}
