@@ -22,20 +22,20 @@
          //so i can format exactly
          // so appearance more animated/fun
 
-
-
+// maybe do /////////////////////////////////
+// var ui = {}; // object to hold dom variables
+// ++++++++++++++ put vars and arrays below in ui object w/ ui.varName
 
 
 
 /////////////////////////////////////////////////
 // DOM element variables
-// var ui = {}; // object to hold dom variables
-// ++++++++++++++ put vars and arrays below in ui object w/ ui.varName
-// var quizArea = $('.quizArea');
 var quizBackground = $('.quizBackground');
 var img = $('img')
 var imageLocation = $('#imageLocation');
 var p = $('p'); // paragraph text
+
+
 ///////////////////////////////////////
 //  replacing arrays with objects    //
 //   to bundle values by family      //
@@ -86,7 +86,7 @@ families[3] = {
 
 
 /////////////////////////////////////////////////
-// declare arrays
+// declare arrays no more!
 // var names = ['Kathy', 'Howard', 'Renee', 'Adam'];
 // var cities = ['Dayton', 'Chicago'];
 // var states = ['Ohio', 'Illinois'];
@@ -124,11 +124,13 @@ families[3] = {
       /////////////////////////////////////////////
       // for (var inc = 0; inc < families.length; inc++) {
 
-         // welcome to city of current family
+         // welcome to city
          quizBackground.append('<p>Welcome to ' + families[inc].city + '.</p>');
          quizBackground.append('What State is ' + families[inc].city + ' in?');
 
+         // setMarker
          setMarker(families[inc].lat, families[inc].long);
+
          // prompt to guess state for that city
          // refactoring will put these in sep. functions
          var stateGuess = prompt(' ');
