@@ -40,6 +40,17 @@ p transmogrifier(42, 13, 7)
 #
 # toonify("daffy", "so you smell like sausage")
 # #=> "tho you thmell like thauthage"
+def toonify(accent, sentence)
+  case accent
+  when "daffy"
+    sentence = sentence.gsub "s" ,"th"
+  when "elmer"
+    sentence = sentence.gsub "r" , "w"
+  end
+  sentence
+end
+p toonify("daffy", "so you smell like sausage")
+p toonify("elmer", "be very quiet, we're hunting rabbits")
 # Round 4
 #
 # Write a function wordReverse that accepts a single argument, a string. The method should return a string with the order of the words reversed. Don't worry about punctuation.
