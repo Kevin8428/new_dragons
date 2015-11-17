@@ -1,0 +1,9 @@
+.weather {
+  width: 50%;
+  margin: 1em auto;
+  color: #333;
+  border: 1px solid #333;
+  list-style: none;
+  padding: 10px;
+  line-height: 1.5em;
+}

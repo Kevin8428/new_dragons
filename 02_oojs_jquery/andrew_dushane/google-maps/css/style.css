@@ -1,0 +1,24 @@
+/*#map-canvas {
+  width: 80%;
+  margin: 0 auto;
+  background-color: black;
+  border: 1px solid #333;
+  height: 800px;
+}*/
+#movies-container {
+  width: 90%;
+  margin: 0 auto;
+}
+#movies-container div {
+  width: 20%;
+  margin: 0 5% 5% 0;
+  float: left;
+  clear: right;
+}
+#movies-container div:nth-child(4n + 4) {
+  clear: left;
+}
+#movies-container img {
+  width: 100%;
+}
+#movies-container

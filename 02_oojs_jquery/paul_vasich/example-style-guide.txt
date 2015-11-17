@@ -1,0 +1,9 @@
+Headline Text <h1>         300%
+
+Body Text     <p>          100% -- Baseline
+
+Nav Items     <li>         75 - 125%
+
+Sub-Header    <h2>         150%
+
+Byline        <figcaption> 75%

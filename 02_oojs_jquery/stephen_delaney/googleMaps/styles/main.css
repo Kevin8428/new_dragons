@@ -1,0 +1,19 @@
+/*#thisisblank {
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  background-color: black;
+  border: 3px dotted rgb(244, 64, 56);
+  border-radius: 10%;
+  position: 0, 0, 0, 0
+}*/
+
+#map-canvas {
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  background-color: black;
+  border: 3px dotted rgb(244, 64, 56);
+  border-radius: 10%;
+  display: none;
+}
