@@ -4,8 +4,13 @@
 # Write a function lengths that accepts a single parameter as an argument, namely an array of strings. The function should return an array of numbers. Each number in the array should be the length of the corresponding string.
 # words = ["hello", "what", "is", "up", "dude"]
 # lengths(words)  # => [5, 4, 2, 2, 4]
-
-
+def lengths(arr)
+  result = []
+  arr.each { |e| result.push(e.length) }
+  result
+end
+words = ["hello", "what", "is", "up", "dude"]
+p lengths(words)  # => [5, 4, 2, 2, 4]
 
 # Round 2
 #
