@@ -33,7 +33,7 @@ teachers = ["James", "Adriana", "The other James who goes by Jim"]
 #   p teacher               # Recommended when you have a lot of stuff to do
 # end
 
-# teachers.map{|teacher|p teacher} # Maps changes on each item in array. Like .each but it actually changes it
+# teachers.map{|teacher|p teacher} # Map returns a new array while each does not
 # Ex:
 teachers.each{|teacher|p teacher.upcase}
 p teachers
