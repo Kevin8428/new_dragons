@@ -21,6 +21,15 @@ p lengths(words)  # => [5, 4, 2, 2, 4]
 # transmogrifier(5, 4, 3)
 # transmogrifier(13, 12, 5)
 # transmogrifier(42, 13, 7)
+
+def transmogrifier(a1,a2,a3)
+  (a1 * a2) ** a3
+end
+p transmogrifier(5, 4, 3)
+p transmogrifier(13, 12, 5)
+p transmogrifier(42, 13, 7)
+
+
 # Round 3
 #
 # Write a function called toonify that takes two parameters, accent and sentence.
