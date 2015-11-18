@@ -93,3 +93,14 @@ p letterReverse("Put Hans back on the line")
 # longest(["oh", "good", "grief"]) # => "grief"
 # longest(["Nothing" , "takes", "the", "taste", "out", "of", "peanut", "butter", "quite", "like", "unrequited", "love"])
 # # => "unrequited"
+def longest(arr)
+  result = arr.first
+  arr.each { |e| if e.length > result.length
+    result = e
+  end  }
+  result
+end
+
+p longest(["oh", "good", "grief"]) # => "grief"
+p longest(["Nothing" , "takes", "the", "taste", "out", "of", "peanut", "butter", "quite", "like", "unrequited", "love"])
+# => "unrequited"
