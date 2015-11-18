@@ -1,0 +1,9 @@
+body {
+  background-color: turquoise;
+  color: white;
+}
+
+.sprite {
+  height: 200px;
+  width: 200px;
+}

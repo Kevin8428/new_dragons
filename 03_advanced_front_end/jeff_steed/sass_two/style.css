@@ -1,0 +1,24 @@
+.wrapper {
+  width: 96%;
+  height: 780px;
+  background: coral;
+  margin: 0 auto; }
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  height: 210px; }
+
+.column {
+  height: 200px;
+  width: 30%;
+  margin: 0.5% 1.5% 0 1.5%;
+  background-color: aliceblue;
+  float: left;
+  border: 2px solid grey; }
+  .column p {
+    text-align: center;
+    margin-top: 22%;
+    padding: 0; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,170 @@
+// Generic device widths:
+
+$device-phone: 400px;
+$device-phone-landscape: 420px;
+$device-phablet: 550px;
+$device-tablet: 700px;
+$device-netbook: 768px;
+$device-notebook: 900px;
+$device-laptop: 1200px;
+
+$body-text: black;
+$body-background: aliceblue;
+$radius: 15px;
+
+body {
+  font-family: sans-serif;
+}
+
+div {
+  height: 100px;
+  border-radius: $radius;
+  text-align: center;
+}
+
+.phone {
+  display: none;
+  background: magenta;
+}
+
+.phone-landscape {
+  display: none;
+  background: rgb(85, 181, 94);
+}
+
+.phablet {
+  display: none;
+  background: rgb(183, 187, 93);
+}
+
+.tablet {
+  display: none;
+  background: orange;
+}
+
+.netbook {
+  display: none;
+  background: rgb(174, 200, 213);
+}
+
+.notebook {
+  display: none;
+  background: rgb(244, 0, 165);
+}
+
+.laptop {
+  display: none;
+  background: yellow;
+}
+
+// @media (min-width: 320px) {}
+@media (min-width: $device-phone) {
+  .phone {
+    display: block;
+  }
+}
+
+// @media (min-width: 400px) {}
+@media (min-width: $device-phone-landscape) {
+  .phone {
+    display: none;
+  }
+  .phone-landscape {
+    display: block;
+  }
+}
+
+// @media (min-width: 550px) {}
+@media (min-width: $device-phablet) {
+  .phone {
+    display: none;
+  }
+  .phone-landscape {
+    display: none;
+  }
+  .phablet {
+    display: block;
+  }
+}
+
+// @media (min-width: 700px) {}
+@media (min-width: $device-tablet) {
+  .phone {
+    display: none;
+  }
+  .phone-landscape {
+    display: none;
+  }
+  .phablet {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+}
+
+// @media (min-width: 768px) {}
+@media (min-width: $device-netbook) {
+  .phone {
+    display: none;
+  }
+  .phone-landscape {
+    display: none;
+  }
+  .phablet {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
+  .netbook {
+    display: block;
+  }
+}
+
+// @media (min-width: 900px) {}
+@media (min-width: $device-notebook) {
+  .phone {
+    display: none;
+  }
+  .phone-landscape {
+    display: none;
+  }
+  .phablet {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
+  .netbook {
+    display: none;
+  }
+  .notebook {
+    display: block;
+  }
+}
+
+// @media (min-width: 1200px) {}
+@media (min-width: $device-laptop) {
+  .phone {
+    display: none;
+  }
+  .phone-landscape {
+    display: none;
+  }
+  .phablet {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
+  .netbook {
+    display: none;
+  }
+  .notebook {
+    display: none;
+  }
+  .laptop {
+    display: block;
+  }
+}
