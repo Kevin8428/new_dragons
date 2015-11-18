@@ -1,0 +1,79 @@
+body{
+  background-position: center;
+}
+div {
+  float: left;
+  width: 30%;
+  border: solid 1px;
+  padding: 2px;
+}
+
+div {
+  display: inline-block;
+  display: block;
+  width: 30%;
+  padding-left: 3%;
+  clear: left;
+  float: left;
+}
+
+.picture{
+  float: bottom;
+  clear: right;
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link{
+  float: bottom;
+  clear: right;
+}
+
+#first{
+    float: left;
+    width: 25%;
+}
+#second{
+  float: left;
+  width: 25%;
+}
+#third{
+  float: left;
+  width: 25%;
+}
+
+/*this is a pseudo class*/
+a:active{
+  background-color: yellow;
+}
+
+.first:hover{
+  background-color: red;
+}
+
+.second:hover{
+  background-color: green;
+}
+
+.third:hover{
+  background-color: blue;
+  transition: 2s;
+}
+
+.third:active{
+  background-color: yellow;
+}
+
+div:nth-child(3n){
+  /*background-color: grey;*/
+}
+
+P {
+  background-color: lightgrey;
+}
+
+.red {
+    background-color: red;
+}

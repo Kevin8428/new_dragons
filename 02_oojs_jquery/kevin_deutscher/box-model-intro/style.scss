@@ -1,0 +1,90 @@
+/*ids are identifiable using a name
+/*/
+/*pixels can be bad unless you know exact size being viewed on
+percentages, ems, relative widths are more responsive
+clear allows you to clear floating position of left, right or both. so if
+things are above clear and at different height, clear both will put footer below the lowest.
+
+/*/
+
+/*/wrapper is container or cage around css/*/
+
+$wrapper-width: 90%;
+$border: 3px dashed black;
+$font: 2.5 em;
+$lfont: 7.5 em;
+$sideheight: 200px;
+$colBackground: black;
+$otherBackground: black;
+
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  /*margin: auto; will affect top and bottom as well/*/
+}
+
+#logo {
+  border: 3px orange;
+  font-size: $font;
+  border: 3px orange;
+  margin: 3px;
+}
+
+#navbar {
+  height: 100%;
+  border: blue;
+  font-size: $lfont;
+  font-weight: bold;
+  margin: 30px;
+  background-color: $otherBackground
+}
+
+#sidebar {
+  float: right;
+  border: $border;
+  margin: 3px;
+  width: 25%;
+  height: $sideheight;
+  background-color: $colBackground;
+}
+
+#sidebar2 {
+  float: left;
+  border: $border;
+  width: 10%;
+  clear: left;
+  margin: 5px;
+  height: $sideheight;
+  background-color: $colBackground;
+}
+
+
+#content {
+  float: left;
+  border: $border;
+  margin: 3px;
+  width: 65%
+}
+
+#goodbye {
+  margin: 3px;
+  border: $border;
+  clear: both;
+  background-color: $otherBackground
+}
+
+/*header {
+  background: limegreen;
+
+}
+
+section {
+  background: grey;
+  border: 10px;
+  padding: 30px;
+  margin: 10px;
+}
+
+/*--margins borders and padding/*/

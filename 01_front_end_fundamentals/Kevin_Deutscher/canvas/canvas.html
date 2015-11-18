@@ -7,16 +7,13 @@
   <body>
     <canvas id="canvas" width="300" height="300" style="border: 1px solid black"></canvas>
 
-    <script type="text/javascript">
-
+<script type="text/javascript">
     var canvas = document.getElementById('canvas');
     var context = canvas.getContext('2d');
 
     function randomNumber() {
         return Math.random();
         }
-
-
 
 function format(){
       context.fillStyle= 'red';
@@ -29,8 +26,6 @@ function format(){
       context.stroke();
 }
 
-
-
 function colorRange() {
     var max = 250;
     var min = 0;
@@ -38,13 +33,12 @@ function colorRange() {
     console.log(random)
   }
 
-
 setInterval(function() {
   format()
 }, 1000);
 
-      </script>
-  </body>
+</script>
+</body>
 </html>
 
 

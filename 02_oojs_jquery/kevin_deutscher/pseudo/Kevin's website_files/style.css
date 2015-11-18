@@ -1,0 +1,98 @@
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+
+#header {
+  text-align: center;
+  background-color: lightblue;
+  border-bottom: 3px solid white;
+  border-bottom-width: 5px;
+  border-bottom-color: white;
+  height: 150px;
+  position: relative; }
+
+#leftcolumn {
+  background-color: lightgrey;
+  font-size: 2rem;
+  border: 1px solid black;
+  height: 400px;
+  width: 25%;
+  float: left; }
+
+#rightcolumn {
+  background-color: lightgrey;
+  font-size: 2rem;
+  border: 1px solid black;
+  height: 400px;
+  width: 74.6%;
+  float: right; }
+
+#footer {
+  padding-top: 5px;
+  background-color: #677FBF;
+  clear: both;
+  border: 1px solid black;
+  height: 150px;
+  border-top-width: 5px;
+  border-top-color: white; }
+
+.headertext {
+  text-align: center; }
+
+.socialmedia {
+  background-color: #677FBF; }
+
+.socialheader ul li a:hover {
+  color: blue; }
+
+.nav1 {
+  float: right;
+  bottom: 0px;
+  margin: 0px;
+  padding: 0px;
+  bottom: 0px; }
+
+.nav1 ul {
+  padding-right: 300px;
+  padding-top: 37px;
+  bottom: 0px; }
+
+.nav1 ul li {
+  padding: 2px;
+  margin-left: 50px;
+  float: right;
+  bottom: 0px;
+  list-style: none;
+  bottom: 0px;
+  background-color: lightgrey; }
+
+.nav1 ul li a {
+  text-decoration: none;
+  float: left;
+  display: block;
+  padding: 10px 20px;
+  bottom: 0px; }
+
+.nav1 ul li a:hover {
+  color: blue; }
+
+.headertext {
+  text-align: center;
+  font-size: 3rem; }
+
+.leftcolumnheader {
+  text-align: center;
+  color: blue; }
+
+.rightcolumnheader {
+  text-align: center; }
+
+.rightcolumnheader p {
+  font-size: 1rem; }
+
+.albuminfoheader {
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
