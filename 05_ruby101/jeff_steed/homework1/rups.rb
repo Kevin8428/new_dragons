@@ -33,22 +33,22 @@ p toonify("daffy", "so you smell like sausage")
 
 # Round 4 ----------------------------------------------------------------------
 
-def wordReverse(string)
+def word_reverse(string)
   words = string.split(' ')
   return words.reverse
 end
 
-p wordReverse("Now I know what a TV dinner feels like")
+p word_reverse("Now I know what a TV dinner feels like")
 
 # Round 5 ----------------------------------------------------------------------
 
-def letterReverse(string)
+def letter_reverse(string)
   words = string.split(' ')
-  return words.map{|word| word.reverse}
+  return words.map{|word| word.reverse}.join(' ')
 end
 
-p letterReverse("Now I know what a TV dinner feels like")
-p letterReverse("Put Hans back on the line")
+p letter_reverse("Now I know what a TV dinner feels like")
+p letter_reverse("Put Hans back on the line")
 
 # Round 6 ----------------------------------------------------------------------
 
