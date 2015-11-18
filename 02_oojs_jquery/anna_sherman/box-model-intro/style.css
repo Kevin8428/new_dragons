@@ -1,97 +1,70 @@
-/*ids are identifiable using a name */
+/*
+Error: Undefined variable: "$wide-font".
+        on line 60 of style.scss
 
-#wrapper {
-  width: 90%;
-  text-align: center;
-  margin: 0 auto;
-  position: relative;
-  border: 3px dashed black;
-}
+55: #content2{
+56:   float:right;
+57:   border:3px dashed black;
+58:   width:29%;
+59:   height: 30em;
+60:   font-family: $wide-font; 
+61: }
+62: 
+63: 
+64: #goodbye{
+65:   margin: 3px;
 
-#logo{
-  border: 3px dashed orange;
-  font-size: 3em;
-  font-weight: bold;
-  margin: 3px;
-}
-
-#navbar{
-  border: 3px dashed purple;
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 3px;
-  margin: 3px;
-}
-
-#sidebar {
-  border: 3px dashed green;
-  margin: auto 0px;
-  float: left;
-  width:30%;
-}
-
-#content{
-  border: 3px dashed navy;
-  margin: auto 0px;
-  width:30%;
-}
-
-#content2{
-  float:right;
-  border:3px dashed black;
-  margin: auto 0px;
-  width:30%;
-}
-
-
-#goodbye{
-  margin: 3px;
-  border: 3px dashed red;
-  clear: both; /*clear floats*/
-}
-
-/*li{
-  display: inline;
-}*/
-
-/*elements are WRAPPED */
-/*you should only ever use exact pixels if your content needs a specific height. aka never.*/
-/*we use a wrapper to contain b/c things mess up */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*header {
-  background-color: rgb(100, 252, 120);
-  border: 10px dashed;
-  padding: 20px;
-  margin-top: 20px;
-}
-img{
-  height: 50%;
-  width: 50%;
-}
-/*moat = margin */
-/*border = courtyard helps define */
-/*padding expands the courtyard. takes the edge of it and pushes it back*/
-
-
-/*section {
-  background-color: rgb(105, 171, 171);
-  border: 10px dashed;
-  padding: 20px;
-  margin: 20px;
-}*/
+Backtrace:
+style.scss:60
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `map'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/Users/annasherman/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$wide-font\".\A         on line 60 of style.scss\A \A 55: #content2{\A 56:   float:right;\A 57:   border:3px dashed black;\A 58:   width:29%;\A 59:   height: 30em;\A 60:   font-family: $wide-font; \A 61: }\A 62: \A 63: \A 64: #goodbye{\A 65:   margin: 3px;"; }

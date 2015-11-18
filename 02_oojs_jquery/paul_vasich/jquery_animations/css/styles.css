@@ -1,0 +1,42 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arvo;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(49, 154, 6, .8);
+  float: right;
+}
+
+h1 {
+  float: right;
+  margin-right: 50%;
+  display: none;
+}
+
+.box1 {
+  background: repeating-radial-gradient(green, black 5px, blue 5px, green 10px);
+  height: 200px;
+  width: 200px;
+  left: 50px;
+  top: 100px;
+  position: absolute;
+  margin-left: 50%;
+  border-radius: 50%;
+  border: 6px;
+}
+
+button {
+  display: block;
+  margin-bottom: 1%;
+  width: 75px;
+  padding: 20px;
+  /*background-color: rgb(32, 27, 66);*/
+  background: repeating-radial-gradient(green, black 5px, blue 5px, green 10px);
+  box-shadow: 5px 2.5px 5px black;
+}

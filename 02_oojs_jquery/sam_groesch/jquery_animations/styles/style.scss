@@ -1,0 +1,40 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(85, 13, 221, 0.83);
+}
+
+h1 {
+  float: right;
+  display: none;
+  margin-right: 45%
+}
+
+.box1 {
+  background: repeating-radial-gradient(green, black 5px, blue 5px, red 10px);
+  height: 200px;
+  width:200px;
+  left: 50px; //Defined left and top values so it knows where it is starting
+  top: 100px; //Same reason we used left and top as starting directions in jQuery
+  position: absolute; //Need to position absolute so it knows where to start
+  margin-left: 50%;
+  border-radius: 50%;
+  border: 6px dotted black;
+}
+
+button {
+  display: block;
+  margin-bottom: 1%;
+  width: 75px;
+  padding: 20px;
+  background-color: rgb(145, 14, 98);
+  position: relative;
+  box-shadow: 10px 5px 5px black;
+}

@@ -1,89 +1,101 @@
 #wrapper {
   width: 90%;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 #hello {
-  border: 3px solid black;
+  border: 5px dashed green;
   margin: 10px;
   text-align: center;
   height: 5em;
   width: 20%;
   float: left;
-}
+  background: gray; }
 
 #quadboxone {
-  border: 3px solid black;
+  background: linear-gradient(-164.80475deg, #0f473b 49.9%, #0f473b 50%, #1a6352 50%);
+  border: 5px dashed green;
   margin: 10px;
   margin-top: 25px;
   height: 2em;
   width: 10%;
-  float: right;
-}
+  float: right; }
 
 #quadboxtwo {
-  border: 3px solid black;
+  background: linear-gradient(-164.80475deg, #0f473b 49.9%, #0f473b 50%, #1a6352 50%);
+  border: 5px dashed green;
   margin: 10px;
   margin-top: 25px;
   height: 2em;
   width: 10%;
-  float: right;
-}
+  float: right; }
 
 #quadboxthree {
-  border: 3px solid black;
+  background: linear-gradient(-164.80475deg, #0f473b 49.9%, #0f473b 50%, #1a6352 50%);
+  border: 5px dashed green;
   margin: 10px;
   margin-top: 25px;
   height: 2em;
   width: 10%;
-  float: right;
-}
+  float: right; }
 
 #quadboxfour {
-  border: 3px solid black;
+  background: linear-gradient(-164.80475deg, #0f473b 49.9%, #0f473b 50%, #1a6352 50%);
+  border: 5px dashed green;
   margin: 10px;
   margin-top: 25px;
   height: 2em;
   width: 10%;
-  float: right;
-}
+  float: right; }
 
 #content {
+  background: linear-gradient(-164.80475deg, #0f473b 49.9%, #0f473b 50%, #1a6352 50%);
   clear: both;
-  border: 3px solid black;
+  border: 3px solid purple;
   margin: 3px;
-  height: 20em;
-}
+  height: 20em; }
 
 #triboxone {
-clear: both;
+  clear: both;
   float: left;
-  border: 3px solid black;
+  border: 3px solid purple;
   margin: 3px;
   width: 31%;
-  height: 10em;}
+  height: 10em;
+  background: linear-gradient(0deg, #2a822d 0.97222%, #2a6882 98.472%);
+  color: white;
+  text-align: center;
+  font-family: fantasy; }
 
-  #triboxtwo {
-    float: left;
-    border: 3px solid black;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    margin-left: 11px;
-    margin-right: 11px;
-    width: 31%;
-    height: 10em;}
+#triboxtwo {
+  float: left;
+  border: 3px solid purple;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 11px;
+  margin-right: 11px;
+  width: 31%;
+  height: 10em;
+  background: linear-gradient(0deg, #2a822d 0.97222%, #2a6882 98.472%);
+  color: white;
+  text-align: center;
+  font-family: fantasy; }
 
-    #triboxthree {
-      float: left;
-      border: 3px solid black;
-      margin: 3px;
-      width: 31%;
-      height: 10em;}
+#triboxthree {
+  float: left;
+  border: 3px solid purple;
+  margin: 3px;
+  width: 31%;
+  height: 10em;
+  background: linear-gradient(0deg, #2a822d 0.97222%, #2a6882 98.472%);
+  color: white;
+  text-align: center;
+  font-family: fantasy; }
 
 #goodbye {
   margin: 3px;
-  border: 3px solid black;
+  border: 3px solid purple;
   clear: both;
-  height: 5em;
-}
+  height: 5em; }
+
+/*# sourceMappingURL=style.css.map */

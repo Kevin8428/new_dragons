@@ -1,0 +1,84 @@
+$m: 1%;
+$p: 1%;
+$b: 1px solid;
+$bc: grey;
+
+#header {
+  background-color: $bc;
+  float: left;
+  margin-bottom: $m;
+  padding: $p;
+  border: $b;
+}
+
+#wrapper {
+  margin-left: $m;
+  margin-right: $m;
+}
+
+#title {
+  background-color: $bc;
+  margin-bottom: $m;
+  padding: $p;
+  float: right;
+  border: $b;
+  width: 77.5%;
+}
+
+#leftColumn {
+  background-color: $bc;
+  margin-bottom: $m;
+  padding: $p;
+  float: left;
+  border: $b;
+  clear: both;
+  width: 17%;
+}
+
+#content {
+  background-color: $bc;
+  margin-bottom: $m;
+  margin-left: $m;
+  margin-right: $m;
+  border: $b;
+  padding: $p;
+  float: right;
+  width: 57.3%;
+}
+
+#rightColumn {
+  background-color: $bc;
+  margin-bottom: $m;
+  padding: $m;
+  float: right;
+  border: $b;
+  width: 17%;
+}
+
+.small {
+  background-color: $bc;
+  margin-bottom: $m;
+  margin-left: $m;
+  border: $b;
+  padding: $p;
+  float: right;
+  width: 17%;
+}
+
+#footer {
+  background-color: $bc;
+  margin: $m;
+  padding: $p;
+  border: $b;
+  clear: both;
+}
+
+.tiny {
+  background-color: $bc;
+  margin-bottom: $m;
+  margin-left: $m;
+  padding: $p;
+  border: $b;
+  float: right;
+  width: 10%;
+}

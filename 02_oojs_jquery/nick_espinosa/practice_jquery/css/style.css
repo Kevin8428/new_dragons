@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+img {
+    animation: transform 1s infinite alternate;
+    transform: rotate(0deg);
+    display: none;
+}
+a {
+  font-size: 20px;
+  color: #ccc;
+  text-decoration: none;
+}
+a:hover{
+  color:#fff;
+  text-decoration: underline;
+}

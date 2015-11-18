@@ -1,5 +1,4 @@
 #butt {
   margin: 0 auto;
-  width: 30px;
-  padding-bottom: 10px;
+  display: block;
 }

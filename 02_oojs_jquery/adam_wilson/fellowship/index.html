@@ -8,7 +8,7 @@
 <body>
   <div class="overlay">
   </div>
-  <audio id="nazgul-screech" src="./media/nazgul_screech.mp3"></audio>
+  <!-- <audio id="nazgul-screech" src="./media/nazgul_screech.mp3"></audio> -->
   <audio id="hobbit-theme" src="./media/hobbit_theme.mp3"></audio>
   <script charset="utf-8">
     var nazgulScreech = function () {
@@ -17,8 +17,10 @@
     var playTheme = function () {
       document.getElementById("hobbit-theme").play();
     };
-    playTheme();
+    playTheme(); //called already, thus plays on load
   </script>
-  <script src="./scripts/fellowship.js"></script>
+  <!-- SCRIPTS AT END OF BODY SO DOCUMENT CAN LOAD FIRST FOR SPEED -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script src="scripts/fellowship.js"></script>
 </body>
 </html>
