@@ -1,0 +1,43 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(139, 163, 167);
+}
+
+/*#wrapper {
+  width: 100%;
+}*/
+
+h1 {
+  float: right;
+  margin-right: 41%;
+  display: none;
+}
+
+.box1 {
+  background: green;
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  left: 50px;
+  top: 100px;
+  margin-left: 50%;
+  border-radius: 50%;
+  border: 6px solid darkgreen;
+}
+
+button {
+  display: block;
+  margin-bottom: 1%;
+  width: 75px;
+  padding: 20px;
+  background-color: rgb(151, 191, 175);
+  position: relative;
+}
