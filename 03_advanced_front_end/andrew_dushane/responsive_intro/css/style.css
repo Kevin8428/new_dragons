@@ -1,0 +1,32 @@
+.phone {
+  background: magenta;
+  display: none; }
+
+.tablet {
+  background: orange;
+  display: none; }
+
+.laptop {
+  background: yellow;
+  display: none; }
+
+@media (min-width: 320px) {
+  .phone {
+    display: block; } }
+@media (min-width: 700px) {
+  .phone {
+    display: none; }
+
+  .tablet {
+    display: block; } }
+@media (min-width: 1200px) {
+  .phone {
+    display: none; }
+
+  .tablet {
+    display: none; }
+
+  .laptop {
+    display: block; } }
+
+/*# sourceMappingURL=style.css.map */
