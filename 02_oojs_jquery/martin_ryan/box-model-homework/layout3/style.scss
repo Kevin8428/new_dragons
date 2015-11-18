@@ -1,0 +1,63 @@
+// vars
+$marg-b: 10px;
+$bg-color: grey;
+
+#wrapper {
+  width: 90%;
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#topNav {
+  height: 20%;
+  background-color: grey;
+  margin-bottom: $marg-b;
+}
+
+#feature1 {
+  float: left;
+  width: 49%;
+  height: 40%;
+  background-color: grey;
+  margin-bottom: $marg-b;
+  margin-right: 2%;
+}
+
+#feature2 {
+  float: right;
+  width: 49%;
+  height: 40%;
+  background-color: grey;
+  margin-bottom: $marg-b;
+}
+
+#colLeft {
+  float: left;
+  width: 33%;
+  height: 20%;
+  background-color: grey;
+  margin-bottom: $marg-b;
+}
+
+#colMiddle {
+  float: left;
+  width: 33%;
+  height: 20%;
+  background-color: grey;
+  margin-bottom: $marg-b;
+}
+
+#colRight {
+  float: left;
+  width: 33%;
+  height: 20%;
+  background-color: grey;
+  margin-bottom: $marg-b;
+}
+
+#botNav {
+  clear: both;
+  height: 20%;
+  background-color: grey;
+}
