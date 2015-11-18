@@ -21,8 +21,8 @@ def toonify accent, sentence
 end
 
                                 # word_reverse
-def word_reverse ls
-  p ls.reverse
+def word_reverse string
+  p string.split(' ').reverse.join(' ')
 end
 
                                 # letter_reverse
@@ -36,13 +36,13 @@ def longest ls
 end
 
                                 # testing
-if Testing
+#if Testing
   v = ['how', 'does', :this, 456]
   lengths v
   transmogrifier 2, 3, 4
   toonify 'daffy', 'smelly sour salmon'
   toonify 'elmer', 'hear me roar'
-  word_reverse ['how', 'now', 'brown', 'cow']
+  word_reverse 'how now brown cow'
   letter_reverse "hello there goober"
   longest ['one', 'two', 'three', 'shmowzow', 'six', 'seven']
-end
+#end
