@@ -56,6 +56,17 @@ p toonify("elmer", "be very quiet, we're hunting rabbits")
 # Write a function wordReverse that accepts a single argument, a string. The method should return a string with the order of the words reversed. Don't worry about punctuation.
 # wordReverse("Now I know what a TV dinner feels like")
 # # => "like feels dinner TV a what know I Now"
+def wordReverse(arg)
+  resultarr = []
+  words = arg.split(" ")
+  result = ''
+  words.each { |e| resultarr.push(e.reverse)}
+  resultarr.each { |e| result += e + ' '}
+  return result.chomp!(" ")
+end
+
+p wordReverse("Now I know what a TV dinner feels like")
+
 # Round 5
 #
 # Write a function letterReverse that accepts a single argument, a string. The function should maintain the order of words in the string but reverse the letters in each word. Don't worry about punctuation. This will be very similar to round 4 except you won't need to split them with a space.
