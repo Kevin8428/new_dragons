@@ -36,3 +36,20 @@ end
 
 p toonify("daffy", "I thought I saw a pussy cat")
 p toonify("elmer", "Really, I just don\'t eat raw fish")
+p toonify("daffy", "so you smell like sausage")
+
+
+
+#ROUND 4
+def wordReverse(theString)
+  newWords = []
+  theWords = theString.split(' ')
+  # p theWords
+  theWords.each {|word| newWords.unshift(word)}
+  return newWords.join(' ')
+end
+
+p wordReverse("Now I know what a TV dinner feels like")
+
+
+#ROUND 5
