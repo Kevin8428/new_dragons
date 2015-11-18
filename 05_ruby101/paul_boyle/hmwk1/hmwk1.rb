@@ -1,11 +1,11 @@
 words = ['hello','what','is','up','dude']
-def lengths (arr)
-  len=[]
-  for word in arr
-    len.push(word.length)
-  end
-  p len
-end
+# def lengths (arr)
+#   len=[]
+#   for word in arr
+#     len.push(word.length)
+#   end
+#   p len
+# end
 
 def lengths (arr)
   return arr.map!{|word| word.length}
@@ -17,13 +17,15 @@ def trans(num1,num2,num3)
   return (num1*num2)**num3
 end
 
-p trans(1,3,3)#8
+p trans(1,3,3)#27
 
 def toonify (accent,sentence)
   if accent.downcase == 'daffy'
     return  p sentence.gsub 's', 'th'
-  else
+  elsif accent.downcase == 'elmer'
     return p sentence.gsub 'r','w'
+  else
+    return sentence
   end
 end
 toonify("daffy", "so you smell like sausage")
@@ -68,9 +70,11 @@ def prime? (number)
   end
 end
 
-p prime?(17)
-p prime?(2)
-p prime?(10000001)
+p prime?(17)#true
+p prime?(2)#true
+p prime?(10000001)#true
+p prime?(-10)#false
+p prime?(2)#true
 
 # Round 2: Fardingworth Falls
 #
@@ -88,21 +92,31 @@ p prime?(10000001)
 #
 # Modify the method so that calling town_names(3, 'short_name') will always generate names without a Middle.
 
-def town_names(amount)
+def town_names(amount,location)
   starts=['Bed','Brunn','Dun','Far','Glen','Tarn']
   middles=['ding','fing','ly','ston']
   ends=['borough','burg','ditch','hall','pool','ville','way','worth']
-  names=[];
+  near_water=['falls','-on-sea']
+  mountain=['Mount ', 'The hills of ']
+  names=[]
 
   amount.times do
-    names.push(starts.sample+middles.sample+ends.sample)
+    if location == 'near_water'
+      names.push(starts.sample+middles.sample+ends.sample+near_water.sample)
+    elsif location == 'mountain'
+      names.push(mountain.sample+starts.sample+middles.sample+ends.sample)
+    elsif location == 'short_name'
+      names.push(starts.sample+ends.sample)
+    else
+      names.push(starts.sample+middles.sample+ends.sample)
+    end
   end
-
   return names
 end
 
-p town_names(10)
-
+p town_names(3, 'short_name')
+p town_names(3, 'near_water')
+p town_names(3, 'mountain')
 
 
 
