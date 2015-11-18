@@ -69,11 +69,11 @@ var leaveTheShire = function () {
 };
 
 var forgeTheFellowShip = function () {
-  $('article:nth-child(2)').append('<div>the-fellowship</div>');
+  $('article:nth-child(2)').append('<div id="the-fellowship"></div>');
   var numberOfFollowers = $('aside>ul>li').length;
   for (var i = 0; i < numberOfFollowers; i++) {
     $('aside>ul>li:nth-child(1)').detach().appendTo('article>div');
-    alert($('article>div>li:last-child').html() + ' has joined the party');
+    alert($('article>div>li:last-child').text() + ' has joined the party');
   };
 };
 
