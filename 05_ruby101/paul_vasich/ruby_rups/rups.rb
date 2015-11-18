@@ -9,19 +9,30 @@ end
 #p prime?(797)
 
 
-def town_names n, locale, length
+def town_names n, param
+
+  suffix = ['-on-sea', ' Falls']
   starts = ['Bed', 'Brunn', 'Dun', 'Far', 'Glen', 'Tarn']
   middles = ['ding', 'fing', 'ly', 'ston']
   ends = ['borough', 'burg', 'ditch', 'hall', 'pool', 'ville', 'way', 'worth']
 
   ls = []
-  if !n
-    n = 3
+
+  n.times do
+    town_name = starts.sample
+
+    if param && param != 'short_name'
+      town_name += middles.sample
+    end
+
+    town_name += ends.sample
+
+    if param && param == 'near_water'
+      town_name += suffix.sample
+    end
+    ls.push(town_name)
+
   end
-  (1..n).each do
-    ls.push(starts.sample+middles.sample+ends.sample)
-  end
+
   return ls
 end
-
-puts town_names 5
