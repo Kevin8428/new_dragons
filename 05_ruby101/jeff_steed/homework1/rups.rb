@@ -2,11 +2,7 @@
 words = ["hello", "what", "is", "up", "dude"]
 
 def lengths(array)
-  lens = []
-  array.each do |string|
-    lens.push(string.length)
-  end
-  return lens
+  return array.map{|word| word.length}
 end
 
 p lengths(words)
@@ -38,7 +34,6 @@ p toonify("daffy", "so you smell like sausage")
 # Round 4 ----------------------------------------------------------------------
 
 def wordReverse(string)
-  words = []
   words = string.split(' ')
   return words.reverse
 end
@@ -49,11 +44,7 @@ p wordReverse("Now I know what a TV dinner feels like")
 
 def letterReverse(string)
   words = string.split(' ')
-  revWords = []
-  words.each do |word|
-    revWords.push(word.reverse)
-  end
-  return revWords
+  return words.map{|word| word.reverse}
 end
 
 p letterReverse("Now I know what a TV dinner feels like")
