@@ -1,0 +1,114 @@
+.phone {
+  background: magenta;
+  display: none; }
+
+.tablet {
+  background: orange;
+  display: none; }
+
+.laptop {
+  background: yellow;
+  display: none; }
+
+.phonels {
+  background: green;
+  display: none; }
+
+.phoneph {
+  background: #15edd3;
+  display: none; }
+
+.netbook {
+  background: #f025d5;
+  display: none; }
+
+.notebook {
+  background: #fa4cf8;
+  display: none; }
+
+@media (min-width: 320px) {
+  .phone {
+    display: block; } }
+@media (min-width: 400px) {
+  .phone {
+    display: none; }
+
+  .phonels {
+    display: block; } }
+@media (min-width: 550px) {
+  .phone {
+    display: none; }
+
+  .phonels {
+    display: none; }
+
+  .phoneph {
+    display: block; } }
+@media (min-width: 700px) {
+  .phone {
+    display: none; }
+
+  .tablet {
+    display: block; }
+
+  .phonels {
+    display: none; }
+
+  .phoneph {
+    display: none; } }
+@media (min-width: 768px) {
+  .phone {
+    display: none; }
+
+  .tablet {
+    display: none; }
+
+  .phonels {
+    display: none; }
+
+  .phoneph {
+    display: none; }
+
+  .netbook {
+    display: block; } }
+@media (min-width: 900px) {
+  .phone {
+    display: none; }
+
+  .tablet {
+    display: none; }
+
+  .phonels {
+    display: none; }
+
+  .phoneph {
+    display: none; }
+
+  .netbook {
+    display: none; }
+
+  .notebook {
+    display: block; } }
+@media (min-width: 1200px) {
+  .phone {
+    display: none; }
+
+  .phonels {
+    display: none; }
+
+  .phoneph {
+    display: none; }
+
+  .tablet {
+    display: none; }
+
+  .netbook {
+    display: none; }
+
+  .notebook {
+    display: none; }
+
+  .laptop {
+    display: block; } }
+
+/*# sourceMappingURL=main.css.map */
