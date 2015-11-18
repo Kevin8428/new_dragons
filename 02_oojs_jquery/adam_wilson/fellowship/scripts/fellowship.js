@@ -1,3 +1,28 @@
+
+
+//////////////////////////////////////////////////
+//////////// NOTES FROM IN CLASS ANSWERS /////////
+//////////////////////////////////////////////////
+// fellowshipMembers.eq(i).text()  // li i text (not all html, just text) from fellowshipMembers
+// see video or posted code for answers
+
+// create vars for "1 thing 1 place" rule
+// var mountDoom = $('<div>');
+// mountDoom.prop('id', 'mount-doom');
+// mordor.append(mountDoom);
+
+//  frodo global var find chiild element id the-ring
+//theRing = frodo.find('#the-ring').eq(0);
+
+
+// declare some variables outside functions for global access
+// preferably all globals at top of page
+
+// put all items in class of hobbits into an Array
+// var hobbits = $('.hobbit');
+// then use for loop to iterate and do things with them
+
+
 /////////////////////////////////////////////
 ////////////Starter Code   ///////////////////
 //////////////////////////////////////////////
@@ -77,6 +102,7 @@ var beautifulStranger = function() {
 // ?????????????????????????????????????????????????????
 //ABOVE NO WORK SINCE NOT TARGETIN "DOM ELEMENT"?  SO INSTEAD USE:
    $('aside ul li:nth-child(4)').replaceWith('<li>Aragorn</li>');
+   // .eq(0) same as nth-child(0) except eq index starts w zero
 };
 beautifulStranger();
 
@@ -95,7 +121,7 @@ var forgeTheFellowship = function () {
    // iterate each li of rivList pusihing it (to end of ) > arr
    var arr = new Array();
    $('#rivendellList li').each(function() {
-     arr.push(this.innerHTML);
+     arr.push(this.innerHTML); // this refers to array push adds to
    })
    console.log(arr);
    //remove all li's from rivList
@@ -112,6 +138,8 @@ var forgeTheFellowship = function () {
    };
 }; // end forgeTheFellowship
 forgeTheFellowship();
+
+
 
 var theBalrog = function() {
    //select gandlalf the grey (first li in thefellowship)

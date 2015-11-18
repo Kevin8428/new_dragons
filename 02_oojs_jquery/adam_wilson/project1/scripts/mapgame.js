@@ -6,7 +6,14 @@ $(document).ready(function() {
    initialize(); // MAP
 }) // end of doc.ready
 
-
+//////////////////////////////////////////////
+// getWeather is ajax code to link api libraries
+// 1. gets api libraries with ajax
+// 2. prompts for community
+// 3. loops thru array, if community match
+// 4. appends data.adress of match
+// 5. calls setMarker func. w/ lat,long of match
+//    a. setMarker drops pins on map
 var getWeather = {
    type: 'get',
    url: 'https://data.cityofchicago.org/resource/dip3-ud6z.json',
@@ -37,8 +44,14 @@ var getWeather = {
       // if match, append "address" to .weather div
       for (var i = 0; i < data.length; i++) {
          if (community == data[i].community_area) {
+
             $('.weather').append('<li>' + data[i].address + '</li>');
-               setMarker(data[i].latitude, data[i].longitude);
+
+   ////// // call setMarker ////////////////
+            setMarker(data[i].latitude, data[i].longitude);
+
+   //////////////////////////////////////
+
             //drop markers for libraries
          //    var marker = new google.maps.Marker({
          //       position: new google.maps.LatLng(data[i].latitude, data[i].longitude),
@@ -58,18 +71,27 @@ var getWeather = {
    }
 } // end getWeather object
 
+
+/////////map code///////////////////////
+//++++++++++++++ will need call initialize
+///++++++++++++can in initialize with parameters of new Lat.Lng?????? each time change states?
+///////map constructor ////////////////
 var mapCanvas, mapOptions, map;
 function initialize() {
   mapCanvas = document.getElementById('map-canvas');
+  // +++++++++++++need put this elem in html
   mapOptions = {
       center: new google.maps.LatLng(41.931929, -87.698327),
       zoom: 10,
       mapTypeId: google.maps.MapTypeId.ROADMAP
    } // end options
 
- //the map object constructor takes two arguments
+ //instantiate map constructor w/ two args
  // mapCanvas and mapOptions
   map = new google.maps.Map(mapCanvas, mapOptions);
+
+
+  //////////////////////////////////////
 
   // var marker = new google.maps.Marker({
   //    position: new google.maps.LatLng(41.889793, -87.627270),
@@ -80,7 +102,6 @@ function initialize() {
 
  function setMarker (lat, long) {
     console.log('test');
-    console.log(lat, long);
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(lat, long),
       map: map,
