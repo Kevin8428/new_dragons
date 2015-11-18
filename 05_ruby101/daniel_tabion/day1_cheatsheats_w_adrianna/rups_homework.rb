@@ -61,3 +61,19 @@ def letterReverse(theString)
 end
 
 p letterReverse("Now I know what a TV dinner feels like")
+
+
+#ROUND 6
+def longest(theWords)
+  theLongestWord = ""
+  theWords.each do |currentWord|
+    if currentWord.length >= theLongestWord.length
+      theLongestWord = currentWord
+    end
+  end
+
+  return theLongestWord
+end
+
+p longest(["oh", "good", "grief"]) # => "grief"
+p longest(["Nothing" , "takes", "the", "taste", "out", "of", "peanut", "butter", "quite", "like", "unrequited", "love"])
