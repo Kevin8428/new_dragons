@@ -1,0 +1,19 @@
+.weather{
+  width: 300px;
+  height: auto;
+  color: green;
+  border: 3px rgb(61, 219, 16) solid;
+}
+.address{
+  width: 300px;
+  height: auto;
+  color: green;
+  border: 3px rgb(61, 219, 16) solid;
+
+}
+
+li{
+  list-style: none;
+  margin-bottom: 10px;
+  border-bottom: 2px solid blue;
+}

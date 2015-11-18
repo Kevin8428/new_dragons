@@ -1,0 +1,43 @@
+body {
+  background-color: #eff; }
+
+@media (max-width: 720px) {
+  body {
+    background-color: #ffe; } }
+@media (min-width: 320px) {
+  .phone {
+    color: #efe0f0; } }
+@media (min-width: 550px) {
+  .phone {
+    display: none; }
+
+  .phablet {
+    background-color: black; } }
+@media (min-width: 700px) {
+  .phablet {
+    display: none; }
+
+  .tablet {
+    display: block; } }
+@media (min-width: 1200px) {
+  .tablet {
+    display: none; } }
+.phone {
+  background-color: #fef; }
+
+.phone-landscape {
+  background-color: #ede; }
+
+.phablet {
+  background-color: #eed0fe; }
+
+.tablet {
+  background-color: #ffe0fe; }
+
+.notebook {
+  background-color: #eed1ed; }
+
+.laptop {
+  background-color: #00eFF0; }
+
+/*# sourceMappingURL=main.css.map */
