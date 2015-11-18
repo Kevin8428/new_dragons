@@ -31,13 +31,13 @@ end
 toonify("daffy", "so you smell like sausage")
 
 def letterReverse(str)
-  return str.split(' ').each{|word| word.reverse!}.join(' ')
+  return str.split.each{|word| word.reverse!}.join(' ')
 end
 
 p letterReverse("Put Hans back on the line")
 
 def wordReverse(str)
-  return str.split(' ').reverse.join(' ')
+  return str.split.reverse.join(' ')
 end
 
 p wordReverse('now i know what tv dinner feels like')
