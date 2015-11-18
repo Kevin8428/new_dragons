@@ -57,11 +57,9 @@ p toonify("elmer", "be very quiet, we're hunting rabbits")
 # wordReverse("Now I know what a TV dinner feels like")
 # # => "like feels dinner TV a what know I Now"
 def wordReverse(arg)
-  resultarr = []
-  words = arg.split(" ")
-  result = ''
-  words.each { |e| resultarr.push(e.reverse)}
-  resultarr.each { |e| result += e + ' '}
+  resultarr = arg.split(" ")
+  result = ""
+  resultarr.reverse.each { |e| result += e + " " }
   return result.chomp!(" ")
 end
 
@@ -74,6 +72,21 @@ p wordReverse("Now I know what a TV dinner feels like")
 # # => "woN I wonk tahw a VT rennid sleef ekil"
 # letterReverse("Put Hans back on the line")
 # # => "tuP snaH kcab no eht enil"
+
+def letterReverse(arg)
+  resultarr = []
+  words = arg.split(" ")
+  result = ""
+  words.each { |e| resultarr.push(e.reverse)}
+  resultarr.each { |e| result += e + " "}
+  return result.chomp!(" ")
+end
+
+p letterReverse("Now I know what a TV dinner feels like")
+# => "woN I wonk tahw a VT rennid sleef ekil"
+p letterReverse("Put Hans back on the line")
+# => "tuP snaH kcab no eht enil"
+
 # Round 6
 #
 # Write a function longest that accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return either.
