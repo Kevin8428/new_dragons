@@ -1,0 +1,10 @@
+.weather {
+  width: 300px;
+  height: 300px;
+  color: green;
+  border: 3px dotted rgb(171, 43, 237);
+}
+
+li {
+  color: black;
+}

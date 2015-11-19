@@ -1,0 +1,8 @@
+#map-canvas {
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: black;
+  border: 3px solid rgb(149, 68, 16);
+}

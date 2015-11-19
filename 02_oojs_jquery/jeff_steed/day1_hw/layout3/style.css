@@ -1,14 +1,13 @@
 #wrapper {
   width: 90%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 #header {
   border: 1px solid black;
-  height: 150px;
+  height: 200px;
   margin: 1%;
-  background-color: #ccc;
-}
+  background-color: turquoise;
+  border-radius: 10px; }
 
 #maincolLeft {
   border: 1px solid black;
@@ -16,8 +15,8 @@
   height: 400px;
   margin: 1%;
   float: left;
-  background-color: #ccc;
-}
+  background-color: turquoise;
+  border-radius: 10px; }
 
 #maincolRight {
   border: 1px solid black;
@@ -25,12 +24,11 @@
   height: 400px;
   margin: 1%;
   float: right;
-  background-color: #ccc;
-}
+  background-color: turquoise;
+  border-radius: 10px; }
 
 #container {
-  clear: both;
-}
+  clear: both; }
 
 #leftcol {
   border: 1px solid black;
@@ -38,8 +36,8 @@
   width: 31.15%;
   float: left;
   margin: 1%;
-  background-color: #ccc;
-}
+  background-color: turquoise;
+  border-radius: 10px; }
 
 #centercol {
   border: 1px solid black;
@@ -47,8 +45,8 @@
   width: 31.15%;
   float: left;
   margin: 1%;
-  background-color: #ccc;
-}
+  background-color: turquoise;
+  border-radius: 10px; }
 
 #rightcol {
   border: 1px solid black;
@@ -56,8 +54,8 @@
   width: 31.15%;
   float: left;
   margin: 1%;
-  background-color: #ccc;
-}
+  background-color: turquoise;
+  border-radius: 10px; }
 
 #footer {
   position: relative;
@@ -65,5 +63,7 @@
   height: 150px;
   clear: both;
   margin: 19% 1% 1% 1%;
-  background-color: #ccc;
-}
+  background-color: turquoise;
+  border-radius: 10px; }
+
+/*# sourceMappingURL=style.css.map */

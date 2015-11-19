@@ -1,0 +1,86 @@
+// Variables
+$wrapper-width: 90%;
+$marginOnePrct: 1%;
+$border: 1px solid black;
+$bkgColor: turquoise;
+$mainColHght: 400px;
+$scdColHght: 200px;
+$header-height: 200px;
+$border-radius: 10px;
+
+#wrapper {
+  width: $wrapper-width;
+  margin: 0 auto;
+}
+
+#header {
+  border: $border;
+  height: $header-height;
+  margin: $marginOnePrct;
+  background-color: $bkgColor;
+  border-radius: $border-radius;
+}
+
+#maincolLeft {
+  border: $border;
+  width: 47.5%;
+  height: $mainColHght;
+  margin: $marginOnePrct;
+  float: left;
+  background-color: $bkgColor;
+  border-radius: $border-radius;
+}
+
+#maincolRight {
+  border: $border;
+  width: 47.5%;
+  height: $mainColHght;
+  margin: $marginOnePrct;
+  float: right;
+  background-color: $bkgColor;
+  border-radius: $border-radius;
+}
+
+#container {
+  clear: both;
+}
+
+#leftcol {
+  border: $border;
+  height: $scdColHght;
+  width: 31.15%;
+  float: left;
+  margin: $marginOnePrct;
+  background-color: $bkgColor;
+  border-radius: $border-radius;
+}
+
+#centercol {
+  border: $border;
+  height: $scdColHght;
+  width: 31.15%;
+  float: left;
+  margin: $marginOnePrct;
+  background-color: $bkgColor;
+  border-radius: $border-radius;
+}
+
+#rightcol {
+  border: $border;
+  height: $scdColHght;
+  width: 31.15%;
+  float: left;
+  margin: $marginOnePrct;
+  background-color: $bkgColor;
+  border-radius: $border-radius;
+}
+
+#footer {
+  position: relative;
+  border: $border;
+  height: 150px;
+  clear: both;
+  margin: 19% 1% 1% 1%;
+  background-color: $bkgColor;
+  border-radius: $border-radius;
+}

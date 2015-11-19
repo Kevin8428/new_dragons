@@ -1,0 +1,11 @@
+#map-canvas{
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  background-color: black;
+  border: 3px dotted black;
+}
+
+body{
+  background-color: rgba(51, 188, 190, 0.52);
+}

@@ -1,41 +1,35 @@
-html{
-  height: 98%;
-}
+html {
+  height: 98%; }
 
-body{
-  height: 98%;
-}
+body {
+  height: 98%; }
 
 #wrapper {
   width: 90%;
   height: 90%;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 #content {
   float: left;
   border: 3px dashed navy;
   margin: 3px;
   width: 65%;
-  height: 75%;
-}
+  height: 75%; }
 
-#top{
+#top {
   border: 3px dashed orange;
   font-size: 3em;
   font-weight: bold;
   margin: 3px;
-  height: 15%;
-}
+  height: 15%; }
 
 #sidebar {
   float: right;
   border: 3px dashed green;
   margin: 3px;
   width: 33%;
-  height: 75%;
-}
+  height: 75%; }
 
 #foot {
   border: 3px dashed blue;
@@ -43,5 +37,6 @@ body{
   font-weight: bold;
   margin: 3px;
   height: 10%;
-  clear: both;
-}
+  clear: both; }
+
+/*# sourceMappingURL=style.css.map */

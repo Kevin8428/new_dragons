@@ -1,0 +1,13 @@
+#button1{
+  border: 5px solid blue;
+  background-color: aliceblue;
+  border-radius: 50px;
+  width: 30rem;
+  height: 30rem;
+  font-size: 5rem;
+}
+
+#divbutton{
+  text-align: center;
+  margin: 0 auto;
+}

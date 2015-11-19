@@ -1,0 +1,29 @@
+#map-canvas {
+   width: 80%;
+   margin: 0 auto;
+   background-color: black;
+   border 3px rgb(28, 85, 184);
+   height: 400px;
+}
+
+/*
+header {
+   width: 300px;
+   height: 7500px;
+   color: white;
+   background-color: rgb(47, 49, 179)
+   border-radius: 10%;
+   padding: 30px;
+}
+
+
+.weather {
+   width: 300px;
+   height: 300px;
+   color: white;
+   background-color: rgb(95, 151, 209);
+   border: 10px solid black;
+   border-radius: 10%;
+   padding: 30px;
+
+}*/

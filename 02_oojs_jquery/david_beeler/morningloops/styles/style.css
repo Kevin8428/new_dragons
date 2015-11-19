@@ -1,0 +1,13 @@
+div {
+  margin: 0 auto;
+}
+
+#main_button {
+  border: 3px solid purple;
+  border-radius: 25px;
+  color: red;
+  width: 20em;
+  height: 10em;
+  font-size: 3em;
+
+}

@@ -1,0 +1,14 @@
+div {
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  background-color: #effeff;
+  display: block; }
+  div:hover {
+    background-color: #ffeffe; }
+    div:hover p {
+      color: white; }
+      div:hover p:hover {
+        color: black; }
+
+/*# sourceMappingURL=style.css.map */

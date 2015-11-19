@@ -1,0 +1,14 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #eee;
+}
+#map-canvas {
+  width: 80%;
+  margin: 20px auto;
+  background-color: black;
+  border: 3px dotted rgb(48, 138, 231);
+  height: 400px;
+}

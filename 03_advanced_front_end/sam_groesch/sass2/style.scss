@@ -1,0 +1,54 @@
+$column-width: 30%;
+$column-height: 3000px;
+$header-width: 90%;
+$wrapper: 95%;
+$font: 'Permanent Marker', cursive;
+$text-align: center;
+
+
+body {
+  font-size: 20px;
+}
+
+.wrapper {
+  width: $wrapper;
+}
+
+.column {
+  width: $column-width;
+  height: $column-height;
+  font-family: $font;
+  float: left;
+  background-color: rgba(88, 57, 38, 0.52);
+  text-align: $text-align;
+  p {
+    background-color: rgb(35, 90, 121);
+    font-size: 1em;
+    text-align: left;
+  }
+}
+
+.dmx {
+
+}
+
+#first {
+  clear:both;
+}
+
+header {
+  text-align: $text-align;
+  font-size: 3em;
+}
+
+p {
+  background-color: rgb(188, 0, 255);
+  font-size: 2em;
+  clear:both;
+  float: left;
+}
+
+img {
+  clear: both;
+  float: left;
+}

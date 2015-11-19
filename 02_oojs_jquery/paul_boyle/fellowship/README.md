@@ -134,5 +134,16 @@ var itsDangerousToGoAlone = function (){
 var thereAndBackAgain = function () {
    // remove `Gollum` and `the Ring` from the document
    // Move all the `hobbits` back to `the shire`
+   var frodo=$('#middle-earth > article:nth-child(3) > h1 > ul:nth-child(1)');
+   var sam=$('#middle-earth > article:nth-child(3) > h1 > ul:nth-child(1)');
+   var meriadoc=$('#middle-earth > article:nth-child(2) > h1 > div > ul:nth-child(4)');
+   var peregrin=$('#middle-earth > article:nth-child(2) > h1 > div > ul:nth-child(4)');
+
+   var hobbits=[frodo,sam,meriadoc,peregrin];
+
+   for(var hobbit in hobbits){
+     $('#middle-earth > article:nth-child(1) > h1').append(hobbits[hobbit]);
+   }
+
 };
 ```

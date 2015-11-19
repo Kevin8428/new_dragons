@@ -1,0 +1,21 @@
+.weather {
+  width: 300px;
+  height: 300px;
+  color: linear-gradient(
+	-75.3791260113683deg,
+	rgba(25,158,142,1) 2.7083%,
+	rgba(122,255,120,1) 54.306%,
+	rgba(112,232,255,1) 96.875%);
+  border: 10px solid grey;
+}
+
+.inspections {
+  width: 400px;
+  height: 600px;
+  color: linear-gradient(
+  -75.3791260113683deg,
+  rgba(25,158,142,1) 2.7083%,
+  rgba(122,255,120,1) 54.306%,
+  rgba(112,232,255,1) 96.875%);
+  border: 10px solid grey;
+}

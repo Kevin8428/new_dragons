@@ -1,0 +1,76 @@
+//variables
+$device-phone: 320px;
+$device-phone-landscape: 400px;
+$device-phablet: 550px;
+$device-tablet: 700px;
+$device-netbook: 768px;
+$device-notebook: 900px;
+$device-laptop: 1200px;
+
+$body-text: black;
+$body-background: #eff;
+$radius: 15px;
+
+
+
+body{
+  background-color: #eff;
+}
+
+@media (max-width: 720px) {
+  body{
+    background-color: #ffe;
+  }
+}
+@media (min-width: $device-phone){
+  .phone{
+    color: #efe0f0;
+  }
+}
+@media (min-width: $device-phablet) {
+  .phone{
+    display: none;
+  }
+  .phablet{
+    background-color: black;
+  }
+}
+@media(min-width: $device-tablet){
+  .phablet{
+    display: none;
+  }
+  .tablet{
+    display: block;
+  }
+}
+@media(min-width: $device-netbook){
+
+}
+@media(min-width: $device-notebook){
+
+}
+@media(min-width: $device-laptop){
+  .tablet{
+    display: none;
+  }
+}
+
+.phone{
+  background-color: #fef;
+}
+.phone-landscape {
+  background-color: #ede;
+
+}
+.phablet{
+  background-color: #eed0fe
+}
+.tablet{
+  background-color: #ffe0fe;
+}
+.notebook{
+  background-color: #eed1ed;
+}
+.laptop{
+  background-color: #00eFF0;
+}

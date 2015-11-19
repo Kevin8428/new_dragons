@@ -1,0 +1,29 @@
+$blue:blue;
+$full:98%;
+$red:red;
+$yellow:yellow;
+$black:black;
+$white:white;
+
+div {
+  background-color:$blue;
+  height:500px;
+  width:$full;
+  .nested-p{
+    &:hover {
+      background-color:$black;
+      color:$
+
+    }
+    background-color:$red;
+
+  }
+
+
+}
+
+
+
+p{
+  background-color:$yellow;
+}

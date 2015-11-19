@@ -1,0 +1,37 @@
+// sass variables
+$opaquelightblue: rgba(122, 179, 226, 0.8);
+$opaqueblue: rgba(37, 60, 215, .9);
+$divborders: 1px solid white;
+$hoverborder: 3px solid white;
+
+// styling
+body {
+   margin: 0px;
+   background-image: url(http://www.kkisproject.org/wp-content/uploads/2015/09/Classroom-Interior-Design-3D.jpg);
+}
+header {
+   background-color: $opaqueblue;
+   height: 50px;
+   border: $divborders;
+   width: 98%;
+
+}
+div {
+   background-color: $opaquelightblue;
+   height: 500px;
+   width: 32%;
+   border: $divborders;
+   .nested-p { // inherits parent selector properties
+      background-color: rgba(74, 210, 15, .9);
+      margin: 0px;
+   }
+   :hover { // hover over nested-p
+      background-color: green;
+   }
+   float: left;
+   text-align: center;
+   
+}
+div:hover, header:hover { // hover over nested-p
+   border: $hoverborder;
+}

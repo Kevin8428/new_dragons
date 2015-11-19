@@ -1,0 +1,41 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header {
+  margin: 0;
+  background: #EFEFEF;
+  width: 100%;
+  height: 200px;
+}
+
+h1 {
+  margin: 0;
+  padding: 2em;
+  text-align: center;
+  display: none;
+}
+
+.box1 {
+  background: repeating-radial-gradient(green, black 5px, blue 5px, green 10px);
+  height: 200px;
+  width: 200px;
+  margin-left: -100px;
+  left: 50%;
+  top: 20%;
+  border-radius: 50%;
+  border: 6px;
+  position: absolute;
+}
+
+button {
+  padding: 1em 3em;
+  margin: 1em;
+  border: none;
+  border-radius: 10px;
+  background: #EFEFEF;
+}

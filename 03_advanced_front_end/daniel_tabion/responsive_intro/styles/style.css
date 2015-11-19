@@ -1,0 +1,117 @@
+body {
+  background-color: aliceblue; }
+
+.phone {
+  display: none;
+  background: magenta; }
+
+.phone-landscape {
+  display: none;
+  background: green; }
+
+.phablet {
+  display: none;
+  background: yellow; }
+
+.tablet {
+  display: none;
+  background: orange; }
+
+.netbook {
+  display: none;
+  background: pink; }
+
+.notebook {
+  display: none;
+  background: blue; }
+
+.laptop {
+  display: none;
+  background: yellow; }
+
+@media (min-width: 320px) {
+  .phone {
+    display: block; } }
+@media (min-width: 400px) {
+  .phone {
+    display: none; }
+
+  .phone-landscape {
+    display: block; } }
+@media (min-width: 550px) {
+  .phone {
+    display: none; }
+
+  .phone-landscape {
+    display: none; }
+
+  .phablet {
+    display: block; } }
+@media (min-width: 700px) {
+  .phone {
+    display: none; }
+
+  .phone-landscape {
+    display: none; }
+
+  .phablet {
+    display: none; }
+
+  .tablet {
+    display: block; } }
+@media (min-width: 768px) {
+  .phone {
+    display: none; }
+
+  .phone-landscape {
+    display: none; }
+
+  .phablet {
+    display: none; }
+
+  .tablet {
+    display: none; }
+
+  .netbook {
+    display: block; } }
+@media (min-width: 900px) {
+  .phone {
+    display: none; }
+
+  .phone-landscape {
+    display: none; }
+
+  .phablet {
+    display: none; }
+
+  .tablet {
+    display: none; }
+
+  .netbook {
+    display: none; }
+
+  .notebook {
+    display: block; } }
+@media (min-width: 1200px) {
+  .phone {
+    display: none; }
+
+  .phone-landscape {
+    display: none; }
+
+  .phablet {
+    display: none; }
+
+  .tablet {
+    display: none; }
+
+  .netbook {
+    display: none; }
+
+  .notebook {
+    display: none; }
+
+  .laptop {
+    display: block; } }
+
+/*# sourceMappingURL=style.css.map */

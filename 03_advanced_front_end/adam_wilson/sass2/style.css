@@ -1,0 +1,27 @@
+body {
+  margin: 0px;
+  background-image: url(http://www.kkisproject.org/wp-content/uploads/2015/09/Classroom-Interior-Design-3D.jpg); }
+
+header {
+  background-color: rgba(37, 60, 215, 0.9);
+  height: 50px;
+  border: 1px solid white;
+  width: 98%; }
+
+div {
+  background-color: rgba(122, 179, 226, 0.8);
+  height: 500px;
+  width: 32%;
+  border: 1px solid white;
+  float: left;
+  text-align: center; }
+  div .nested-p {
+    background-color: rgba(74, 210, 15, 0.9);
+    margin: 0px; }
+  div :hover {
+    background-color: green; }
+
+div:hover, header:hover {
+  border: 3px solid white; }
+
+/*# sourceMappingURL=style.css.map */

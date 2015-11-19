@@ -1,0 +1,37 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px; }
+
+header {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(85, 13, 221, 0.83); }
+
+h1 {
+  float: right;
+  display: none;
+  margin-right: 45%; }
+
+.box1 {
+  background: repeating-radial-gradient(green, black 5px, blue 5px, red 10px);
+  height: 200px;
+  width: 200px;
+  left: 50px;
+  top: 100px;
+  position: absolute;
+  margin-left: 50%;
+  border-radius: 50%;
+  border: 6px dotted black; }
+
+button {
+  display: block;
+  margin-bottom: 1%;
+  width: 75px;
+  padding: 20px;
+  background-color: #910e62;
+  position: relative;
+  box-shadow: 10px 5px 5px black; }
+
+/*# sourceMappingURL=style.css.map */

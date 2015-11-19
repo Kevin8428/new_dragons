@@ -1,0 +1,42 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  background-color: #F0D8FF;
+}
+
+h1 {
+  float: right; /* why does this get rid of top margin? */
+  margin-right: 45%;
+  display: none;
+}
+
+.box1 {
+  /*background: repeating-radial-gradient(green, black 5px, blue 5px, green 10px);*/
+  height: 200px;
+  width: 200px;
+  left: 50px;
+  top: 100px;
+  margin-left: 50%;
+  /*border-radius: 50%;*/
+  position: absolute;
+}
+
+img {
+  width: 150px;
+}
+
+button {
+  display: inline-block;
+  margin-bottom: 1%;
+  width: 75px;
+  padding: 20px;
+  background-color: grey;
+  box-shadow: 5px 5px 5px black;
+}
