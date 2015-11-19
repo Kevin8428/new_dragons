@@ -28,30 +28,31 @@
 
 #--------------------------
 
-starts = ["Bed", "Brunn", "Dun", "Far", "Glen", "Tarn"]
-middles = ["ding", "fing", "ly", "ston"]
-ends = ["borough", "burg", "ditch", "hall", "pool", "ville", "way", "worth"]
+
 
 
 #teachers.sample(2)
 
-p starts.sample(1)
+# p starts.sample(1)
 
-# def town_names()
-#   p starts.sample(1)
-#   p middles.sample(1)
-#   p ends.sample(1)
-# end
-#
-# town_names()
+def town_names(i)
+  starts = ["Bed", "Brunn", "Dun", "Far", "Glen", "Tarn"]
+  middles = ["ding", "fing", "ly", "ston"]
+  ends = ["borough", "burg", "ditch", "hall", "pool", "ville", "way", "worth"]
 
-#times do method
+  if i==nil then i = 3
+  end
+    i.times{
+    name1 = starts.sample(1)
+    name2 = middles.sample(1)
+    name3 = ends.sample(1)
+    townArr = []
+    townArr.push(name1, name2, name3)
+    townName = townArr.each_slice(1).map{|a|a.join ''}.join ''
+    p townName
+    }
+end
 
+town_names(1)
 
-
-
-
-
-
-
-#
+# times do method

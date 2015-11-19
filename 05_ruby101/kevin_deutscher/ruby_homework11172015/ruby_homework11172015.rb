@@ -1,14 +1,20 @@
+#quiz answers 11182015
+#..?
+#float and fixed note
+#a Hash
+#=>
+#methods because everytihng is an object
+
 #ROUND1---------------------------------------------------
 
 def lengths(inputArray)
-  #inputArray.each{|words| p words.length}
-  #inputArray.map{|words| p words.length}
-  #p inputArray[1].length
   newArr = []
+  #could do p array.map{|word|word.length}
   newArr.push(inputArray.map{|words| words.length})
   p newArr
 end
 
+#.map makes a temporary array transformed by parameters
 
 words = ["hello", "what", "is", "up", "dude"]
 lengths(words)
@@ -28,7 +34,7 @@ transmogrifier(5,3,2)
 def toonify(accent,sentence)
   if accent == "daffy"
     p sentence.gsub! 's','th'
-  elsif accent = "elmer"
+  elsif accent == "elmer"
     p sentence.gsub! 'r','w'
   end
 end
@@ -48,6 +54,7 @@ wordReverse("Now I know what a TV dinner feels like")
 #ROUND5----------------------------------------------------
 
 def letterReverse(inputArr)
+  #could do string.split.map{|words|.word.length}
   p inputArr.reverse.split.each_slice(1).map{|a|a.join ' '}.reverse.join ' '
 end
 
