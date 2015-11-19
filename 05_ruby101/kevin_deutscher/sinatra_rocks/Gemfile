@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+#gemfile to store information
+#config file tells app how to be configured, the settings, files to include etc.
+
+gem 'sinatra'
+gem 'json'
+gem 'httparty'
