@@ -1,3 +1,4 @@
+require 'json'
 class Dictionary
 
 
@@ -8,9 +9,10 @@ class Dictionary
   def add(key, value)
     @key = key
     @value = value
-    p return @internal_hash
+    p @internal_hash.to_json
   end
 
+  
 
   def get_dictionary
     return @internal_hash
@@ -18,5 +20,5 @@ class Dictionary
 
 end
 
-Dictionary_one = Dictionary.new('test string')
+p dictionary_one = Dictionary.new('test string')
 # p Dictionary_one.get_dictionary

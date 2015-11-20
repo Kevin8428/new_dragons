@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style/style.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="scripts/app.js"></script>
+  </head>
+  <body>
+
+    <form class="" action="index.html" method="post">
+
+    <fieldset id = fieldsetOne>
+      <legend id = basicInfoID>Your Basic Info</legend>
+      <!--for needs to match up with ID!-->
+      <label for="name">Name:</label>
+      <!--method"post" means sending, action means where you're sending!-->
+      <input type="text" id = "name" name="user_name">
+
+      <label for="mail">Email:</label>
+      <!--user_name correlates with server side!-->
+      <input type="email" id = "mail" name="user_email">
+      <label for="password">Password:</label>
+      <input type="password" id = "password" name="user_password">
+      <label>Age:</label>
+      <input type="radio" id ="over_21" name="user_age" value="over_21">
+      <label for="over_21">Over_21</label>
+      <input type="radio" id ="under_21" name="user_age" value="under_21">
+      <label for="under_21">Under_21</label>
+      <!--because radio buttons have same name, can only select one on page!-->
+    </fieldset>
+
+    <fieldset id = fieldsetTwo>
+      <legend id = bioID>Bio</legend>
+      <label for="bio">Bio:</label>
+      <textarea name="name" id="bio"></textarea>
+
+      <label for="job">Job Role:</label>
+      <select class="job" name="user_job">
+        <optgroup label="web">
+          <option value="frontend_developer">frontend_developer</option>
+          <option value="backend_developer">backend_developer</option>
+          <option value="javascript_developer">javascript_developer</option>
+          <option value="designer">designer</option>
+        </optgroup>
+        <optgroup label="mobile">
+          <option value="ios_developer">ios_developer</option>
+          <option value="android_developer">android_developer</option>
+        </optgroup>
+      </select>
+
+      <label>Interests:</label>
+      <input type="checkbox" id = "development" name="user_interest" value="interest_development">
+      <label for="development">Development</label>
+
+      <input type="checkbox" id = "design" name="user_interest" value="interest_design">
+      <label for="design">Design</label>
+
+      <input type="checkbox" id = "business" name="user_interest" value="interest_business">
+      <label for="business">Business</label>
+    </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
