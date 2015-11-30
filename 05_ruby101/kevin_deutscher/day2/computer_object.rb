@@ -1,6 +1,6 @@
 computer = Object.new
 
-#brand, name, model and operatin system
+#brand, name, model and operating system
 
 def computer.set_brand(brand_name)
   @brand = brand_name
@@ -11,7 +11,11 @@ def computer.get_brand
   return @brand
 end
 
+
+
 computer.set_brand('macbook')
+p computer.get_brand
+
 
 #----
 def computer.set_computer_name(computer_name)
@@ -44,8 +48,30 @@ def computer.get_op_soft
 end
 
 
-p computer.get_brand
 
+class Item
+  def initialize(item_name, quantity)
+    @item_name = item_name
+    @quantity = quantity
+  end
+
+  # def show
+  #   puts @item_name
+  #   puts @quantity
+  # end
+
+
+  def
+
+  def multiply
+    puts @quantity*2
+    puts @item_name + " the fridge is big"
+  end
+
+end
+
+# # Item.new("tv",1).show
+# Item.new("fridge",1).multiply
 
 
 

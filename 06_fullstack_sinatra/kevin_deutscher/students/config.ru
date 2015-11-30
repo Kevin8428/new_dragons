@@ -1,3 +1,4 @@
 require './app'
-require './dictionary'
+require './models/Students'
+
 run Sinatra::Application

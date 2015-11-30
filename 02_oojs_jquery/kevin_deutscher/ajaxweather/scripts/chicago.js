@@ -24,6 +24,7 @@ var getLandlord = {
   success: function(data){
     console.log('we did it');
     console.dir(data);
+    console.log(data[1]);
     // for(i=0, i<50, i++){
     //   $(.landlord).append(Object[i]_permit_type)
     // }

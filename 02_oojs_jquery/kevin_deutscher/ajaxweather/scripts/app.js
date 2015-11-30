@@ -23,7 +23,7 @@ var getWeather = {
   success: function(data){
     console.log('we did it');
     console.dir(data);
-    $('.weather').append('<li>the city is called ' + data.name + ' and the current temperature is '+ Math.round(data.main.temp *9/5 -459.67) + '.</li>');
+    $('#landlord').append('<li>the city is called ' + data.name + ' and the current temperature is '+ Math.round(data.main.temp *9/5 -459.67) + '.</li>');
   },
   error: function(){
     console.log('it didnt work');

@@ -4,42 +4,50 @@
 
 $(document).ready(function(){
 
+
+
+
 $.ajax(getOmdb);
-$.ajax(getCountry);
+// $.ajax(getCountry);
 
 
 });//end of document.ready
 
 var getOmdb = {
   type: 'get',
-  url:
-  'http://pokeapi.co/api/v1/pokedex/1/',
-  //'http:api.openweathermap.org/data/2.5/weather?id=1269750&appid=a05bfd071a37e53235764306afc842d8',
+  url: 'http://www.omdbapi.com/?',
   data: 'json',
-  success: function(data){
-    console.log('we did it');
-    console.dir(data);
-    $('.Omdb').append('<li>test element</li>');
-    //$('.Omdb').append('<li>the movie is called ' + data.name + ' and the director is ' + '.</li>');
-  },
-  error: function(){
-    console.log('it didnt work');
-  },
-
+  success: function(event){
+    console.log('works');
+    console.dir(event);
+  }
 }
+
 
 var getCountry = {
   tye: 'get',
-  url:
-  'https://restcountries.eu/rest/v1/all',
+  // url: 'https://data.ct.gov/resource/hma6-9xbg.json?category=Fruit&item=Peaches',
+  url:'https://restcountries.eu/rest/v1/all',
   data: 'json',
-  success: function(data){
-    console.log('we did it');
-    console.dir(data);
-    $('.country').append('<li>the country is called ' + data.name + ' and the population is ' + '.</li>');
+  success: function(x) {
+    console.dir(x);
+    $.each(x, function(anything, v) {
+        // For each record in the returned array
+        $('#testdiv').append('<p>'+ anything + ' ' +v.name+'</p>');
+    });
   },
   error: function(){
     console.log('it didnt work');
   },
 
 }
+
+
+
+
+
+
+
+
+
+//
